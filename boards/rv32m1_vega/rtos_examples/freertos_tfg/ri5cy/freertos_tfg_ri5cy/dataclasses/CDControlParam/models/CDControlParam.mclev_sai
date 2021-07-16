@@ -1,0 +1,14 @@
+package es.uah.aut.srg.edroom.mclev.data_sai.cdcontrolparam;
+
+inport es.uah.aut.srg.micobs.langs;
+
+sai cdcontrolparam_iface
+{
+
+
+
+	version := v1;
+	language := CPP(98);
+
+
+};

@@ -1,0 +1,114 @@
+package es.uah.aut.srg.micobs.mesp.common.embdio;
+ 
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+import es.uah.aut.srg.micobs.pdl.common.os_;
+import es.uah.aut.srg.micobs.mesp.ctools;
+
+import es.uah.aut.srg.micobs.mesp.common.libc;
+
+swpackage xprintf_slib
+{
+	version := HEAD;
+	
+	languages := C(C99);
+	
+	construction tools := GNUMake(3.81);
+	
+	configuration parameters {
+		
+		enum CHANNEL_OUTPUT {
+			NULL = 0, STDOUT = 1
+		};
+		
+		enum CHANNEL_OUTPUT CHANNEL_0_OUTPUT := NULL;
+		enum CHANNEL_OUTPUT CHANNEL_1_OUTPUT := STDOUT;
+		
+	};
+	
+	provided interfaces {
+		
+		provides xprintf_iface(v1) {
+			
+			parameter NB_MAX_CHANNELS := 2;
+			
+		};
+		
+	}; 
+	
+	required interfaces {
+		
+		requires stdarg_iface(C99) { };
+		
+	};
+	
+	supported platforms
+	{
+		supported platform RTEMSAPI_4_6_RTEMS_4_6_5_any_any_any
+		{
+			osapi := RTEMSAPI(4.6);
+			os := RTEMS(4.6.5);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+			
+			required interfaces {
+				requires vprintf_iface(C99) { };
+			};
+		};
+		
+		supported platform POSIX_v13_Linux_2_6_any_any_any
+		{
+			osapi := POSIX(v13);
+			os := Linux(2.6);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+			
+			required interfaces {
+				requires vprintf_iface(C99) { };
+			};
+		};
+		
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_any_any_any
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+			
+			required interfaces {
+				requires console_drv_iface(v1) { };
+			};
+			
+			configuration parameters {
+				
+				integer STDOUT_UART_CHANNEL := 0;
+				
+			};
+		};
+		
+		supported platform pbootapi_v1_pboot_v1_any_any_any
+		{
+			osapi := pbootapi(v1);
+			os := pboot(v1);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+					
+		};
+		
+		supported platform pbootapi_v1_pboot_euclid_v1_any_any_any
+		{
+			osapi := pbootapi(v1);
+			os := pboot_euclid(v1);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+					
+		};
+		
+	};
+	
+};

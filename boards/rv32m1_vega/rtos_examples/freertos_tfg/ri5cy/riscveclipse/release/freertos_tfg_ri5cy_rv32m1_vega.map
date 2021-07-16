@@ -1,0 +1,2371 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+                              drivers\fsl_lpuart.o (atoi)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+                              startup\startup_RV32M1_ri5cy.o (__libc_init_array)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+                              osswpackages\freertos\src\portable\MemMang\heap_3.o (malloc)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+                              stream_buffer\StreamBufferDemo.o (memcmp)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+                              osswpackages\freertos\src\queue.o (memcpy)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+                              drivers\fsl_lpuart.o (memset)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o) (_free_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o) (_malloc_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+                              drivers\fsl_lpuart.o (strcat)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcmp.o)
+                              drivers\fsl_lpuart.o (strcmp)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+                              drivers\fsl_lpuart.o (strdup)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o) (_strdup_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+                              source\test.o (strlen)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+                              drivers\fsl_lpuart.o (strncpy)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o) (_strtol_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+                              swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o (vprintf)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o) (_impure_ptr)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o) (__locale_ctype_ptr_l)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o) (__ascii_mbtowc)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o) (_vfprintf_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o) (errno)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (__swbuf_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o) (__ascii_wctomb)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (__swsetup_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o) (_ctype_)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o) (_fflush_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (__sinit)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (_fputwc_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o) (_fwalk)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o) (__smakebuf_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (memchr)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o) (memmove)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o) (_realloc_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o) (_printf_i)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o) (__sread)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o) (_wcrtomb_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o) (_write_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o) (_close_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o) (_fclose_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o) (_fstat_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o) (_isatty_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o) (_lseek_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+                              c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o) (_read_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 board\board.o
+ .data          0x0000000000000000        0x0 board\board.o
+ .bss           0x0000000000000000        0x0 board\board.o
+ .text          0x0000000000000000        0x0 board\clock_config.o
+ .data          0x0000000000000000        0x0 board\clock_config.o
+ .bss           0x0000000000000000        0x0 board\clock_config.o
+ .text.BOARD_InitBootClocks
+                0x0000000000000000        0x8 board\clock_config.o
+ .text.BOARD_BootClockHSRUN
+                0x0000000000000000       0x98 board\clock_config.o
+ .text.BOARD_BootClockVLPR
+                0x0000000000000000       0x98 board\clock_config.o
+ .rodata.g_scgFircConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgFircConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgLpFllConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgLpFllConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgSircConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x14 board\clock_config.o
+ .rodata.g_scgSircConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x14 board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .sdata.g_sysClkConfig_BOARD_BootClockHSRUN
+                0x0000000000000000        0x4 board\clock_config.o
+ .sdata.g_sysClkConfig_BOARD_BootClockVLPR
+                0x0000000000000000        0x4 board\clock_config.o
+ .text          0x0000000000000000        0x0 board\pin_mux.o
+ .data          0x0000000000000000        0x0 board\pin_mux.o
+ .bss           0x0000000000000000        0x0 board\pin_mux.o
+ .text.BOARD_InitBootPins
+                0x0000000000000000        0x8 board\pin_mux.o
+ .text          0x0000000000000000        0x0 drivers\freertos\fsl_lpuart_freertos.o
+ .data          0x0000000000000000        0x0 drivers\freertos\fsl_lpuart_freertos.o
+ .bss           0x0000000000000000        0x0 drivers\freertos\fsl_lpuart_freertos.o
+ .text          0x0000000000000000        0x0 drivers\fsl_clock.o
+ .data          0x0000000000000000        0x0 drivers\fsl_clock.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_clock.o
+ .text.unlikely.CLOCK_GetOsc32kClkFreq.part.0
+                0x0000000000000000       0x28 drivers\fsl_clock.o
+ .text.unlikely.CLOCK_GetRtcOscFreq.part.4
+                0x0000000000000000       0x28 drivers\fsl_clock.o
+ .text.CLOCK_GetOsc32kClkFreq
+                0x0000000000000000       0x18 drivers\fsl_clock.o
+ .text.CLOCK_EnableUsbfs0Clock
+                0x0000000000000000       0xea drivers\fsl_clock.o
+ .text.CLOCK_GetSysClkFreq
+                0x0000000000000000      0x16c drivers\fsl_clock.o
+ .rodata.CLOCK_GetSysClkFreq
+                0x0000000000000000       0x18 drivers\fsl_clock.o
+ .text.CLOCK_GetBusClkFreq
+                0x0000000000000000        0xa drivers\fsl_clock.o
+ .text.CLOCK_GetFlashClkFreq
+                0x0000000000000000        0x8 drivers\fsl_clock.o
+ .text.CLOCK_GetCoreSysClkFreq
+                0x0000000000000000        0xa drivers\fsl_clock.o
+ .text.CLOCK_GetPlatClkFreq
+                0x0000000000000000        0x8 drivers\fsl_clock.o
+ .text.CLOCK_GetExtClkFreq
+                0x0000000000000000        0xa drivers\fsl_clock.o
+ .text.CLOCK_InitSysOsc
+                0x0000000000000000       0xa2 drivers\fsl_clock.o
+ .text.CLOCK_DeinitSysOsc
+                0x0000000000000000       0x2e drivers\fsl_clock.o
+ .text.CLOCK_GetSysOscFreq
+                0x0000000000000000       0x2c drivers\fsl_clock.o
+ .text.CLOCK_DeinitSirc
+                0x0000000000000000       0x2a drivers\fsl_clock.o
+ .text.CLOCK_GetSircFreq
+                0x0000000000000000       0x2c drivers\fsl_clock.o
+ .text.CLOCK_DeinitFirc
+                0x0000000000000000       0x2e drivers\fsl_clock.o
+ .text.CLOCK_GetFircFreq
+                0x0000000000000000       0x2c drivers\fsl_clock.o
+ .text.CLOCK_GetRtcOscFreq
+                0x0000000000000000       0x2c drivers\fsl_clock.o
+ .text.CLOCK_DeinitLpFll
+                0x0000000000000000       0x2e drivers\fsl_clock.o
+ .text.CLOCK_GetLpFllFreq
+                0x0000000000000000       0x2c drivers\fsl_clock.o
+ .text.CLOCK_GetFreq
+                0x0000000000000000      0x1c0 drivers\fsl_clock.o
+ .rodata.CLOCK_GetFreq
+                0x0000000000000000       0x64 drivers\fsl_clock.o
+ .rodata.__func__.3393
+                0x0000000000000000       0x12 drivers\fsl_clock.o
+ .rodata.__func__.3407
+                0x0000000000000000        0xf drivers\fsl_clock.o
+ .rodata.__func__.3589
+                0x0000000000000000       0x17 drivers\fsl_clock.o
+ .rodata.__func__.3673
+                0x0000000000000000       0x11 drivers\fsl_clock.o
+ .rodata.__func__.3752
+                0x0000000000000000       0x14 drivers\fsl_clock.o
+ .sbss.g_xtal32Freq
+                0x0000000000000000        0x4 drivers\fsl_clock.o
+ .text          0x0000000000000000        0x0 drivers\fsl_common.o
+ .data          0x0000000000000000        0x0 drivers\fsl_common.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_common.o
+ .text          0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .data          0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .text.unlikely.GPIO_GetInstance.part.0
+                0x0000000000000000       0x28 drivers\fsl_gpio.o
+ .text.GPIO_PinInit
+                0x0000000000000000       0x5a drivers\fsl_gpio.o
+ .text.GPIO_GetPinsInterruptFlags
+                0x0000000000000000       0x56 drivers\fsl_gpio.o
+ .text.GPIO_ClearPinsInterruptFlags
+                0x0000000000000000       0x56 drivers\fsl_gpio.o
+ .rodata.GPIO_GetInstance.part.0.str1.4
+                0x0000000000000000       0x5b drivers\fsl_gpio.o
+ .rodata.GPIO_PinInit.str1.4
+                0x0000000000000000        0x7 drivers\fsl_gpio.o
+ .rodata.__func__.3633
+                0x0000000000000000       0x11 drivers\fsl_gpio.o
+ .rodata.__func__.3639
+                0x0000000000000000        0xd drivers\fsl_gpio.o
+ .comment       0x0000000000000000       0x1b drivers\fsl_gpio.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .text          0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .data          0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .text.unlikely.LPUART_TransferGetRxRingBufferLength.isra.0.part.1
+                0x0000000000000000       0x28 drivers\fsl_lpuart.o
+ .text.LPUART_GetInstance
+                0x0000000000000000       0x3c drivers\fsl_lpuart.o
+ .text.LPUART_SetBaudRate
+                0x0000000000000000       0xda drivers\fsl_lpuart.o
+ .text.LPUART_EnableInterrupts
+                0x0000000000000000       0x28 drivers\fsl_lpuart.o
+ .text.LPUART_DisableInterrupts
+                0x0000000000000000       0x34 drivers\fsl_lpuart.o
+ .text.LPUART_GetEnabledInterrupts
+                0x0000000000000000       0x20 drivers\fsl_lpuart.o
+ .text.LPUART_GetStatusFlags
+                0x0000000000000000       0x10 drivers\fsl_lpuart.o
+ .text.LPUART_TransferStopRingBuffer
+                0x0000000000000000       0x60 drivers\fsl_lpuart.o
+ .text.LPUART_TransferAbortSend
+                0x0000000000000000       0x48 drivers\fsl_lpuart.o
+ .text.LPUART_TransferGetSendCount
+                0x0000000000000000       0x6c drivers\fsl_lpuart.o
+ .text.LPUART_TransferGetReceiveCount
+                0x0000000000000000       0x74 drivers\fsl_lpuart.o
+ .text.LPUART_TransferHandleErrorIRQ
+                0x0000000000000000        0x2 drivers\fsl_lpuart.o
+ .rodata.LPUART_SetBaudRate.str1.4
+                0x0000000000000000        0xd drivers\fsl_lpuart.o
+ .rodata.LPUART_TransferGetSendCount.str1.4
+                0x0000000000000000        0x6 drivers\fsl_lpuart.o
+ .rodata.__func__.4848
+                0x0000000000000000       0x25 drivers\fsl_lpuart.o
+ .rodata.__func__.4916
+                0x0000000000000000       0x13 drivers\fsl_lpuart.o
+ .rodata.__func__.4999
+                0x0000000000000000       0x1e drivers\fsl_lpuart.o
+ .rodata.__func__.5011
+                0x0000000000000000       0x19 drivers\fsl_lpuart.o
+ .rodata.__func__.5017
+                0x0000000000000000       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.5043
+                0x0000000000000000       0x1f drivers\fsl_lpuart.o
+ .text          0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .data          0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeRun
+                0x0000000000000000        0xe drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeHsrun
+                0x0000000000000000        0xe drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeWait
+                0x0000000000000000       0x20 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeStop
+                0x0000000000000000       0x2e drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlpr
+                0x0000000000000000       0x12 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlpw
+                0x0000000000000000        0x8 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlps
+                0x0000000000000000       0x2a drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeLls
+                0x0000000000000000       0x2a drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlls0
+                0x0000000000000000       0x2a drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlls2
+                0x0000000000000000       0x2a drivers\fsl_msmc.o
+ .text.SMC_ConfigureResetPinFilter
+                0x0000000000000000       0x3e drivers\fsl_msmc.o
+ .rodata.SMC_ConfigureResetPinFilter.str1.4
+                0x0000000000000000       0x3f drivers\fsl_msmc.o
+ .rodata.__func__.3770
+                0x0000000000000000       0x1c drivers\fsl_msmc.o
+ .comment       0x0000000000000000       0x1b drivers\fsl_msmc.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\croutine.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\croutine.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\croutine.o
+ .comment       0x0000000000000000       0x1b osswpackages\freertos\src\croutine.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 osswpackages\freertos\src\croutine.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\event_groups.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\event_groups.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x0000000000000000        0x8 osswpackages\freertos\src\event_groups.o
+ .text.xEventGroupClearBitsFromISR
+                0x0000000000000000       0x16 osswpackages\freertos\src\event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x0000000000000000       0x24 osswpackages\freertos\src\event_groups.o
+ .text.xEventGroupSync
+                0x0000000000000000      0x134 osswpackages\freertos\src\event_groups.o
+ .text.uxEventGroupGetNumber
+                0x0000000000000000        0xa osswpackages\freertos\src\event_groups.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\heap_4.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\heap_4.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\heap_4.o
+ .text.xPortGetFreeHeapSize
+                0x0000000000000000        0xa osswpackages\freertos\src\heap_4.o
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x0000000000000000        0xa osswpackages\freertos\src\heap_4.o
+ .text.vPortInitialiseBlocks
+                0x0000000000000000        0x2 osswpackages\freertos\src\heap_4.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\list.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\list.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\list.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortEndScheduler
+                0x0000000000000000        0x6 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .text.pvPortMalloc
+                0x0000000000000000       0x2e osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .text.vPortFree
+                0x0000000000000000       0x2c osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .comment       0x0000000000000000       0x1b osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 osswpackages\freertos\src\portable\MemMang\heap_3.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.prvTaskExitError
+                0x0000000000000000       0x2a osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.portYIELD_FROM_ISR
+                0x0000000000000000        0xe osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.portYIELD
+                0x0000000000000000       0x1c osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.pxPortInitialiseStack
+                0x0000000000000000       0x3a osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.xPortStartScheduler
+                0x0000000000000000       0xa0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortEndScheduler
+                0x0000000000000000        0x6 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortEnterCritical
+                0x0000000000000000       0x44 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortExitCritical
+                0x0000000000000000       0x4e osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortSetInterruptMask
+                0x0000000000000000       0x18 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.vPortClearInterruptMask
+                0x0000000000000000       0x10 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.LPIT0_IRQHandler
+                0x0000000000000000       0x4c osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .rodata.__func__.3801
+                0x0000000000000000        0xf osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .rodata.xPortStartScheduler.str1.4
+                0x0000000000000000       0x73 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .sbss.uxInterruptNesting
+                0x0000000000000000        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .sbss.uxYieldRequired
+                0x0000000000000000        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .sdata.uxCriticalNesting
+                0x0000000000000000        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .comment       0x0000000000000000       0x1b osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\portable\portASM.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\queue.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\queue.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x0000000000000000       0x3a osswpackages\freertos\src\queue.o
+ .text.xQueueGiveMutexRecursive
+                0x0000000000000000       0x54 osswpackages\freertos\src\queue.o
+ .text.xQueueGiveFromISR
+                0x0000000000000000       0xa6 osswpackages\freertos\src\queue.o
+ .text.xQueueTakeMutexRecursive
+                0x0000000000000000       0x60 osswpackages\freertos\src\queue.o
+ .text.xQueueReceiveFromISR
+                0x0000000000000000       0xb2 osswpackages\freertos\src\queue.o
+ .text.xQueuePeekFromISR
+                0x0000000000000000       0x7e osswpackages\freertos\src\queue.o
+ .text.uxQueueMessagesWaiting
+                0x0000000000000000       0x30 osswpackages\freertos\src\queue.o
+ .text.uxQueueSpacesAvailable
+                0x0000000000000000       0x36 osswpackages\freertos\src\queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x0000000000000000       0x14 osswpackages\freertos\src\queue.o
+ .text.uxQueueGetQueueNumber
+                0x0000000000000000        0x4 osswpackages\freertos\src\queue.o
+ .text.vQueueSetQueueNumber
+                0x0000000000000000        0x4 osswpackages\freertos\src\queue.o
+ .text.ucQueueGetQueueType
+                0x0000000000000000        0x6 osswpackages\freertos\src\queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x0000000000000000       0x18 osswpackages\freertos\src\queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x0000000000000000       0x1c osswpackages\freertos\src\queue.o
+ .text.pcQueueGetName
+                0x0000000000000000       0x28 osswpackages\freertos\src\queue.o
+ .text.vQueueUnregisterQueue
+                0x0000000000000000       0x2c osswpackages\freertos\src\queue.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\tasks.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\tasks.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\tasks.o
+ .text.vTaskDelete
+                0x0000000000000000      0x102 osswpackages\freertos\src\tasks.o
+ .text.eTaskGetState
+                0x0000000000000000       0x8e osswpackages\freertos\src\tasks.o
+ .text.uxTaskPriorityGet
+                0x0000000000000000       0x2e osswpackages\freertos\src\tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x0000000000000000       0x2e osswpackages\freertos\src\tasks.o
+ .text.vTaskPrioritySet
+                0x0000000000000000       0xea osswpackages\freertos\src\tasks.o
+ .text.xTaskResumeFromISR
+                0x0000000000000000       0xc8 osswpackages\freertos\src\tasks.o
+ .text.vTaskEndScheduler
+                0x0000000000000000       0x20 osswpackages\freertos\src\tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x0000000000000000       0x28 osswpackages\freertos\src\tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x0000000000000000        0xa osswpackages\freertos\src\tasks.o
+ .text.pcTaskGetName
+                0x0000000000000000       0x20 osswpackages\freertos\src\tasks.o
+ .text.vTaskDelayUntil
+                0x0000000000000000       0x84 osswpackages\freertos\src\tasks.o
+ .text.vTaskDelay
+                0x0000000000000000       0x50 osswpackages\freertos\src\tasks.o
+ .text.uxTaskGetTaskNumber
+                0x0000000000000000        0xa osswpackages\freertos\src\tasks.o
+ .text.vTaskSetTaskNumber
+                0x0000000000000000        0x6 osswpackages\freertos\src\tasks.o
+ .text.vTaskSetThreadLocalStoragePointer
+                0x0000000000000000       0x24 osswpackages\freertos\src\tasks.o
+ .text.pvTaskGetThreadLocalStoragePointer
+                0x0000000000000000       0x28 osswpackages\freertos\src\tasks.o
+ .text.vTaskGetInfo
+                0x0000000000000000       0xda osswpackages\freertos\src\tasks.o
+ .text.prvListTasksWithinSingleList.part.5
+                0x0000000000000000       0x8c osswpackages\freertos\src\tasks.o
+ .text.uxTaskGetSystemState
+                0x0000000000000000      0x136 osswpackages\freertos\src\tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x0000000000000000        0xa osswpackages\freertos\src\tasks.o
+ .text.ulTaskNotifyTake
+                0x0000000000000000       0x88 osswpackages\freertos\src\tasks.o
+ .text.xTaskNotifyWait
+                0x0000000000000000       0xc0 osswpackages\freertos\src\tasks.o
+ .text.xTaskGenericNotify
+                0x0000000000000000       0xfc osswpackages\freertos\src\tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x0000000000000000      0x12e osswpackages\freertos\src\tasks.o
+ .text.vTaskNotifyGiveFromISR
+                0x0000000000000000       0xdc osswpackages\freertos\src\tasks.o
+ .text.xTaskNotifyStateClear
+                0x0000000000000000       0x46 osswpackages\freertos\src\tasks.o
+ .rodata        0x0000000000000000       0x10 osswpackages\freertos\src\tasks.o
+ .text          0x0000000000000000        0x0 osswpackages\freertos\src\timers.o
+ .data          0x0000000000000000        0x0 osswpackages\freertos\src\timers.o
+ .bss           0x0000000000000000        0x0 osswpackages\freertos\src\timers.o
+ .text.xTimerCreate
+                0x0000000000000000       0x70 osswpackages\freertos\src\timers.o
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x0000000000000000       0x1a osswpackages\freertos\src\timers.o
+ .text.xTimerGetPeriod
+                0x0000000000000000       0x14 osswpackages\freertos\src\timers.o
+ .text.xTimerGetExpiryTime
+                0x0000000000000000       0x14 osswpackages\freertos\src\timers.o
+ .text.pcTimerGetName
+                0x0000000000000000       0x14 osswpackages\freertos\src\timers.o
+ .text.xTimerIsTimerActive
+                0x0000000000000000       0x34 osswpackages\freertos\src\timers.o
+ .text.pvTimerGetTimerID
+                0x0000000000000000       0x30 osswpackages\freertos\src\timers.o
+ .text.vTimerSetTimerID
+                0x0000000000000000       0x32 osswpackages\freertos\src\timers.o
+ .text.xTimerPendFunctionCall
+                0x0000000000000000       0x3e osswpackages\freertos\src\timers.o
+ .text          0x0000000000000000        0x0 pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .data          0x0000000000000000        0x0 pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .bss           0x0000000000000000        0x0 pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .text.vMainQueueSendPassed
+                0x0000000000000000        0x2 pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .comment       0x0000000000000000       0x1b pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+ .text          0x0000000000000000        0x0 source\test.o
+ .data          0x0000000000000000        0x0 source\test.o
+ .bss           0x0000000000000000        0x0 source\test.o
+ .text          0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .data          0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .bss           0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .text          0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .data          0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .bss           0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0xc2 startup\system_RV32M1_ri5cy.o
+ .text.SystemGetIRQNestingLevel
+                0x0000000000000000        0xa startup\system_RV32M1_ri5cy.o
+ .text.EVENT_GetIRQPriority
+                0x0000000000000000       0x2a startup\system_RV32M1_ri5cy.o
+ .text.SystemInISR
+                0x0000000000000000        0xc startup\system_RV32M1_ri5cy.o
+ .text.EVENT_SystemReset
+                0x0000000000000000       0x12 startup\system_RV32M1_ri5cy.o
+ .text          0x0000000000000000        0x0 stream_buffer\StreamBufferDemo.o
+ .data          0x0000000000000000        0x0 stream_buffer\StreamBufferDemo.o
+ .bss           0x0000000000000000        0x0 stream_buffer\StreamBufferDemo.o
+ .text.prvInterruptTriggerLevelTest
+                0x0000000000000000       0xe6 stream_buffer\StreamBufferDemo.o
+ .text.prvNonBlockingReceiverTask
+                0x0000000000000000       0xa6 stream_buffer\StreamBufferDemo.o
+ .text.prvNonBlockingSenderTask
+                0x0000000000000000       0x6c stream_buffer\StreamBufferDemo.o
+ .text.prvSingleTaskTests
+                0x0000000000000000      0x18c stream_buffer\StreamBufferDemo.o
+ .text.prvEchoServer
+                0x0000000000000000      0x11a stream_buffer\StreamBufferDemo.o
+ .text.prvEchoClient
+                0x0000000000000000       0xd4 stream_buffer\StreamBufferDemo.o
+ .text.vStartStreamBufferTasks
+                0x0000000000000000       0xc2 stream_buffer\StreamBufferDemo.o
+ .text.vPeriodicStreamBufferProcessing
+                0x0000000000000000       0x6a stream_buffer\StreamBufferDemo.o
+ .text.xAreStreamBufferTasksStillRunning
+                0x0000000000000000       0x88 stream_buffer\StreamBufferDemo.o
+ .rodata.prvEchoServer.str1.4
+                0x0000000000000000        0xb stream_buffer\StreamBufferDemo.o
+ .rodata.prvInterruptTriggerLevelTest.str1.4
+                0x0000000000000000        0x9 stream_buffer\StreamBufferDemo.o
+ .rodata.prvNonBlockingReceiverTask.str1.4
+                0x0000000000000000       0x37 stream_buffer\StreamBufferDemo.o
+ .rodata.vStartStreamBufferTasks.str1.4
+                0x0000000000000000       0x40 stream_buffer\StreamBufferDemo.o
+ .sbss.ulEchoLoopCounters
+                0x0000000000000000        0x8 stream_buffer\StreamBufferDemo.o
+ .sbss.ulInterruptTriggerCounter
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .sbss.ulLastEchoLoopCounters.4977
+                0x0000000000000000        0x8 stream_buffer\StreamBufferDemo.o
+ .sbss.ulLastInterruptTriggerCounter.4979
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .sbss.ulLastNonBlockingRxCounter.4978
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .sbss.ulNonBlockingRxCounter
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .sbss.xInterruptStreamBuffer
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .sbss.xNextChar.4953
+                0x0000000000000000        0x4 stream_buffer\StreamBufferDemo.o
+ .comment       0x0000000000000000       0x1b stream_buffer\StreamBufferDemo.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 stream_buffer\StreamBufferDemo.o
+ .text          0x0000000000000000        0x0 stream_buffer\StreamBufferInterrupt.o
+ .data          0x0000000000000000        0x0 stream_buffer\StreamBufferInterrupt.o
+ .bss           0x0000000000000000        0x0 stream_buffer\StreamBufferInterrupt.o
+ .text.prvReceivingTask
+                0x0000000000000000       0xe8 stream_buffer\StreamBufferInterrupt.o
+ .text.vStartStreamBufferInterruptDemo
+                0x0000000000000000       0x42 stream_buffer\StreamBufferInterrupt.o
+ .text.vBasicStreamBufferSendFromISR
+                0x0000000000000000       0x72 stream_buffer\StreamBufferInterrupt.o
+ .text.xIsInterruptStreamBufferDemoStillRunning
+                0x0000000000000000       0x20 stream_buffer\StreamBufferInterrupt.o
+ .rodata.prvReceivingTask.str1.4
+                0x0000000000000000        0xf stream_buffer\StreamBufferInterrupt.o
+ .rodata.vBasicStreamBufferSendFromISR.str1.4
+                0x0000000000000000       0x19 stream_buffer\StreamBufferInterrupt.o
+ .rodata.vStartStreamBufferInterruptDemo.str1.4
+                0x0000000000000000        0x9 stream_buffer\StreamBufferInterrupt.o
+ .sbss.ulCycleCount
+                0x0000000000000000        0x4 stream_buffer\StreamBufferInterrupt.o
+ .sbss.xCallCount.4802
+                0x0000000000000000        0x4 stream_buffer\StreamBufferInterrupt.o
+ .sbss.xNextByteToSend.4799
+                0x0000000000000000        0x4 stream_buffer\StreamBufferInterrupt.o
+ .sbss.xStreamBuffer
+                0x0000000000000000        0x4 stream_buffer\StreamBufferInterrupt.o
+ .sdata.xDemoStatus
+                0x0000000000000000        0x4 stream_buffer\StreamBufferInterrupt.o
+ .comment       0x0000000000000000       0x1b stream_buffer\StreamBufferInterrupt.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 stream_buffer\StreamBufferInterrupt.o
+ .text          0x0000000000000000        0x0 stream_buffer\stream_buffer.o
+ .data          0x0000000000000000        0x0 stream_buffer\stream_buffer.o
+ .bss           0x0000000000000000        0x0 stream_buffer\stream_buffer.o
+ .text.prvInitialiseNewStreamBuffer
+                0x0000000000000000       0x74 stream_buffer\stream_buffer.o
+ .text.prvWriteBytesToBuffer
+                0x0000000000000000       0x90 stream_buffer\stream_buffer.o
+ .text.prvReadBytesFromBuffer
+                0x0000000000000000       0x9e stream_buffer\stream_buffer.o
+ .text.prvReadMessageFromBuffer
+                0x0000000000000000       0x64 stream_buffer\stream_buffer.o
+ .text.xStreamBufferGenericCreate
+                0x0000000000000000       0x68 stream_buffer\stream_buffer.o
+ .text.vStreamBufferDelete
+                0x0000000000000000       0x2e stream_buffer\stream_buffer.o
+ .text.xStreamBufferReset
+                0x0000000000000000       0x54 stream_buffer\stream_buffer.o
+ .text.xStreamBufferSetTriggerLevel
+                0x0000000000000000       0x24 stream_buffer\stream_buffer.o
+ .text.xStreamBufferSpacesAvailable
+                0x0000000000000000       0x26 stream_buffer\stream_buffer.o
+ .text.xStreamBufferBytesAvailable
+                0x0000000000000000       0x24 stream_buffer\stream_buffer.o
+ .text.xStreamBufferSend
+                0x0000000000000000      0x15e stream_buffer\stream_buffer.o
+ .text.xStreamBufferSendFromISR
+                0x0000000000000000       0xdc stream_buffer\stream_buffer.o
+ .text.xStreamBufferReceive
+                0x0000000000000000      0x108 stream_buffer\stream_buffer.o
+ .text.xStreamBufferReceiveFromISR
+                0x0000000000000000       0xa4 stream_buffer\stream_buffer.o
+ .text.xStreamBufferIsEmpty
+                0x0000000000000000       0x1c stream_buffer\stream_buffer.o
+ .text.xStreamBufferIsFull
+                0x0000000000000000       0x30 stream_buffer\stream_buffer.o
+ .text.xStreamBufferSendCompletedFromISR
+                0x0000000000000000       0x5e stream_buffer\stream_buffer.o
+ .text.xStreamBufferReceiveCompletedFromISR
+                0x0000000000000000       0x5e stream_buffer\stream_buffer.o
+ .text.uxStreamBufferGetStreamBufferNumber
+                0x0000000000000000        0x4 stream_buffer\stream_buffer.o
+ .text.vStreamBufferSetStreamBufferNumber
+                0x0000000000000000        0x4 stream_buffer\stream_buffer.o
+ .text.ucStreamBufferGetStreamBufferType
+                0x0000000000000000        0xa stream_buffer\stream_buffer.o
+ .comment       0x0000000000000000       0x1b stream_buffer\stream_buffer.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 stream_buffer\stream_buffer.o
+ .text          0x0000000000000000        0x0 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .data          0x0000000000000000        0x0 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .bss           0x0000000000000000        0x0 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_normalize
+                0x0000000000000000       0x3c swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_add
+                0x0000000000000000       0x1a swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_sub
+                0x0000000000000000       0x1c swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_nz
+                0x0000000000000000       0x10 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_lt
+                0x0000000000000000       0x20 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_gt
+                0x0000000000000000       0x20 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_le
+                0x0000000000000000       0x20 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_ge
+                0x0000000000000000       0x20 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_eq
+                0x0000000000000000       0x18 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_from_us
+                0x0000000000000000       0x26 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text.timespec_to_us
+                0x0000000000000000       0x18 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .comment       0x0000000000000000       0x1b swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+ .text          0x0000000000000000        0x0 swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+ .data          0x0000000000000000        0x0 swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+ .bss           0x0000000000000000        0x0 swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+ .comment       0x0000000000000000       0x1b swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+ .text          0x0000000000000000        0x0 swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .data          0x0000000000000000        0x0 swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .bss           0x0000000000000000        0x0 swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .text.xprintf  0x0000000000000000       0x28 swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .comment       0x0000000000000000       0x1b swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+ .text          0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .data          0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .text.DbgConsole_Deinit
+                0x0000000000000000       0x14 utilities\fsl_debug_console.o
+ .text.DbgConsole_Flush
+                0x0000000000000000        0x8 utilities\fsl_debug_console.o
+ .text.DbgConsole_Putchar
+                0x0000000000000000       0x18 utilities\fsl_debug_console.o
+ .text.DbgConsole_Scanf
+                0x0000000000000000       0x4a utilities\fsl_debug_console.o
+ .text.DbgConsole_Getchar
+                0x0000000000000000       0x1a utilities\fsl_debug_console.o
+ .text._write   0x0000000000000000       0x2c utilities\fsl_debug_console.o
+ .text._read    0x0000000000000000       0x14 utilities\fsl_debug_console.o
+ .text.isatty   0x0000000000000000        0x4 utilities\fsl_debug_console.o
+ .text.fstat    0x0000000000000000        0x8 utilities\fsl_debug_console.o
+ .text.lseek    0x0000000000000000        0x4 utilities\fsl_debug_console.o
+ .text.close    0x0000000000000000        0x4 utilities\fsl_debug_console.o
+ .text.read     0x0000000000000000       0x14 utilities\fsl_debug_console.o
+ .text.write    0x0000000000000000       0x2c utilities\fsl_debug_console.o
+ .text          0x0000000000000000        0x0 utilities\fsl_io.o
+ .data          0x0000000000000000        0x0 utilities\fsl_io.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_io.o
+ .text.IO_Deinit
+                0x0000000000000000       0x32 utilities\fsl_io.o
+ .text.IO_WaitIdle
+                0x0000000000000000       0x36 utilities\fsl_io.o
+ .text          0x0000000000000000        0x0 utilities\fsl_log.o
+ .data          0x0000000000000000        0x0 utilities\fsl_log.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_log.o
+ .text.LOG_Deinit
+                0x0000000000000000        0x8 utilities\fsl_log.o
+ .text.LOG_WaitIdle
+                0x0000000000000000       0x14 utilities\fsl_log.o
+ .text.LOG_Pop  0x0000000000000000       0x30 utilities\fsl_log.o
+ .text.LOG_ReadLine
+                0x0000000000000000       0x9e utilities\fsl_log.o
+ .text.LOG_ReadCharacter
+                0x0000000000000000       0x44 utilities\fsl_log.o
+ .rodata.LOG_ReadCharacter.str1.4
+                0x0000000000000000        0xb utilities\fsl_log.o
+ .rodata.__func__.4104
+                0x0000000000000000        0xd utilities\fsl_log.o
+ .rodata.__func__.4112
+                0x0000000000000000       0x12 utilities\fsl_log.o
+ .text          0x0000000000000000        0x0 utilities\fsl_str.o
+ .data          0x0000000000000000        0x0 utilities\fsl_str.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_str.o
+ .text.ScanIgnoreWhiteSpace
+                0x0000000000000000       0x36 utilities\fsl_str.o
+ .text.StrFormatScanf
+                0x0000000000000000      0x39c utilities\fsl_str.o
+ .rodata.StrFormatScanf
+                0x0000000000000000      0x124 utilities\fsl_str.o
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .text          0x0000000000000000       0x24 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-malloc.o)
+ .text          0x0000000000000000       0x1c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .text          0x0000000000000000       0xb8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcmp.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+ .text          0x0000000000000000       0x26 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-vprintf.o)
+ .text          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+ .sbss          0x0000000000000000        0x4 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+ .text          0x0000000000000000      0x3e2 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .rodata.str1.4
+                0x0000000000000000       0x13 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf.o)
+ .text          0x0000000000000000       0xee c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+ .text          0x0000000000000000       0xdc c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wbuf.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+ .text          0x0000000000000000       0xe8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wsetup.o)
+ .text          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+ .text          0x0000000000000000      0x1b4 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fflush.o)
+ .text          0x0000000000000000      0x22c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-findfp.o)
+ .text          0x0000000000000000      0x116 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fputwc.o)
+ .text          0x0000000000000000      0x314 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fvwrite.o)
+ .text          0x0000000000000000       0xca c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fwalk.o)
+ .text          0x0000000000000000      0x11c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-makebuf.o)
+ .text          0x0000000000000000       0x1e c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memchr.o)
+ .text          0x0000000000000000       0x3a c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memmove.o)
+ .text          0x0000000000000000       0x72 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-reallocr.o)
+ .text          0x0000000000000000      0x3aa c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .rodata.str1.4
+                0x0000000000000000       0x25 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-vfprintf_i.o)
+ .text          0x0000000000000000       0xda c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-stdio.o)
+ .text          0x0000000000000000       0x70 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wcrtomb.o)
+ .text          0x0000000000000000       0x36 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-writer.o)
+ .text          0x0000000000000000       0x32 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-closer.o)
+ .text          0x0000000000000000       0xbc c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fclose.o)
+ .text          0x0000000000000000       0x34 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-fstatr.o)
+ .text          0x0000000000000000       0x32 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-isattyr.o)
+ .text          0x0000000000000000       0x36 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-lseekr.o)
+ .text          0x0000000000000000       0x14 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-msizer.o)
+ .text          0x0000000000000000       0x36 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+ .comment       0x0000000000000000       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-readr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+m_vector         0x00000000000fff00 0x0000000000000100 xr
+m_text           0x0000000000000000 0x00000000000fff00 xr
+m_data           0x0000000020000000 0x000000000002e800 rw
+rpmsg_sh_mem     0x000000002002e800 0x0000000000001800 rw
+m_usb_sram       0x0000000048010000 0x0000000000000800 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD board\board.o
+LOAD board\clock_config.o
+LOAD board\pin_mux.o
+LOAD drivers\freertos\fsl_lpuart_freertos.o
+LOAD drivers\fsl_clock.o
+LOAD drivers\fsl_common.o
+LOAD drivers\fsl_gpio.o
+LOAD drivers\fsl_lpuart.o
+LOAD drivers\fsl_msmc.o
+LOAD osswpackages\freertos\src\croutine.o
+LOAD osswpackages\freertos\src\event_groups.o
+LOAD osswpackages\freertos\src\heap_4.o
+LOAD osswpackages\freertos\src\list.o
+LOAD osswpackages\freertos\src\portable\GCC\Posix\port.o
+LOAD osswpackages\freertos\src\portable\MemMang\heap_3.o
+LOAD osswpackages\freertos\src\portable\GCC\Posix\port.o
+LOAD osswpackages\freertos\src\portable\portASM.o
+LOAD osswpackages\freertos\src\queue.o
+LOAD osswpackages\freertos\src\tasks.o
+LOAD osswpackages\freertos\src\timers.o
+LOAD pswpackages\freertosapi_freertos_x86_v1\src\freertos_def.o
+LOAD source\test.o
+LOAD startup\startup_RV32M1_ri5cy.o
+LOAD startup\system_RV32M1_ri5cy.o
+LOAD stream_buffer\StreamBufferDemo.o
+LOAD stream_buffer\StreamBufferInterrupt.o
+LOAD stream_buffer\stream_buffer.o
+LOAD swpackages\edroombp_slib_head\src\freertossapi\timespec.o
+LOAD swpackages\exit_slib_c99\src\posix_v13\exit_iface.o
+LOAD swpackages\xprintf_slib_head\src\posix_v13\linux_2_6\xprintf_iface_v1.o
+LOAD utilities\fsl_debug_console.o
+LOAD utilities\fsl_io.o
+LOAD utilities\fsl_log.o
+LOAD utilities\fsl_str.o
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libnosys.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/rv32imcxpulpv2/ilp32\libgcc.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libm.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libg.a
+                0x0000000000000400                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x400
+                0x0000000000000800                STACK_SIZE = DEFINED (__stack_size__)?__stack_size__:0x800
+
+.noinit_rpmsg_sh_mem
+                0x000000002002e800        0x0
+ *(.noinit.$rpmsg_sh_mem*)
+                0x000000002002e800                . = ALIGN (0x4)
+
+.vectors        0x00000000000fff00       0x90
+                0x00000000000fff00                __VECTOR_TABLE = .
+ *(.vectors)
+ .vectors       0x00000000000fff00       0x90 startup\startup_RV32M1_ri5cy.o
+
+.text           0x0000000000000000     0x5798
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.startup)
+ .startup       0x0000000000000000      0x192 startup\startup_RV32M1_ri5cy.o
+                0x0000000000000026                _fini
+                0x0000000000000026                _init
+                0x000000000000013e                IllegalInstruction_Handler
+                0x000000000000016e                LSU_Handler
+                0x0000000000000186                IllegalInstruction_HandlerFunc
+                0x000000000000018a                Ecall_HandlerFunc
+                0x000000000000018e                LSU_HandlerFunc
+                0x0000000000000194                . = ALIGN (0x4)
+ *fill*         0x0000000000000192        0x2 
+                0x0000000000000194                __user_vector = .
+ *(user_vectors)
+ user_vectors   0x0000000000000194       0xfc startup\system_RV32M1_ri5cy.o
+                0x0000000000000194                isrTable
+ *(.text)
+ .text          0x0000000000000290      0x360 osswpackages\freertos\src\portable\portASM.o
+                0x0000000000000290                xPortStartFirstTask
+                0x000000000000031a                Ecall_Handler
+                0x0000000000000466                IRQ_Handler
+ .text          0x00000000000005f0        0xc c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+                0x00000000000005f0                atoi
+                0x00000000000005f6                _atoi_r
+ .text          0x00000000000005fc       0x60 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+                0x00000000000005fc                __libc_init_array
+ .text          0x000000000000065c       0xb6 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+                0x000000000000065c                memcpy
+ .text          0x0000000000000712       0xa8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+                0x0000000000000712                memset
+ .text          0x00000000000007ba       0xda c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+                0x00000000000007ba                _malloc_r
+ .text          0x0000000000000894       0x32 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+                0x0000000000000894                _sbrk_r
+ .text          0x00000000000008c6       0x1c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+                0x00000000000008c6                strcat
+ .text          0x00000000000008e2      0x11e c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcmp.o)
+                0x00000000000008e2                strcmp
+ .text          0x0000000000000a00        0xc c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+                0x0000000000000a00                strdup
+ .text          0x0000000000000a0c       0x32 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+                0x0000000000000a0c                _strdup_r
+ .text          0x0000000000000a3e       0x10 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+                0x0000000000000a3e                strlen
+ .text          0x0000000000000a4e       0x2c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+                0x0000000000000a4e                strncpy
+ .text          0x0000000000000a7a      0x182 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+                0x0000000000000bb6                _strtol_r
+                0x0000000000000bcc                strtol_l
+                0x0000000000000bde                strtol
+ .text          0x0000000000000bfc       0x90 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+                0x0000000000000bfc                _setlocale_r
+                0x0000000000000c44                __locale_mb_cur_max
+                0x0000000000000c5e                __locale_ctype_ptr_l
+                0x0000000000000c64                __locale_ctype_ptr
+                0x0000000000000c7e                setlocale
+ .text          0x0000000000000c8c       0x54 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+                0x0000000000000c8c                _mbtowc_r
+                0x0000000000000ca6                __ascii_mbtowc
+ .text          0x0000000000000ce0        0x4 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+                0x0000000000000ce0                __malloc_lock
+                0x0000000000000ce2                __malloc_unlock
+ .text          0x0000000000000ce4       0x3a c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+                0x0000000000000ce4                _wctomb_r
+                0x0000000000000cfe                __ascii_wctomb
+ *(.text*)
+ .text.BOARD_InitDebugConsole
+                0x0000000000000d1e       0x88 board\board.o
+                0x0000000000000d1e                BOARD_InitDebugConsole
+ .text.CLOCK_CONFIG_FircSafeConfig
+                0x0000000000000da6       0x48 board\clock_config.o
+ .text.BOARD_BootClockRUN
+                0x0000000000000dee       0x58 board\clock_config.o
+                0x0000000000000dee                BOARD_BootClockRUN
+ .text.BOARD_InitPins
+                0x0000000000000e46       0x56 board\pin_mux.o
+                0x0000000000000e46                BOARD_InitPins
+ .text.LPUART_RTOS_Callback
+                0x0000000000000e9c       0x74 drivers\freertos\fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Init
+                0x0000000000000f10       0xd0 drivers\freertos\fsl_lpuart_freertos.o
+                0x0000000000000f10                LPUART_RTOS_Init
+ .text.LPUART_RTOS_Deinit
+                0x0000000000000fe0       0x50 drivers\freertos\fsl_lpuart_freertos.o
+                0x0000000000000fe0                LPUART_RTOS_Deinit
+ .text.LPUART_RTOS_Send
+                0x0000000000001030       0x7a drivers\freertos\fsl_lpuart_freertos.o
+                0x0000000000001030                LPUART_RTOS_Send
+ .text.LPUART_RTOS_Receive
+                0x00000000000010aa       0xd4 drivers\freertos\fsl_lpuart_freertos.o
+                0x00000000000010aa                LPUART_RTOS_Receive
+ .text.unlikely.CLOCK_GetSysOscFreq.part.1
+                0x000000000000117e       0x20 drivers\fsl_clock.o
+ .text.CLOCK_GetSysOscAsyncFreq
+                0x000000000000119e       0x58 drivers\fsl_clock.o
+                0x000000000000119e                CLOCK_GetSysOscAsyncFreq
+ .text.CLOCK_InitSirc
+                0x00000000000011f6       0x94 drivers\fsl_clock.o
+                0x00000000000011f6                CLOCK_InitSirc
+ .text.CLOCK_GetSircAsyncFreq
+                0x000000000000128a       0x66 drivers\fsl_clock.o
+                0x000000000000128a                CLOCK_GetSircAsyncFreq
+ .text.CLOCK_InitFirc
+                0x00000000000012f0       0xf8 drivers\fsl_clock.o
+                0x00000000000012f0                CLOCK_InitFirc
+ .text.CLOCK_GetFircAsyncFreq
+                0x00000000000013e8       0x64 drivers\fsl_clock.o
+                0x00000000000013e8                CLOCK_GetFircAsyncFreq
+ .text.CLOCK_InitLpFll
+                0x000000000000144c      0x116 drivers\fsl_clock.o
+                0x000000000000144c                CLOCK_InitLpFll
+ .text.CLOCK_GetLpFllAsyncFreq
+                0x0000000000001562       0x54 drivers\fsl_clock.o
+                0x0000000000001562                CLOCK_GetLpFllAsyncFreq
+ .text.CLOCK_GetIpFreq
+                0x00000000000015b6       0xbe drivers\fsl_clock.o
+                0x00000000000015b6                CLOCK_GetIpFreq
+ .text.__assert_func
+                0x0000000000001674       0x20 drivers\fsl_common.o
+                0x0000000000001674                __assert_func
+ .text.LPUART_ReadNonBlocking
+                0x0000000000001694       0x5e drivers\fsl_lpuart.o
+ .text.unlikely.LPUART_GetInstance.part.5
+                0x00000000000016f2       0x20 drivers\fsl_lpuart.o
+ .text.LPUART_TransferIsRxRingBufferFull.isra.3
+                0x0000000000001712       0x62 drivers\fsl_lpuart.o
+ .text.LPUART_TransferHandleIRQ
+                0x0000000000001774      0x344 drivers\fsl_lpuart.o
+                0x0000000000001774                LPUART_TransferHandleIRQ
+ .text.LPUART_Init
+                0x0000000000001ab8      0x2a4 drivers\fsl_lpuart.o
+                0x0000000000001ab8                LPUART_Init
+ .text.LPUART_Deinit
+                0x0000000000001d5c       0xa4 drivers\fsl_lpuart.o
+                0x0000000000001d5c                LPUART_Deinit
+ .text.LPUART_GetDefaultConfig
+                0x0000000000001e00       0x66 drivers\fsl_lpuart.o
+                0x0000000000001e00                LPUART_GetDefaultConfig
+ .text.LPUART_ClearStatusFlags
+                0x0000000000001e66       0x54 drivers\fsl_lpuart.o
+                0x0000000000001e66                LPUART_ClearStatusFlags
+ .text.LPUART_WriteBlocking
+                0x0000000000001eba       0x44 drivers\fsl_lpuart.o
+                0x0000000000001eba                LPUART_WriteBlocking
+ .text.LPUART_ReadBlocking
+                0x0000000000001efe      0x11e drivers\fsl_lpuart.o
+                0x0000000000001efe                LPUART_ReadBlocking
+ .text.LPUART_TransferCreateHandle
+                0x000000000000201c      0x104 drivers\fsl_lpuart.o
+                0x000000000000201c                LPUART_TransferCreateHandle
+ .text.LPUART_TransferStartRingBuffer
+                0x0000000000002120       0x6c drivers\fsl_lpuart.o
+                0x0000000000002120                LPUART_TransferStartRingBuffer
+ .text.LPUART_TransferSendNonBlocking
+                0x000000000000218c       0xca drivers\fsl_lpuart.o
+                0x000000000000218c                LPUART_TransferSendNonBlocking
+ .text.LPUART_TransferReceiveNonBlocking
+                0x0000000000002256      0x1c8 drivers\fsl_lpuart.o
+                0x0000000000002256                LPUART_TransferReceiveNonBlocking
+ .text.LPUART_TransferAbortReceive
+                0x000000000000241e       0x4c drivers\fsl_lpuart.o
+                0x000000000000241e                LPUART_TransferAbortReceive
+ .text.stream_ok
+                0x000000000000246a        0xa drivers\fsl_lpuart.o
+                0x000000000000246a                stream_ok
+ .text.get_stream
+                0x0000000000002474       0x4c drivers\fsl_lpuart.o
+                0x0000000000002474                get_stream
+ .text.LPUART0_DriverIRQHandler
+                0x00000000000024c0      0x1ec drivers\fsl_lpuart.o
+                0x00000000000024c0                LPUART0_DriverIRQHandler
+ .text.LPUART1_DriverIRQHandler
+                0x00000000000026ac       0x2a drivers\fsl_lpuart.o
+                0x00000000000026ac                LPUART1_DriverIRQHandler
+ .text.LPUART2_DriverIRQHandler
+                0x00000000000026d6       0x2a drivers\fsl_lpuart.o
+                0x00000000000026d6                LPUART2_DriverIRQHandler
+ .text.LPUART3_DriverIRQHandler
+                0x0000000000002700       0x2a drivers\fsl_lpuart.o
+                0x0000000000002700                LPUART3_DriverIRQHandler
+ .text.xEventGroupCreate
+                0x000000000000272a       0x1e osswpackages\freertos\src\event_groups.o
+                0x000000000000272a                xEventGroupCreate
+ .text.xEventGroupWaitBits
+                0x0000000000002748       0xe2 osswpackages\freertos\src\event_groups.o
+                0x0000000000002748                xEventGroupWaitBits
+ .text.xEventGroupClearBits
+                0x000000000000282a       0x3a osswpackages\freertos\src\event_groups.o
+                0x000000000000282a                xEventGroupClearBits
+ .text.xEventGroupSetBits
+                0x0000000000002864       0xa6 osswpackages\freertos\src\event_groups.o
+                0x0000000000002864                xEventGroupSetBits
+ .text.vEventGroupSetBitsCallback
+                0x000000000000290a        0x2 osswpackages\freertos\src\event_groups.o
+                0x000000000000290a                vEventGroupSetBitsCallback
+ .text.vEventGroupDelete
+                0x000000000000290c       0x44 osswpackages\freertos\src\event_groups.o
+                0x000000000000290c                vEventGroupDelete
+ .text.xEventGroupSetBitsFromISR
+                0x0000000000002950       0x12 osswpackages\freertos\src\event_groups.o
+                0x0000000000002950                xEventGroupSetBitsFromISR
+ .text.prvInsertBlockIntoFreeList
+                0x0000000000002962       0x52 osswpackages\freertos\src\heap_4.o
+ .text.pvPortMalloc
+                0x00000000000029b4      0x11c osswpackages\freertos\src\heap_4.o
+                0x00000000000029b4                pvPortMalloc
+ .text.vPortFree
+                0x0000000000002ad0       0x5c osswpackages\freertos\src\heap_4.o
+                0x0000000000002ad0                vPortFree
+ .text.vListInitialise
+                0x0000000000002b2c       0x14 osswpackages\freertos\src\list.o
+                0x0000000000002b2c                vListInitialise
+ .text.vListInitialiseItem
+                0x0000000000002b40        0x6 osswpackages\freertos\src\list.o
+                0x0000000000002b40                vListInitialiseItem
+ .text.vListInsertEnd
+                0x0000000000002b46       0x18 osswpackages\freertos\src\list.o
+                0x0000000000002b46                vListInsertEnd
+ .text.vListInsert
+                0x0000000000002b5e       0x2e osswpackages\freertos\src\list.o
+                0x0000000000002b5e                vListInsert
+ .text.uxListRemove
+                0x0000000000002b8c       0x22 osswpackages\freertos\src\list.o
+                0x0000000000002b8c                uxListRemove
+ .text.prvTaskExitError
+                0x0000000000002bae       0x2a osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .text.portYIELD_FROM_ISR
+                0x0000000000002bd8        0xe osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002bd8                portYIELD_FROM_ISR
+ .text.portYIELD
+                0x0000000000002be6       0x1c osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002be6                portYIELD
+ .text.pxPortInitialiseStack
+                0x0000000000002c02       0x38 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002c02                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x0000000000002c3a       0x86 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002c3a                xPortStartScheduler
+ .text.vPortEnterCritical
+                0x0000000000002cc0       0x44 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002cc0                vPortEnterCritical
+ .text.vPortExitCritical
+                0x0000000000002d04       0x4e osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002d04                vPortExitCritical
+ .text.vPortSetInterruptMask
+                0x0000000000002d52       0x18 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002d52                vPortSetInterruptMask
+ .text.vPortClearInterruptMask
+                0x0000000000002d6a       0x10 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002d6a                vPortClearInterruptMask
+ .text.LPIT0_IRQHandler
+                0x0000000000002d7a       0x44 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x0000000000002d7a                LPIT0_IRQHandler
+ .text.prvCopyDataToQueue
+                0x0000000000002dbe       0xa2 osswpackages\freertos\src\queue.o
+ .text.prvCopyDataFromQueue
+                0x0000000000002e60       0x1e osswpackages\freertos\src\queue.o
+ .text.prvUnlockQueue
+                0x0000000000002e7e       0xa6 osswpackages\freertos\src\queue.o
+ .text.xQueueGenericReset
+                0x0000000000002f24       0x7a osswpackages\freertos\src\queue.o
+                0x0000000000002f24                xQueueGenericReset
+ .text.xQueueGenericCreate
+                0x0000000000002f9e       0x72 osswpackages\freertos\src\queue.o
+                0x0000000000002f9e                xQueueGenericCreate
+ .text.xQueueGenericSend
+                0x0000000000003010      0x15a osswpackages\freertos\src\queue.o
+                0x0000000000003010                xQueueGenericSend
+ .text.xQueueCreateMutex
+                0x000000000000316a       0x30 osswpackages\freertos\src\queue.o
+                0x000000000000316a                xQueueCreateMutex
+ .text.xQueueGenericSendFromISR
+                0x000000000000319a       0xae osswpackages\freertos\src\queue.o
+                0x000000000000319a                xQueueGenericSendFromISR
+ .text.xQueueGenericReceive
+                0x0000000000003248      0x17e osswpackages\freertos\src\queue.o
+                0x0000000000003248                xQueueGenericReceive
+ .text.vQueueDelete
+                0x00000000000033c6       0x3c osswpackages\freertos\src\queue.o
+                0x00000000000033c6                vQueueDelete
+ .text.vQueueAddToRegistry
+                0x0000000000003402       0x26 osswpackages\freertos\src\queue.o
+                0x0000000000003402                vQueueAddToRegistry
+ .text.vQueueWaitForMessageRestricted
+                0x0000000000003428       0x58 osswpackages\freertos\src\queue.o
+                0x0000000000003428                vQueueWaitForMessageRestricted
+ .text.prvResetNextTaskUnblockTime.part.0
+                0x0000000000003480       0x18 osswpackages\freertos\src\tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000000003498       0xa2 osswpackages\freertos\src\tasks.o
+ .text.xTaskCreate
+                0x000000000000353a      0x23a osswpackages\freertos\src\tasks.o
+                0x000000000000353a                xTaskCreate
+ .text.vTaskResume
+                0x0000000000003774       0xa2 osswpackages\freertos\src\tasks.o
+                0x0000000000003774                vTaskResume
+ .text.vTaskStartScheduler
+                0x0000000000003816       0x74 osswpackages\freertos\src\tasks.o
+                0x0000000000003816                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x000000000000388a       0x10 osswpackages\freertos\src\tasks.o
+                0x000000000000388a                vTaskSuspendAll
+ .text.xTaskGetTickCount
+                0x000000000000389a       0x20 osswpackages\freertos\src\tasks.o
+                0x000000000000389a                xTaskGetTickCount
+ .text.xTaskIncrementTick
+                0x00000000000038ba      0x156 osswpackages\freertos\src\tasks.o
+                0x00000000000038ba                xTaskIncrementTick
+ .text.xTaskResumeAll
+                0x0000000000003a10      0x124 osswpackages\freertos\src\tasks.o
+                0x0000000000003a10                xTaskResumeAll
+ .text.prvIdleTask
+                0x0000000000003b34       0x98 osswpackages\freertos\src\tasks.o
+ .text.vTaskSwitchContext
+                0x0000000000003bcc       0x96 osswpackages\freertos\src\tasks.o
+                0x0000000000003bcc                vTaskSwitchContext
+ .text.vTaskSuspend
+                0x0000000000003c62       0xea osswpackages\freertos\src\tasks.o
+                0x0000000000003c62                vTaskSuspend
+ .text.vTaskPlaceOnEventList
+                0x0000000000003d4c       0x2c osswpackages\freertos\src\tasks.o
+                0x0000000000003d4c                vTaskPlaceOnEventList
+ .text.vTaskPlaceOnUnorderedEventList
+                0x0000000000003d78       0x48 osswpackages\freertos\src\tasks.o
+                0x0000000000003d78                vTaskPlaceOnUnorderedEventList
+ .text.vTaskPlaceOnEventListRestricted
+                0x0000000000003dc0       0x36 osswpackages\freertos\src\tasks.o
+                0x0000000000003dc0                vTaskPlaceOnEventListRestricted
+ .text.xTaskRemoveFromEventList
+                0x0000000000003df6       0x94 osswpackages\freertos\src\tasks.o
+                0x0000000000003df6                xTaskRemoveFromEventList
+ .text.xTaskRemoveFromUnorderedEventList
+                0x0000000000003e8a       0x88 osswpackages\freertos\src\tasks.o
+                0x0000000000003e8a                xTaskRemoveFromUnorderedEventList
+ .text.vTaskSetTimeOutState
+                0x0000000000003f12       0x22 osswpackages\freertos\src\tasks.o
+                0x0000000000003f12                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x0000000000003f34       0x82 osswpackages\freertos\src\tasks.o
+                0x0000000000003f34                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x0000000000003fb6        0xc osswpackages\freertos\src\tasks.o
+                0x0000000000003fb6                vTaskMissedYield
+ .text.xTaskGetSchedulerState
+                0x0000000000003fc2       0x1c osswpackages\freertos\src\tasks.o
+                0x0000000000003fc2                xTaskGetSchedulerState
+ .text.vTaskPriorityInherit
+                0x0000000000003fde       0x9c osswpackages\freertos\src\tasks.o
+                0x0000000000003fde                vTaskPriorityInherit
+ .text.xTaskPriorityDisinherit
+                0x000000000000407a       0x80 osswpackages\freertos\src\tasks.o
+                0x000000000000407a                xTaskPriorityDisinherit
+ .text.uxTaskResetEventItemValue
+                0x00000000000040fa       0x1a osswpackages\freertos\src\tasks.o
+                0x00000000000040fa                uxTaskResetEventItemValue
+ .text.pvTaskIncrementMutexHeldCount
+                0x0000000000004114       0x18 osswpackages\freertos\src\tasks.o
+                0x0000000000004114                pvTaskIncrementMutexHeldCount
+ .text.prvCheckForValidListAndQueue
+                0x000000000000412c       0x80 osswpackages\freertos\src\timers.o
+ .text.prvInsertTimerInActiveList
+                0x00000000000041ac       0x58 osswpackages\freertos\src\timers.o
+ .text.xTimerCreateTimerTask
+                0x0000000000004204       0x44 osswpackages\freertos\src\timers.o
+                0x0000000000004204                xTimerCreateTimerTask
+ .text.xTimerGenericCommand
+                0x0000000000004248       0x7a osswpackages\freertos\src\timers.o
+                0x0000000000004248                xTimerGenericCommand
+ .text.prvSwitchTimerLists
+                0x00000000000042c2       0x88 osswpackages\freertos\src\timers.o
+ .text.prvTimerTask
+                0x000000000000434a      0x1d0 osswpackages\freertos\src\timers.o
+ .text.xTimerPendFunctionCallFromISR
+                0x000000000000451a       0x28 osswpackages\freertos\src\timers.o
+                0x000000000000451a                xTimerPendFunctionCallFromISR
+ .text.send_task
+                0x0000000000004542       0x6e source\test.o
+ .text.recv_task
+                0x00000000000045b0      0x114 source\test.o
+ .text.startup.main
+                0x00000000000046c4       0x90 source\test.o
+                0x00000000000046c4                main
+ .text.DefaultIRQHandler
+                0x0000000000004754        0x2 startup\system_RV32M1_ri5cy.o
+                0x0000000000004754                LPSPI2_DriverIRQHandler
+                0x0000000000004754                INTMUX0_3_DriverIRQHandler
+                0x0000000000004754                LPI2C0_DriverIRQHandler
+                0x0000000000004754                I2S0_DriverIRQHandler
+                0x0000000000004754                LPTMR2_IRQHandler
+                0x0000000000004754                TPM0_IRQHandler
+                0x0000000000004754                INTMUX0_4_DriverIRQHandler
+                0x0000000000004754                LPCMP0_IRQHandler
+                0x0000000000004754                LPI2C3_DriverIRQHandler
+                0x0000000000004754                WDOG0_IRQHandler
+                0x0000000000004754                INTMUX0_1_DriverIRQHandler
+                0x0000000000004754                ADC0_IRQHandler
+                0x0000000000004754                FLEXIO0_DriverIRQHandler
+                0x0000000000004754                EMVSIM0_IRQHandler
+                0x0000000000004754                LPCMP1_IRQHandler
+                0x0000000000004754                INTMUX0_7_DriverIRQHandler
+                0x0000000000004754                FTFE_Command_Complete_IRQHandler
+                0x0000000000004754                INTMUX0_6_DriverIRQHandler
+                0x0000000000004754                PORTD_IRQHandler
+                0x0000000000004754                PORTB_IRQHandler
+                0x0000000000004754                USDHC0_DriverIRQHandler
+                0x0000000000004754                LLWU0_IRQHandler
+                0x0000000000004754                LPDAC0_IRQHandler
+                0x0000000000004754                TPM2_IRQHandler
+                0x0000000000004754                RTC_IRQHandler
+                0x0000000000004754                DMA0_3_7_11_15_DriverIRQHandler
+                0x0000000000004754                CMC0_IRQHandler
+                0x0000000000004754                EWM_IRQHandler
+                0x0000000000004754                DMA0_0_4_8_12_DriverIRQHandler
+                0x0000000000004754                MUA_IRQHandler
+                0x0000000000004754                TPM3_IRQHandler
+                0x0000000000004754                DMA0_2_6_10_14_DriverIRQHandler
+                0x0000000000004754                INTMUX0_0_DriverIRQHandler
+                0x0000000000004754                RF0_0_IRQHandler
+                0x0000000000004754                LPSPI0_DriverIRQHandler
+                0x0000000000004754                USB0_IRQHandler
+                0x0000000000004754                FTFE_Read_Collision_IRQHandler
+                0x0000000000004754                LPI2C1_DriverIRQHandler
+                0x0000000000004754                LPSPI1_DriverIRQHandler
+                0x0000000000004754                SCG_IRQHandler
+                0x0000000000004754                DMA0_1_5_9_13_DriverIRQHandler
+                0x0000000000004754                TPM1_IRQHandler
+                0x0000000000004754                RF0_1_IRQHandler
+                0x0000000000004754                CAU3_Security_Violation_IRQHandler
+                0x0000000000004754                PORTA_IRQHandler
+                0x0000000000004754                LPIT1_IRQHandler
+                0x0000000000004754                INTMUX0_2_DriverIRQHandler
+                0x0000000000004754                CAU3_Task_Complete_IRQHandler
+                0x0000000000004754                INTMUX0_8_DriverIRQHandler
+                0x0000000000004754                PORTE_IRQHandler
+                0x0000000000004754                LPTMR0_IRQHandler
+                0x0000000000004754                SPM_IRQHandler
+                0x0000000000004754                LPSPI3_DriverIRQHandler
+                0x0000000000004754                LPI2C2_DriverIRQHandler
+                0x0000000000004754                DMA0_Error_IRQHandler
+                0x0000000000004754                LPTMR1_IRQHandler
+                0x0000000000004754                INTMUX0_5_DriverIRQHandler
+                0x0000000000004754                TRNG_IRQHandler
+                0x0000000000004754                PORTC_IRQHandler
+ .text.DMA0_0_4_8_12_IRQHandler
+                0x0000000000004756        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004756                DMA0_0_4_8_12_IRQHandler
+ .text.DMA0_1_5_9_13_IRQHandler
+                0x000000000000475a        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000475a                DMA0_1_5_9_13_IRQHandler
+ .text.DMA0_2_6_10_14_IRQHandler
+                0x000000000000475e        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000475e                DMA0_2_6_10_14_IRQHandler
+ .text.DMA0_3_7_11_15_IRQHandler
+                0x0000000000004762        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004762                DMA0_3_7_11_15_IRQHandler
+ .text.FLEXIO0_IRQHandler
+                0x0000000000004766        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004766                FLEXIO0_IRQHandler
+ .text.LPI2C0_IRQHandler
+                0x000000000000476a        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000476a                LPI2C0_IRQHandler
+ .text.LPI2C1_IRQHandler
+                0x000000000000476e        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000476e                LPI2C1_IRQHandler
+ .text.LPI2C2_IRQHandler
+                0x0000000000004772        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004772                LPI2C2_IRQHandler
+ .text.I2S0_IRQHandler
+                0x0000000000004776        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004776                I2S0_IRQHandler
+ .text.USDHC0_IRQHandler
+                0x000000000000477a        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000477a                USDHC0_IRQHandler
+ .text.LPSPI0_IRQHandler
+                0x000000000000477e        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000477e                LPSPI0_IRQHandler
+ .text.LPSPI1_IRQHandler
+                0x0000000000004782        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004782                LPSPI1_IRQHandler
+ .text.LPSPI2_IRQHandler
+                0x0000000000004786        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004786                LPSPI2_IRQHandler
+ .text.LPUART0_IRQHandler
+                0x000000000000478a        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000478a                LPUART0_IRQHandler
+ .text.LPUART1_IRQHandler
+                0x000000000000478e        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000478e                LPUART1_IRQHandler
+ .text.LPUART2_IRQHandler
+                0x0000000000004792        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004792                LPUART2_IRQHandler
+ .text.LPI2C3_IRQHandler
+                0x0000000000004796        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000000004796                LPI2C3_IRQHandler
+ .text.LPSPI3_IRQHandler
+                0x000000000000479a        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000479a                LPSPI3_IRQHandler
+ .text.LPUART3_IRQHandler
+                0x000000000000479e        0x4 startup\system_RV32M1_ri5cy.o
+                0x000000000000479e                LPUART3_IRQHandler
+ .text.INTMUX0_0_IRQHandler
+                0x00000000000047a2        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047a2                INTMUX0_0_IRQHandler
+ .text.INTMUX0_1_IRQHandler
+                0x00000000000047a6        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047a6                INTMUX0_1_IRQHandler
+ .text.INTMUX0_2_IRQHandler
+                0x00000000000047aa        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047aa                INTMUX0_2_IRQHandler
+ .text.INTMUX0_3_IRQHandler
+                0x00000000000047ae        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047ae                INTMUX0_3_IRQHandler
+ .text.INTMUX0_4_IRQHandler
+                0x00000000000047b2        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047b2                INTMUX0_4_IRQHandler
+ .text.INTMUX0_5_IRQHandler
+                0x00000000000047b6        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047b6                INTMUX0_5_IRQHandler
+ .text.INTMUX0_6_IRQHandler
+                0x00000000000047ba        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047ba                INTMUX0_6_IRQHandler
+ .text.INTMUX0_7_IRQHandler
+                0x00000000000047be        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000000047be                INTMUX0_7_IRQHandler
+ .text.SystemInitHook
+                0x00000000000047c2        0x2 startup\system_RV32M1_ri5cy.o
+                0x00000000000047c2                SystemInitHook
+ .text.SystemInit
+                0x00000000000047c4       0xe2 startup\system_RV32M1_ri5cy.o
+                0x00000000000047c4                SystemInit
+ .text.SystemIrqHandler
+                0x00000000000048a6       0x4e startup\system_RV32M1_ri5cy.o
+                0x00000000000048a6                SystemIrqHandler
+ .text.SystemSetupSystick
+                0x00000000000048f4       0xbc startup\system_RV32M1_ri5cy.o
+                0x00000000000048f4                SystemSetupSystick
+ .text.SystemClearSystickFlag
+                0x00000000000049b0        0xa startup\system_RV32M1_ri5cy.o
+                0x00000000000049b0                SystemClearSystickFlag
+ .text.EVENT_SetIRQPriority
+                0x00000000000049ba       0x38 startup\system_RV32M1_ri5cy.o
+                0x00000000000049ba                EVENT_SetIRQPriority
+ .text.DbgConsole_RelocateLog
+                0x00000000000049f2       0x6e utilities\fsl_debug_console.o
+ .text.DbgConsole_Init
+                0x0000000000004a60       0x2c utilities\fsl_debug_console.o
+                0x0000000000004a60                DbgConsole_Init
+ .text.DbgConsole_Printf
+                0x0000000000004a8c       0x44 utilities\fsl_debug_console.o
+                0x0000000000004a8c                DbgConsole_Printf
+ .text.IO_Init  0x0000000000004ad0       0x74 utilities\fsl_io.o
+                0x0000000000004ad0                IO_Init
+ .text.IO_Transfer
+                0x0000000000004b44       0x38 utilities\fsl_io.o
+                0x0000000000004b44                IO_Transfer
+ .text.LOG_Init
+                0x0000000000004b7c       0x20 utilities\fsl_log.o
+                0x0000000000004b7c                LOG_Init
+ .text.LOG_Push
+                0x0000000000004b9c       0x46 utilities\fsl_log.o
+                0x0000000000004b9c                LOG_Push
+ .text.StrFormatPrintf
+                0x0000000000004be2      0x310 utilities\fsl_str.o
+                0x0000000000004be2                StrFormatPrintf
+ *(.rodata)
+ *fill*         0x0000000000004ef2        0x2 
+ .rodata        0x0000000000004ef4      0x101 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+                0x0000000000004ef4                _ctype_
+ *(.rodata*)
+ *fill*         0x0000000000004ff5        0x3 
+ .rodata.BOARD_InitDebugConsole.str1.4
+                0x0000000000004ff8       0x73 board\board.o
+ *fill*         0x000000000000506b        0x1 
+ .rodata.__func__.3391
+                0x000000000000506c        0xf board\board.o
+ *fill*         0x000000000000507b        0x1 
+ .rodata.g_scgFircConfig_BOARD_BootClockRUN
+                0x000000000000507c       0x18 board\clock_config.o
+                0x000000000000507c                g_scgFircConfig_BOARD_BootClockRUN
+ .rodata.g_scgLpFllConfig_BOARD_BootClockRUN
+                0x0000000000005094       0x18 board\clock_config.o
+                0x0000000000005094                g_scgLpFllConfig_BOARD_BootClockRUN
+ .rodata.g_scgSircConfig_BOARD_BootClockRUN
+                0x00000000000050ac       0x14 board\clock_config.o
+                0x00000000000050ac                g_scgSircConfig_BOARD_BootClockRUN
+ .rodata.BOARD_InitPins.str1.4
+                0x00000000000050c0       0x32 board\pin_mux.o
+                                         0x6c (size before relaxing)
+ *fill*         0x00000000000050f2        0x2 
+ .rodata.__func__.3377
+                0x00000000000050f4       0x12 board\pin_mux.o
+ *fill*         0x0000000000005106        0x2 
+ .rodata.CLOCK_EnableUsbfs0Clock.str1.4
+                0x0000000000005108       0x38 drivers\fsl_clock.o
+                                         0xa6 (size before relaxing)
+ .rodata.CLOCK_GetOsc32kClkFreq.part.0.str1.4
+                0x0000000000005140       0x48 drivers\fsl_clock.o
+ .rodata.CLOCK_GetSysOscFreq.part.1.str1.4
+                0x0000000000005188        0xc drivers\fsl_clock.o
+ .rodata.CLOCK_InitSysOsc.str1.4
+                0x0000000000005194        0x7 drivers\fsl_clock.o
+ *fill*         0x000000000000519b        0x1 
+ .rodata.__func__.3640
+                0x000000000000519c       0x10 drivers\fsl_clock.o
+ .rodata.__func__.3686
+                0x00000000000051ac       0x14 drivers\fsl_clock.o
+ .rodata.__func__.3700
+                0x00000000000051c0        0xf drivers\fsl_clock.o
+ *fill*         0x00000000000051cf        0x1 
+ .rodata.__func__.3726
+                0x00000000000051d0        0xf drivers\fsl_clock.o
+ *fill*         0x00000000000051df        0x1 
+ .rodata.__func__.3756
+                0x00000000000051e0       0x10 drivers\fsl_clock.o
+ .rodata.fircFreq.3738
+                0x00000000000051f0       0x10 drivers\fsl_clock.o
+ .rodata.lpfllFreq.3771
+                0x0000000000005200       0x10 drivers\fsl_clock.o
+ .rodata.__assert_func.str1.4
+                0x0000000000005210       0x3e drivers\fsl_common.o
+ *fill*         0x000000000000524e        0x2 
+ .rodata.LPUART0_DriverIRQHandler.str1.4
+                0x0000000000005250        0x9 drivers\fsl_lpuart.o
+ *fill*         0x0000000000005259        0x3 
+ .rodata.LPUART1_DriverIRQHandler.str1.4
+                0x000000000000525c       0x14 drivers\fsl_lpuart.o
+ .rodata.LPUART2_DriverIRQHandler.str1.4
+                0x0000000000005270       0x14 drivers\fsl_lpuart.o
+ .rodata.LPUART3_DriverIRQHandler.str1.4
+                0x0000000000005284       0x14 drivers\fsl_lpuart.o
+ .rodata.LPUART_GetInstance.part.5.str1.4
+                0x0000000000005298       0x25 drivers\fsl_lpuart.o
+ *fill*         0x00000000000052bd        0x3 
+ .rodata.LPUART_Init.str1.4
+                0x00000000000052c0       0x97 drivers\fsl_lpuart.o
+                                        0x10c (size before relaxing)
+ *fill*         0x0000000000005357        0x1 
+ .rodata.LPUART_ReadNonBlocking.str1.4
+                0x0000000000005358        0x5 drivers\fsl_lpuart.o
+ *fill*         0x000000000000535d        0x3 
+ .rodata.LPUART_TransferGetRxRingBufferLength.isra.0.part.1.str1.4
+                0x0000000000005360       0x41 drivers\fsl_lpuart.o
+ *fill*         0x00000000000053a1        0x3 
+ .rodata.LPUART_TransferSendNonBlocking.str1.4
+                0x00000000000053a4       0x23 drivers\fsl_lpuart.o
+ *fill*         0x00000000000053c7        0x1 
+ .rodata.LPUART_TransferStartRingBuffer.str1.4
+                0x00000000000053c8        0xb drivers\fsl_lpuart.o
+ *fill*         0x00000000000053d3        0x1 
+ .rodata.__func__.3377
+                0x00000000000053d4       0x12 drivers\fsl_lpuart.o
+ *fill*         0x00000000000053e6        0x2 
+ .rodata.__func__.3381
+                0x00000000000053e8       0x13 drivers\fsl_lpuart.o
+ *fill*         0x00000000000053fb        0x1 
+ .rodata.__func__.4843
+                0x00000000000053fc       0x13 drivers\fsl_lpuart.o
+ *fill*         0x000000000000540f        0x1 
+ .rodata.__func__.4854
+                0x0000000000005410       0x22 drivers\fsl_lpuart.o
+ *fill*         0x0000000000005432        0x2 
+ .rodata.__func__.4861
+                0x0000000000005434       0x18 drivers\fsl_lpuart.o
+ .rodata.__func__.4871
+                0x000000000000544c       0x17 drivers\fsl_lpuart.o
+ *fill*         0x0000000000005463        0x1 
+ .rodata.__func__.4883
+                0x0000000000005464        0xc drivers\fsl_lpuart.o
+ .rodata.__func__.4910
+                0x0000000000005470       0x18 drivers\fsl_lpuart.o
+ .rodata.__func__.4956
+                0x0000000000005488       0x15 drivers\fsl_lpuart.o
+ *fill*         0x000000000000549d        0x3 
+ .rodata.__func__.4968
+                0x00000000000054a0       0x14 drivers\fsl_lpuart.o
+ .rodata.__func__.4984
+                0x00000000000054b4       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.4994
+                0x00000000000054d0       0x1f drivers\fsl_lpuart.o
+ *fill*         0x00000000000054ef        0x1 
+ .rodata.__func__.5005
+                0x00000000000054f0       0x1f drivers\fsl_lpuart.o
+ *fill*         0x000000000000550f        0x1 
+ .rodata.__func__.5024
+                0x0000000000005510       0x22 drivers\fsl_lpuart.o
+ *fill*         0x0000000000005532        0x2 
+ .rodata.__func__.5037
+                0x0000000000005534       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.5048
+                0x0000000000005550       0x19 drivers\fsl_lpuart.o
+ *fill*         0x0000000000005569        0x3 
+ .rodata.__func__.3801
+                0x000000000000556c        0xf osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .rodata.xPortStartScheduler.str1.4
+                0x000000000000557b       0x73 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ *fill*         0x000000000000557b        0x1 
+ .rodata.vTaskStartScheduler.str1.4
+                0x000000000000557c        0x5 osswpackages\freertos\src\tasks.o
+ *fill*         0x0000000000005581        0x3 
+ .rodata.prvCheckForValidListAndQueue.str1.4
+                0x0000000000005584        0x5 osswpackages\freertos\src\timers.o
+ *fill*         0x0000000000005589        0x3 
+ .rodata.xTimerCreateTimerTask.str1.4
+                0x000000000000558c        0x8 osswpackages\freertos\src\timers.o
+ .rodata.main.str1.4
+                0x0000000000005594       0x56 source\test.o
+ *fill*         0x00000000000055ea        0x2 
+ .rodata.str1.4
+                0x00000000000055ec       0x73 source\test.o
+ .rodata.SystemSetupSystick.str1.4
+                0x000000000000565f       0x6c startup\system_RV32M1_ri5cy.o
+ *fill*         0x000000000000565f        0x1 
+ .rodata.__func__.3377
+                0x0000000000005660       0x12 startup\system_RV32M1_ri5cy.o
+ *fill*         0x0000000000005672        0x2 
+ .rodata.DbgConsole_Init.str1.4
+                0x0000000000005674       0x6e utilities\fsl_debug_console.o
+ *fill*         0x00000000000056e2        0x2 
+ .rodata.__func__.4270
+                0x00000000000056e4       0x10 utilities\fsl_debug_console.o
+ .rodata.IO_Init.str1.4
+                0x00000000000056f4       0x43 utilities\fsl_io.o
+ *fill*         0x0000000000005737        0x1 
+ .rodata.LOG_Push.str1.4
+                0x0000000000005738       0x44 utilities\fsl_log.o
+ .rodata.__func__.4094
+                0x000000000000577c        0x9 utilities\fsl_log.o
+ *fill*         0x0000000000005785        0x3 
+ .rodata.str1.4
+                0x0000000000005788       0x10 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+                                         0x12 (size before relaxing)
+ *(.srodata .srodata.*)
+ *(.glue_7)
+ *(.glue_7t)
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+
+.rela.dyn       0x0000000000005798        0x0
+ .rela.text.BOARD_InitDebugConsole
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_CONFIG_FircSafeConfig
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.BOARD_BootClockRUN
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.BOARD_BootClockHSRUN
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.BOARD_BootClockVLPR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.BOARD_InitPins
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_RTOS_Callback
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_RTOS_Init
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_RTOS_Deinit
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_RTOS_Send
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_RTOS_Receive
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.unlikely.CLOCK_GetOsc32kClkFreq.part.0
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.unlikely.CLOCK_GetSysOscFreq.part.1
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.unlikely.CLOCK_GetRtcOscFreq.part.4
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_EnableUsbfs0Clock
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_InitSysOsc
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_InitSirc
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_InitFirc
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_InitLpFll
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.CLOCK_GetIpFreq
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.__assert_func
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART_TransferCreateHandle
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.get_stream
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART0_DriverIRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART1_DriverIRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART2_DriverIRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPUART3_DriverIRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupCreate
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupWaitBits
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupClearBits
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupClearBitsFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupGetBitsFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupSetBits
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupSync
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vEventGroupDelete
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xEventGroupSetBitsFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.pvPortMalloc
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vPortFree
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.pxPortInitialiseStack
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xPortStartScheduler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPIT0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text     0x0000000000005798        0x0 board\board.o
+ .rela.text.prvCopyDataToQueue
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvCopyDataFromQueue
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvUnlockQueue
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGenericReset
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGenericSend
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGiveMutexRecursive
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGenericSendFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGiveFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueGenericReceive
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueTakeMutexRecursive
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xQueueReceiveFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vQueueWaitForMessageRestricted
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xTaskCreate
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vTaskStartScheduler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.send_task
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.recv_task
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.startup.main
+                0x0000000000005798        0x0 board\board.o
+ .rela.vectors  0x0000000000005798        0x0 board\board.o
+ .rela.text.DMA0_0_4_8_12_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DMA0_1_5_9_13_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DMA0_2_6_10_14_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DMA0_3_7_11_15_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.FLEXIO0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPI2C0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPI2C1_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPI2C2_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.I2S0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.USDHC0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPSPI0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPSPI1_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPSPI2_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPI2C3_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.LPSPI3_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_0_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_1_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_2_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_3_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_4_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_5_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_6_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.INTMUX0_7_IRQHandler
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.SystemInit
+                0x0000000000005798        0x0 board\board.o
+ .relauser_vectors
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvInterruptTriggerLevelTest
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvNonBlockingReceiverTask
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvNonBlockingSenderTask
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvSingleTaskTests
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvEchoServer
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvEchoClient
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vStartStreamBufferTasks
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vPeriodicStreamBufferProcessing
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvReceivingTask
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vStartStreamBufferInterruptDemo
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vBasicStreamBufferSendFromISR
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvInitialiseNewStreamBuffer
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvWriteBytesToBuffer
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.prvReadBytesFromBuffer
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.vStreamBufferDelete
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.xprintf
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_RelocateLog
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Init
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Deinit
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Flush
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Printf
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Putchar
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Scanf
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.DbgConsole_Getchar
+                0x0000000000005798        0x0 board\board.o
+ .rela.text._write
+                0x0000000000005798        0x0 board\board.o
+ .rela.text._read
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.read
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.write
+                0x0000000000005798        0x0 board\board.o
+ .rela.text.StrFormatPrintf
+                0x0000000000005798        0x0 board\board.o
+ .rela.data     0x0000000000005798        0x0 board\board.o
+
+.preinit_array  0x0000000000005798        0x0
+                0x0000000000005798                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000000005798                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000005798        0x0
+                0x0000000000005798                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x0000000000005798                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000005798        0x0
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+                [!provide]                        PROVIDE (__fini_array_end, .)
+                0x0000000000005798                __etext = .
+                0x0000000000005798                __global_pointer = .
+                0x0000000000005798                __DATA_ROM = .
+
+.data           0x0000000020000000      0x5ec load address 0x0000000000005798
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __DATA_RAM = .
+                0x0000000020000000                __data_start__ = .
+ *(.data)
+ .data          0x0000000020000000        0x4 osswpackages\freertos\src\portable\portASM.o
+ *fill*         0x0000000020000004        0x4 
+ .data          0x0000000020000008      0x428 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+ .data          0x0000000020000430      0x16c c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+                0x0000000020000430                __global_locale
+ *(.data*)
+ .data.lpuart_config
+                0x000000002000059c       0x1c source\test.o
+                0x000000002000059c                lpuart_config
+ *(.sdata .sdata.*)
+ .sdata.g_sysClkConfig_BOARD_BootClockRUN
+                0x00000000200005b8        0x4 board\clock_config.o
+                0x00000000200005b8                g_sysClkConfig_BOARD_BootClockRUN
+ .sdata.sircFreq.3712
+                0x00000000200005bc        0x8 drivers\fsl_clock.o
+ .sdata.uxCriticalNesting
+                0x00000000200005c4        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x00000000200005c4                uxCriticalNesting
+ .sdata.recv_task_msg
+                0x00000000200005c8        0x4 source\test.o
+                0x00000000200005c8                recv_task_msg
+ .sdata.send_hardware_overrun
+                0x00000000200005cc        0x4 source\test.o
+                0x00000000200005cc                send_hardware_overrun
+ .sdata.send_ring_overrun
+                0x00000000200005d0        0x4 source\test.o
+                0x00000000200005d0                send_ring_overrun
+ .sdata.send_task_msg
+                0x00000000200005d4        0x4 source\test.o
+                0x00000000200005d4                send_task_msg
+ .sdata.SystemCoreClock
+                0x00000000200005d8        0x4 startup\system_RV32M1_ri5cy.o
+                0x00000000200005d8                SystemCoreClock
+ .sdata.__func__.3847
+                0x00000000200005dc        0x8 utilities\fsl_io.o
+ .sdata         0x00000000200005e4        0x8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+                0x00000000200005e4                _global_impure_ptr
+                0x00000000200005e8                _impure_ptr
+ *(.heapsram*)
+                0x00000000200005ec                __noncachedata_start__ = .
+ *(NonCacheable)
+                0x00000000200005ec                __noncachedata_end__ = .
+ *(.jcr*)
+                0x00000000200005ec                . = ALIGN (0x4)
+                0x00000000200005ec                __data_end__ = .
+                0x0000000000005d84                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00000000000fff00                text_end = (ORIGIN (m_text) + LENGTH (m_text))
+                0x0000000000000001                ASSERT ((__DATA_END <= text_end), region m_text overflowed with text and data)
+                0x00000000200005ec                _edata = .
+
+.bss            0x00000000200005ec     0x2c68 load address 0x0000000000005d84
+                0x00000000200005ec                . = ALIGN (0x4)
+                0x00000000200005ec                __START_BSS = .
+                0x00000000200005ec                __bss_start__ = .
+ *(.bss)
+ *(.bss*)
+ .bss.appData   0x00000000200005ec      0x100 drivers\fsl_lpuart.o
+                0x00000000200005ec                appData
+ .bss.rxChars   0x00000000200006ec      0x100 drivers\fsl_lpuart.o
+                0x00000000200006ec                rxChars
+ .bss.s_lpuartHandle
+                0x00000000200007ec       0x10 drivers\fsl_lpuart.o
+ .bss.ucHeap    0x00000000200007fc     0x2800 osswpackages\freertos\src\heap_4.o
+ .bss.xQueueRegistry
+                0x0000000020002ffc       0x40 osswpackages\freertos\src\queue.o
+                0x0000000020002ffc                xQueueRegistry
+ .bss.pxReadyTasksLists
+                0x000000002000303c       0x64 osswpackages\freertos\src\tasks.o
+ .bss.xDelayedTaskList1
+                0x00000000200030a0       0x14 osswpackages\freertos\src\tasks.o
+ .bss.xDelayedTaskList2
+                0x00000000200030b4       0x14 osswpackages\freertos\src\tasks.o
+ .bss.xPendingReadyList
+                0x00000000200030c8       0x14 osswpackages\freertos\src\tasks.o
+ .bss.xSuspendedTaskList
+                0x00000000200030dc       0x14 osswpackages\freertos\src\tasks.o
+ .bss.xTasksWaitingTermination
+                0x00000000200030f0       0x14 osswpackages\freertos\src\tasks.o
+ .bss.xActiveTimerList1
+                0x0000000020003104       0x14 osswpackages\freertos\src\timers.o
+ .bss.xActiveTimerList2
+                0x0000000020003118       0x14 osswpackages\freertos\src\timers.o
+ .bss.background_buffer
+                0x000000002000312c       0x20 source\test.o
+                0x000000002000312c                background_buffer
+ .bss.handle    0x000000002000314c       0x28 source\test.o
+                0x000000002000314c                handle
+ .bss.t_handle  0x0000000020003174       0x30 source\test.o
+                0x0000000020003174                t_handle
+ *(.sbss)
+ .sbss          0x00000000200031a4        0x8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+                0x00000000200031a4                __malloc_sbrk_start
+                0x00000000200031a8                __malloc_free_list
+ *(.sbss*)
+ .sbss.g_xtal0Freq
+                0x00000000200031ac        0x4 drivers\fsl_clock.o
+                0x00000000200031ac                g_xtal0Freq
+ .sbss.appdata_ok
+                0x00000000200031b0        0x1 drivers\fsl_lpuart.o
+                0x00000000200031b0                appdata_ok
+ .sbss.aux      0x00000000200031b1        0x1 drivers\fsl_lpuart.o
+                0x00000000200031b1                aux
+ *fill*         0x00000000200031b2        0x2 
+ .sbss.header   0x00000000200031b4        0x8 drivers\fsl_lpuart.o
+                0x00000000200031b4                header
+ .sbss.header_ok
+                0x00000000200031bc        0x1 drivers\fsl_lpuart.o
+                0x00000000200031bc                header_ok
+ .sbss.irq_counter
+                0x00000000200031bd        0x1 drivers\fsl_lpuart.o
+                0x00000000200031bd                irq_counter
+ .sbss.len      0x00000000200031be        0x1 drivers\fsl_lpuart.o
+                0x00000000200031be                len
+ *fill*         0x00000000200031bf        0x1 
+ .sbss.length   0x00000000200031c0        0x2 drivers\fsl_lpuart.o
+                0x00000000200031c0                length
+ .sbss.length_ok
+                0x00000000200031c2        0x1 drivers\fsl_lpuart.o
+                0x00000000200031c2                length_ok
+ *fill*         0x00000000200031c3        0x1 
+ .sbss.s_lpuartIsr
+                0x00000000200031c4        0x4 drivers\fsl_lpuart.o
+ .sbss.pxEnd    0x00000000200031c8        0x4 osswpackages\freertos\src\heap_4.o
+ .sbss.xBlockAllocatedBit
+                0x00000000200031cc        0x4 osswpackages\freertos\src\heap_4.o
+ .sbss.xFreeBytesRemaining
+                0x00000000200031d0        0x4 osswpackages\freertos\src\heap_4.o
+ .sbss.xMinimumEverFreeBytesRemaining
+                0x00000000200031d4        0x4 osswpackages\freertos\src\heap_4.o
+ .sbss.xStart   0x00000000200031d8        0x8 osswpackages\freertos\src\heap_4.o
+ .sbss.uxInterruptNesting
+                0x00000000200031e0        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x00000000200031e0                uxInterruptNesting
+ .sbss.uxYieldRequired
+                0x00000000200031e4        0x4 osswpackages\freertos\src\portable\GCC\Posix\port.o
+                0x00000000200031e4                uxYieldRequired
+ .sbss.pxCurrentTCB
+                0x00000000200031e8        0x4 osswpackages\freertos\src\tasks.o
+                0x00000000200031e8                pxCurrentTCB
+ .sbss.pxDelayedTaskList
+                0x00000000200031ec        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.pxOverflowDelayedTaskList
+                0x00000000200031f0        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxCurrentNumberOfTasks
+                0x00000000200031f4        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxDeletedTasksWaitingCleanUp
+                0x00000000200031f8        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxPendedTicks
+                0x00000000200031fc        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxSchedulerSuspended
+                0x0000000020003200        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxTaskNumber
+                0x0000000020003204        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.uxTopReadyPriority
+                0x0000000020003208        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xIdleTaskHandle
+                0x000000002000320c        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xNextTaskUnblockTime
+                0x0000000020003210        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xNumOfOverflows
+                0x0000000020003214        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xSchedulerRunning
+                0x0000000020003218        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xTickCount
+                0x000000002000321c        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.xYieldPending
+                0x0000000020003220        0x4 osswpackages\freertos\src\tasks.o
+ .sbss.pxCurrentTimerList
+                0x0000000020003224        0x4 osswpackages\freertos\src\timers.o
+ .sbss.pxOverflowTimerList
+                0x0000000020003228        0x4 osswpackages\freertos\src\timers.o
+ .sbss.xLastTime.4621
+                0x000000002000322c        0x4 osswpackages\freertos\src\timers.o
+ .sbss.xTimerQueue
+                0x0000000020003230        0x4 osswpackages\freertos\src\timers.o
+ .sbss.xTimerTaskHandle
+                0x0000000020003234        0x4 osswpackages\freertos\src\timers.o
+ .sbss.recv_buffer
+                0x0000000020003238        0x1 source\test.o
+                0x0000000020003238                recv_buffer
+ *fill*         0x0000000020003239        0x3 
+ .sbss.recv_task_handle
+                0x000000002000323c        0x4 source\test.o
+                0x000000002000323c                recv_task_handle
+ .sbss.send_task_handle
+                0x0000000020003240        0x4 source\test.o
+                0x0000000020003240                send_task_handle
+ .sbss.irqNesting
+                0x0000000020003244        0x4 startup\system_RV32M1_ri5cy.o
+ .sbss.s_debugConsoleIO
+                0x0000000020003248        0x8 utilities\fsl_io.o
+ *(COMMON)
+ COMMON         0x0000000020003250        0x4 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+                0x0000000020003250                errno
+                0x0000000020003254                . = ALIGN (0x4)
+                0x0000000020003254                __bss_end__ = .
+                0x0000000020003254                __END_BSS = .
+                0x0000000020003254                _end = .
+                [!provide]                        PROVIDE (end, .)
+
+.heap           0x0000000020003254      0x404 load address 0x00000000000089ec
+                0x0000000020003258                . = ALIGN (0x8)
+ *fill*         0x0000000020003254        0x4 
+                0x0000000020003258                __heap_start = .
+                0x0000000020003658                . = (. + HEAP_SIZE)
+ *fill*         0x0000000020003258      0x400 
+                0x0000000020003658                __heap_end = .
+                0x0000000020003658                _heap_end = __heap_end
+
+.stack          0x0000000020003658      0x800 load address 0x0000000000008df0
+                0x0000000020003658                . = ALIGN (0x8)
+                0x0000000020003658                __StackLimit = .
+                0x0000000020003e58                . = (. + STACK_SIZE)
+ *fill*         0x0000000020003658      0x800 
+                0x0000000020003e58                __StackTop = .
+
+m_usb_bdt       0x0000000048010000        0x0
+                0x0000000048010000                . = ALIGN (0x200)
+ *(m_usb_bdt)
+
+m_usb_global
+ *(m_usb_global)
+                [!provide]                        PROVIDE (__stack, __StackTop)
+OUTPUT(freertos_tfg_ri5cy_rv32m1_vega.elf elf32-littleriscv)
+
+.comment        0x0000000000000000       0x1a
+ .comment       0x0000000000000000       0x1a board\board.o
+                                         0x1b (size before relaxing)
+ .comment       0x000000000000001a       0x1b board\clock_config.o
+ .comment       0x000000000000001a       0x1b board\pin_mux.o
+ .comment       0x000000000000001a       0x1b drivers\freertos\fsl_lpuart_freertos.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_clock.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_common.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_lpuart.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\event_groups.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\heap_4.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\list.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\queue.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\tasks.o
+ .comment       0x000000000000001a       0x1b osswpackages\freertos\src\timers.o
+ .comment       0x000000000000001a       0x1b source\test.o
+ .comment       0x000000000000001a       0x1b startup\system_RV32M1_ri5cy.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_debug_console.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_io.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_log.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_str.o
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)
+
+.Pulp_Chip.Info
+                0x0000000000000000       0x4e
+ .Pulp_Chip.Info
+                0x0000000000000000       0x4e board\board.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 board\clock_config.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 board\pin_mux.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 drivers\freertos\fsl_lpuart_freertos.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 drivers\fsl_clock.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 drivers\fsl_common.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 drivers\fsl_lpuart.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\event_groups.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\heap_4.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\list.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\portable\GCC\Posix\port.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\portable\portASM.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\queue.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\tasks.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 osswpackages\freertos\src\timers.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 source\test.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 startup\startup_RV32M1_ri5cy.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 startup\system_RV32M1_ri5cy.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 utilities\fsl_debug_console.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 utilities\fsl_io.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 utilities\fsl_log.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 utilities\fsl_str.o
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-atoi.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memcpy.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-nano-mallocr.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-sbrkr.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcat.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strcmp.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strdup_r.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strncpy.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strtol.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-impure.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-locale.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mbtowc_r.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-mlock.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-reent.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-wctomb_r.o)
+ .Pulp_Chip.Info
+                0x000000000000004e        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-ctype_.o)

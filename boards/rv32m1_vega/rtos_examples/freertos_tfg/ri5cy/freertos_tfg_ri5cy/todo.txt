@@ -1,0 +1,2 @@
+MODIFICADO:
+FreeRTOS.h : Incluye definiciones de stream buffers.

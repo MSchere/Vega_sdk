@@ -1,0 +1,134 @@
+Release Name: MCUXpresso Software Development Kit (SDK)
+Release Version: 2.2.0
+
+FatFs                      Approved Open Source License: Yes                 
+                           Author: Electronic Lives Mfg. by ChaN of Ageo     
+                           city, Japan (hobbyist)                            
+                           Description: FatFs is a generic FAT file system   
+                           module for small embedded systems.                
+                           Format: source code                               
+                           License: Open Source - FatFs License,             
+                           <rootfolder>/middleware/fatfs/doc/en/appnote.html 
+                           Location: middleware/fatfs_0.12c                  
+                           name: FatFs                                       
+                           URL: http://elm-chan.org/fsw/ff/00index_e.html    
+                           version: 0.12c                                    
+
+FreeRTOS(tm)               Author: Real Time Engineers, Ltd.                 
+                           Description: A real-time operating system(RTOS)   
+                           from Real Time Engineers, Ltd.                    
+                           Format: source code                               
+                           License: Modified GPLv2. See                      
+                           ,<rootfolder>/rtos/freertos/License/license.txt.  
+                           Location: rtos/freertos_9.0.0                     
+                           name: FreeRTOS(tm)                                
+                           URL: http://www.freertos.org                      
+                           version: 9.0.0                                    
+
+KSDK Peripheral Driver     Description: Peripheral drivers are designed for  
+                           the most common use cases indentified for         
+                           the underlying hardware block.                    
+                           Author: Freescale                                 
+                           Version: 2.x.x                                    
+                           License: Open Source - BSD-3-Clause               
+                           Format: source code                               
+                           Location: devices/<device_name>/drivers           
+
+Kinetis_BLE                version: 1.4.0                                    
+                           Location: middleware/wireless/bluetooth_1.4.0     
+                           Description: Bluetooth Low Energy Software        
+                           License: Open Source - BSD-3-Clause               
+                           Author: NXP                                       
+                           name: Bluetooth Low Energy Application Source     
+                           Format: Source code and header Files              
+
+Kinetis_BLE_ControllerLib  version: 4.2.0                                    
+                           Location:                                         
+                           middleware/wireless/bluetooth_1.4.0/controller/lib
+                           Description: Bluetooth Low Energy Controller      
+                           Firmware. Host Command Interface (HCI).           
+                           License: Proprietary                              
+                           Author: Mindtree                                  
+                           name: Bluetooth Low Energy Controller Firmware    
+                           Format: Binary libraries                          
+
+Kinetis_BLE_HostLib        version: 1.4.0                                    
+                           Location:                                         
+                           middleware/wireless/bluetooth_1.4.0/host/lib      
+                           Description: Bluetooth Low Energy Stack (HCI,     
+                           L2CAP, ATT, GATT, GAP and SM)                     
+                           License: Proprietary, See EULA LA_OPT_EVAL_DEMO_ONLY_License
+                           v20 June 2017                                     
+                           Author: NXP                                       
+                           name: Bluetooth Low Energy Host Firmware          
+                           Format: Binary libraries                          
+
+Kinetis_FWK                version: 5.5.1                                    
+                           Location: middleware/wireless/framework_5.5.1     
+                           Description: Kinetis Connectivity Framework       
+                           middleware for Connectivity stacks                
+                           License: Open Source - BSD-3-Clause               
+                           Author: NXP                                       
+                           name: Kinetis Connectivity Framework              
+                           Format: Source code                               
+
+Multicore SDK              version: 2.3.1                                    
+                           Location: middleware/multicore_2.3.1              
+                           Description: Freescale Multicore Software         
+                           Development Kit.                                  
+                           License: Open Source - BSD-3-Clause               
+                           Author: Freescale                                 
+                           name: Multicore SDK                               
+                           Format: source code                               
+
+RPMsg-Lite                 version: NA                                       
+                           Location: middleware/multicore_2.3.1/rpmsg_lite/  
+                           Description: Open Asymmetric Multi Processing     
+                           (OpenAMP) framework project                       
+                           License: Open Source - BSD-3-Clause               
+                           Author: Mentor Graphics Corporation & community   
+                           contributors                                      
+                           name: RPMsg-Lite                                  
+                           Format: source code                               
+                           URL: https://github.com/OpenAMP/open-amp          
+
+SD MMC Card middleware     name: SD MMC Card middleware                      
+                           Location: middleware/sdmmc_2.1.2                  
+                           License: Open Source - BSD-3-Clause               
+                           Description: A software component support SD card,
+                           eMMC card.                                        
+                           Author: Freescale                                 
+                           version: 2.1.2                                    
+                           Format: source code                               
+
+USB                        version: 1.6.3                                    
+                           Location: middleware/usb_1.6.3                    
+                           Description: Freescale USB stack. This is a       
+                           version of the USB stack that has been integrated 
+                           with the MCUXpresso SDK.                          
+                           License: Open Source - BSD-3-Clause               
+                           Author: Freescale                                 
+                           name: USB                                         
+                           Format: source code                               
+
+wifi_qca                   version: 2.0.0                                    
+                           Location: middleware/wifi_qca_2.0.0               
+                           Description: Qualcomm Wi-Fi stack                 
+                           License: Open Source - BSD-3-Clause               
+                           Author: Qualcomm Atheros, Inc.                    
+                           name: wifi_qca                                    
+                           Format: source code                               
+                           URL: https://www.qualcomm.com/products/wifi-      
+                           platforms                                         
+
+wolfSSL                    Author: wolfSSL Inc.                              
+                           Description: wolfSSL is cryptography and SSL/TLS  
+                           library                                           
+                           Format: source code                               
+                           License: 3rd party evaluation. See <rootfolder>/mi
+                           ddleware/wolfssl_3.9.8/wolfSSL_cyaSSL_evaluation_l
+                           icense_agreement.pdf                              
+                           Location: middleware/wolfssl_3.9.8                
+                           name: wolfSSL                                     
+                           URL: https://www.wolfssl.com                      
+                           version: 3.9.8                                    

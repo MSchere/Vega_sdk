@@ -1,0 +1,31 @@
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol EDROOMServiceLibrary{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.EDROOMServiceLibrary;
+	version :=v1;
+
+
+	/*
+	 * Output messages.
+	*/ 
+
+	output messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send EDROOMStart();
+
+	};
+
+};

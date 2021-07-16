@@ -1,0 +1,262 @@
+/*! *********************************************************************************
+ * \addtogroup Bluetooth Shell Application
+ * @{
+ ********************************************************************************** */
+/*! *********************************************************************************
+* Copyright (c) 2015, Freescale Semiconductor, Inc.
+* Copyright 2016-2017 NXP
+* All rights reserved.
+*
+* 
+*
+* This file is the source file for the Bluetooth Shell Application
+*
+* SPDX-License-Identifier: BSD-3-Clause
+********************************************************************************** */
+
+/************************************************************************************
+ *************************************************************************************
+ * Include
+ *************************************************************************************
+ ************************************************************************************/
+/* Framework / Drivers */
+#include "RNG_Interface.h"
+#include "Keyboard.h"
+#include "LED.h"
+#include "TimersManager.h"
+#include "FunctionLib.h"
+#include "fsl_os_abstraction.h"
+#include "shell.h"
+#include "Panic.h"
+#include "MemManager.h"
+#include "board.h"
+
+/* BLE Host Stack */
+#include "gatt_interface.h"
+#include "gatt_server_interface.h"
+#include "gatt_client_interface.h"
+#include "gatt_database.h"
+#include "gap_interface.h"
+#include "gatt_db_app_interface.h"
+
+/* Shell APIs*/
+#include "shell_gap.h"
+#include "shell_gatt.h"
+#include "shell_gattdb.h"
+#include "shell_thrput.h"
+
+#include "ble_conn_manager.h"
+#include "ApplMain.h"
+#include "ble_shell.h"
+
+#if MULTICORE_HOST
+#include "erpc_host.h"
+#include "dynamic_gatt_database.h"
+#endif
+
+/************************************************************************************
+*************************************************************************************
+* Private macros
+*************************************************************************************
+************************************************************************************/
+static uint8_t mSupressEvents = 0;
+/************************************************************************************
+*************************************************************************************
+* Private type definitions
+*************************************************************************************
+************************************************************************************/
+
+/************************************************************************************
+ *************************************************************************************
+ * Private memory declarations
+ *************************************************************************************
+ ************************************************************************************/
+
+const char mpGapHelp[] = "\r\n"
+           "gap advcfg [-interval intervalInMs]\r\n"
+           "gap advstart\r\n"
+           "gap advstop\r\n"
+           "gap advcfg [-interval intervalInMs] [-type type]\r\n"
+           "gap advdata -erase -add [type] [payload]\r\n"
+           "gap scanstart\r\n"
+           "gap scanstop\r\n"
+           "gap scancfg [-type type] [-interval intervalInMs] [-window windowInMs]\r\n"
+           "gap scandata [-erase] [-add type payload]\r\n"
+           "gap connectcfg [-interval intervalInMs] [-latency latency] [-timeout timeout]\r\n"
+           "gap connect scannedDeviceId\r\n"
+           "gap disconnect\r\n"
+           "gap connupdate mininterval maxinterval latency timeout\r\n"
+           "gap paircfg [-usebonding usebonding] [-seclevel seclevel] [-keyflags flags]\r\n"
+           "gap pair\r\n"
+           "gap enterpin pin\r\n"
+           "gap bonds [-erase] [-remove deviceIndex]\r\n";
+
+const char mpGattHelp[] = "\r\n"
+           "gatt discover [-all] [-service serviceUuid16InHex] \r\n"
+           "gatt read handle\r\n"
+           "gatt write handle valueInHex\r\n"
+           "gatt writecmd handle valueInHex\r\n"
+           "gatt notify handle valueInHex\r\n"
+           "gatt indicate handle valueInHex\r\n";
+
+const char mpGattDbHelp[] = "\r\n"
+           "gattdb read handle\r\n"
+           "gattdb write handle valueInHex\r\n"
+           "gattdb addservice serviceUuid16InHex\r\n"
+           "gattdb erase\r\n";
+
+const char mpThrputHelp[]  = "\r\n"
+           "thrput setparam [-connint min max] [-c packet count] [-s payload size]\r\n"
+           "thrput start [tx | rx]\r\n"
+           "thrput stop\r\n";
+
+/* Shell */
+const cmd_tbl_t mGapCmd =
+{
+    .name = "gap",
+    .maxargs = 11,
+    .repeatable = 1,
+    .cmd = ShellGap_Command,
+    .usage = (char*)mpGapHelp,
+    .help = "Contains commands for advertising, scanning, connecting, pairing or disconnecting."
+};
+
+const cmd_tbl_t mGattCmd =
+{
+    .name = "gatt",
+    .maxargs = 11,
+    .repeatable = 1,
+    .cmd = ShellGatt_Command,
+    .usage = (char*)mpGattHelp,
+    .help = "Contains commands for service discovery, read, write, notify and indicate. "
+            "Values in hex must be formatted as 0xXX..X"
+};
+
+const cmd_tbl_t mGattDbCmd =
+{
+    .name = "gattdb",
+    .maxargs = 11,
+    .repeatable = 1,
+    .cmd = ShellGattDb_Command,
+    .usage = (char*)mpGattDbHelp,
+    .help = "Contains commands for adding services, reading and writing characteristics on the local database."
+            "Values in hex must be formatted as 0xXX..X"
+};
+
+const cmd_tbl_t mThrputCmd =
+{
+    .name = "thrput",
+    .maxargs = SHELL_MAX_ARGS,
+    .repeatable = 1,
+    .cmd = ShellThrput_Command,
+    .usage = (char*)mpThrputHelp,
+    .help = "Contains commands for setting up and running throughput test"
+};
+
+/************************************************************************************
+*************************************************************************************
+* Public memory declarations
+*************************************************************************************
+************************************************************************************/
+extern gapAdvertisingParameters_t   gAdvParams;
+extern gapPairingParameters_t       gPairingParameters;
+/************************************************************************************
+ *************************************************************************************
+ * Private functions prototypes
+ *************************************************************************************
+ ************************************************************************************/
+
+static void BleApp_Config(void);
+/************************************************************************************
+*************************************************************************************
+* Public functions
+*************************************************************************************
+************************************************************************************/
+
+/*! *********************************************************************************
+* \brief    Initializes application specific functionality before the BLE stack init.
+*
+********************************************************************************** */
+void BleApp_Init(void)
+{
+    /* UI */
+    shell_init("Kinetis BLE Shell>");
+    shell_register_function((cmd_tbl_t *)&mGapCmd);
+    shell_register_function((cmd_tbl_t *)&mGattCmd);
+    shell_register_function((cmd_tbl_t *)&mGattDbCmd);
+    shell_register_function((cmd_tbl_t *)&mThrputCmd);
+
+    TMR_TimeStampInit();
+
+#if MULTICORE_HOST
+    /* Init eRPC host */
+    init_erpc_host();
+#endif
+}
+
+/*! *********************************************************************************
+ * \brief        Handles BLE generic callback.
+ *
+ * \param[in]    pGenericEvent    Pointer to gapGenericEvent_t.
+ ********************************************************************************** */
+void BleApp_GenericCallback (gapGenericEvent_t* pGenericEvent)
+{
+    BleConnManager_GenericEvent(pGenericEvent);
+    
+    if (pGenericEvent->eventType == gInitializationComplete_c)
+    {
+        BleApp_Config();
+        return;
+    }
+    
+    if (!mSupressEvents)
+    {
+        ShellGap_GenericCallback(pGenericEvent);
+    }
+    else
+    {
+        mSupressEvents--;
+    }
+
+}
+
+/************************************************************************************
+ *************************************************************************************
+ * Private functions
+ *************************************************************************************
+ ************************************************************************************/
+
+/*! *********************************************************************************
+ * \brief        Configures BLE Stack after initialization. Usually used for
+ *               configuring advertising, scanning, white list, services, et al.
+ *
+ ********************************************************************************** */
+static void BleApp_Config (void)
+{   
+#if MULTICORE_HOST
+    if (GattDbDynamic_CreateDatabase() != gBleSuccess_c)
+    {
+        panic(0,0,0,0);
+        return;
+    }
+#endif /* MULTICORE_HOST */
+
+    /* Configure GAP */
+    Gap_SetAdvertisingParameters(&gAdvParams);
+    Gap_ReadPublicDeviceAddress();
+    Gap_SetDefaultPairingParameters(&gPairingParameters);
+    mSupressEvents += 2;
+
+    /* Register for callbacks*/
+    App_RegisterGattServerCallback(ShellGatt_ServerCallback);
+    App_RegisterGattClientProcedureCallback(ShellGatt_ClientCallback);
+    App_RegisterGattClientIndicationCallback(ShellGatt_IndicationCallback);
+    App_RegisterGattClientNotificationCallback(ShellGatt_NotificationCallback);
+    
+    /* Adding GAP and GATT serices in the database */
+    ShellGattDb_Init();
+
+}
+/*! *********************************************************************************
+ * @}
+ ********************************************************************************** */

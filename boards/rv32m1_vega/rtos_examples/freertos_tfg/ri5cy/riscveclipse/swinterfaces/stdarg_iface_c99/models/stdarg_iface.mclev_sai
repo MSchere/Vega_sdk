@@ -1,0 +1,11 @@
+package es.uah.aut.srg.micobs.mclev.common.libc;
+
+import es.uah.aut.srg.micobs.langs;
+
+sai stdarg_iface
+{
+	version := C99;
+	
+	language := C(C99);
+	
+};

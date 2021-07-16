@@ -1,0 +1,9 @@
+dataclass CDControlParam{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.cdcontrolparam.cdcontrolparam_iface;
+	version := v1;
+
+
+};

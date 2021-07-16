@@ -1,0 +1,32 @@
+package es.uah.aut.srg.micobs.mesp.common.cmp_rt;
+
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.mesp.ctools;
+
+swpackage edroomtc_slib
+{
+	version := HEAD;
+	
+	languages := CPP(98);
+	
+	construction tools := GNUMake(3.81);
+	
+	provided interfaces 
+	{
+		provides edroomtc_iface(v1) {};
+	}; 
+	
+
+	supported platforms
+	{
+		supported platform any_any_any_any_any
+		{
+			osapi := any;
+			os := any;
+			architecture := any;
+			microprocessor := any;
+			board := any;
+		};
+	};
+
+};

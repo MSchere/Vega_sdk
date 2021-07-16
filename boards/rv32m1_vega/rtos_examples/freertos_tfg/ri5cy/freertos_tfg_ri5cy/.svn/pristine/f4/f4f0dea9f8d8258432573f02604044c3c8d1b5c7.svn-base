@@ -1,0 +1,15 @@
+package es.uah.aut.srg.micobs.mesp.common.cmp_rt;
+
+import es.uah.aut.srg.micobs.langs;
+
+swinterface edroomsl_iface
+{
+	version := v1;
+	
+	language := CPP(98);
+	
+	provided resources
+	{
+		quantifiable resource CEDROOMComponent step 1 to -1;
+	};
+};
