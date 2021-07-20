@@ -191,7 +191,7 @@ void	CCControlPlant::EDROOM_CTX_Top_0::FUpdateAlgorithmParam()
 		break;
 		case(CDControlParam::Param_Exit):
 			printf("\t\t\t\t\t\tExit\n");
-			exit(0); //Function 'exit' could not be resolved
+			exit(0);
  
 		break;
  
@@ -208,7 +208,7 @@ void	CCControlPlant::EDROOM_CTX_Top_0::FUpdateAlgorithmParam()
 
 	//CEDROOMPOOLTEDROOMUInt8
 
-CCControlPlant::EDROOM_CTX_Top_0::CEDROOMPOOLTEDROOMUInt8::CEDROOMPOOLTEDROOMUInt8( //Member declaration not found
+CCControlPlant::EDROOM_CTX_Top_0::CEDROOMPOOLTEDROOMUInt8::CEDROOMPOOLTEDROOMUInt8(
 			TEDROOMUInt32 elemCount,TEDROOMUInt8* pMem,bool * pMemMarks):
 				CEDROOMProtectedMemoryPool(elemCount, pMem, pMemMarks,
 					sizeof(TEDROOMUInt8))
@@ -232,7 +232,7 @@ TEDROOMUInt8 *	CCControlPlant::EDROOM_CTX_Top_0::CEDROOMPOOLTEDROOMUInt8::AllocD
 
 	// CONSTRUCTOR*************************************************
 
-CCControlPlant::EDROOM_SUB_Top_0::EDROOM_SUB_Top_0 (CCControlPlant&act //Warning: Member 'edroomCurrentState' was not initialized in this constructor
+CCControlPlant::EDROOM_SUB_Top_0::EDROOM_SUB_Top_0 (CCControlPlant&act
 	,CEDROOMMemory *pEDROOMMemory):
 		EDROOM_CTX_Top_0(act,
 			CCONTROL_PLANT_ID,
@@ -245,7 +245,7 @@ CCControlPlant::EDROOM_SUB_Top_0::EDROOM_SUB_Top_0 (CCControlPlant&act //Warning
 		VKd(0.2),
 		VKi(0.25),
 		VKp(0.35),
-		EDROOMPoolTEDROOMUInt8( //Symbol 'CEDROOMPOOLTEDROOMUInt8' could not be resolved
+		EDROOMPoolTEDROOMUInt8(
 			10, pEDROOMMemory->poolTEDROOMUInt8,
 			pEDROOMMemory->poolMarkTEDROOMUInt8)
 {

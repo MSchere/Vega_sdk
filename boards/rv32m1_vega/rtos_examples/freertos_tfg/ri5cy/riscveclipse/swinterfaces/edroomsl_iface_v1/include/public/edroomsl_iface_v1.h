@@ -1264,7 +1264,7 @@ public:
 	                           TEDROOMUInt32 max_event_buffer,
 	                           Pr_Time burstMinInterArrivalTime,
 	                            TEDROOMByte errorMask){
-	     m_EventCtrl.SetEventAsBursty(evMinInterArrivalTime, //Invalid arguments
+	     m_EventCtrl.SetEventAsBursty(evMinInterArrivalTime,
 	                                   max_event_buffer,
 	                                   burstMinInterArrivalTime,
 	                                   errorMask);
@@ -1591,7 +1591,7 @@ public:
   void SetEventAsPeriodic(Pr_Time evMinInterArrivalTime,
                           TEDROOMUInt32 max_event_buffer,
                           TEDROOMByte errorMask){
-    m_EventCtrl.SetEventAsPeriodic(evMinInterArrivalTime, //Invalid arguments
+    m_EventCtrl.SetEventAsPeriodic(evMinInterArrivalTime,
                                    max_event_buffer,
                                    errorMask);
   }
@@ -1621,7 +1621,7 @@ public:
                            TEDROOMUInt32 max_event_buffer,
                            Pr_Time burstMinInterArrivalTime,
                             TEDROOMByte errorMask){
-     m_EventCtrl.SetEventAsBursty(evMinInterArrivalTime, //Invalid arguments
+     m_EventCtrl.SetEventAsBursty(evMinInterArrivalTime,
                                    max_event_buffer,
                                    burstMinInterArrivalTime,
                                    errorMask);

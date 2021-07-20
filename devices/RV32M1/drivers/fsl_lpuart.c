@@ -1307,8 +1307,9 @@ void LPUART0_DriverIRQHandler(void) {
 			LPUART_WriteByte(LPUART0, 'n');
 			LPUART_WriteByte(LPUART0, '\r');
 			LPUART_WriteByte(LPUART0, '\n');
-			int i;
+
 			/*
+			int i;
 			for (i = 0; i <= sizeof(length); i++) {
 				LPUART_WriteByte(LPUART0, length[i]);
 			}

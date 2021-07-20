@@ -89,6 +89,7 @@
  *     in FreeRTOS/source/stdint.readme for more information.
  */
 #include <stdint.h> /* READ COMMENT ABOVE. */
+
 #ifdef __cplusplus
 extern "C" {
 #endif

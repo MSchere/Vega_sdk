@@ -30,12 +30,12 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>drivers</name>
+			<name>doc</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>freertos</name>
+			<name>drivers</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -78,6 +78,11 @@
 			<name>board/pin_mux.h</name>
 			<type>1</type>
 			<locationURI>copy_PARENT1234/pin_mux.h</locationURI>
+		</link>
+		<link>
+			<name>doc/readme.txt</name>
+			<type>1</type>
+			<locationURI>copy_PARENT12345/readme.txt</locationURI>
 		</link>
 		<link>
 			<name>drivers/freertos</name>
@@ -138,116 +143,6 @@
 			<name>drivers/fsl_port.h</name>
 			<type>1</type>
 			<locationURI>PARENT-6-PROJECT_LOC/devices/RV32M1/drivers/fsl_port.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/FreeRTOS.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/FreeRTOS.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/StackMacros.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/StackMacros.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/croutine.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/croutine.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/croutine.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/croutine.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/deprecated_definitions.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/deprecated_definitions.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/event_groups.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/event_groups.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/event_groups.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/event_groups.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/freertos_tasks_c_additions.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/freertos_tasks_c_additions.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/heap_4.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/portable/MemMang/heap_4.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/list.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/list.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/list.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/list.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/mpu_wrappers.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/mpu_wrappers.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/portable.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/projdefs.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/projdefs.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/queue.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/queue.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/queue.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/queue.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/semphr.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/semphr.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/task.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/task.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/tasks.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/tasks.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/timers.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/timers.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/timers.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/timers.h</locationURI>
 		</link>
 		<link>
 			<name>source/test.c</name>
@@ -323,26 +218,6 @@
 			<name>drivers/freertos/fsl_lpuart_freertos.h</name>
 			<type>1</type>
 			<locationURI>PARENT-6-PROJECT_LOC/devices/RV32M1/drivers/fsl_lpuart_freertos.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable/fsl_tickless_generic.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/portable/GCC/RISCY/fsl_tickless_generic.h</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable/port.c</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/portable/GCC/RISCY/port.c</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable/portASM.S</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/portable/GCC/RISCY/portASM.S</locationURI>
-		</link>
-		<link>
-			<name>freertos/portable/portmacro.h</name>
-			<type>1</type>
-			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/portable/GCC/RISCY/portmacro.h</locationURI>
 		</link>
 		<link>
 			<name>osswpackages/freertos/src/croutine.c</name>

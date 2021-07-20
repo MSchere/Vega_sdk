@@ -16,9 +16,9 @@
 #include <stdio.h>
 
 /* FreeRTOS */
-#include <FreeRTOS.h>
-#include <task.h>
-#include <semphr.h>
+#include <public/FreeRTOS.h>
+#include <public/task.h>
+#include <public/semphr.h>
 
 /* others */
 #include <public/edroombp_iface_v3_0_free_rtos.h>

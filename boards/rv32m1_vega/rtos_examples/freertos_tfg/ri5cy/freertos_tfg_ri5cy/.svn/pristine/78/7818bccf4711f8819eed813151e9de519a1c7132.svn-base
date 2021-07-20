@@ -33,7 +33,6 @@ int main (void){
  
 #endif
  
-	//Invalid arguments en todos los comp
 	CCControlPlant	comp2(2, 13, EDROOMprioVeryHigh, 1024, systemDeployment.GetComp2Memory());
 	CCLEDTask	comp3(3, 13, EDROOMprioVeryLow, 1024, systemDeployment.GetComp3Memory());
 	CCHTTPServerTask	comp4(4, 13, EDROOMprioVeryLow, 1024, systemDeployment.GetComp4Memory());

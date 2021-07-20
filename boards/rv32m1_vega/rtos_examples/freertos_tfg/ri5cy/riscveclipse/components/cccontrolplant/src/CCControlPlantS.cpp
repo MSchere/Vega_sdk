@@ -10,7 +10,7 @@
 
 
 
-CCControlPlant::CCControlPlant(TEDROOMComponentID id, //Member declaration not found, los components not resolved
+CCControlPlant::CCControlPlant(TEDROOMComponentID id,
 		TEDROOMUInt32 roomNumMaxMens,
 		TEDROOMPriority roomtaskPrio,
 		TEDROOMStackSizeType roomStack,
@@ -111,7 +111,7 @@ bool CCControlPlant::EDROOMIsComponentFinished()
 
 //****************** EDROOMMemory::SetMemory *******************************
 
-void CCControlPlant::CEDROOMMemory::SetMemory(TEDROOMUInt32 numMessages_ , //member declaration not found
+void CCControlPlant::CEDROOMMemory::SetMemory(TEDROOMUInt32 numMessages_ ,
 		CEDROOMMessage * MessagesMem_,
 		bool * MessagesMemMarks_,
 		TEDROOMUInt32 numberOfNodes_,
@@ -119,7 +119,7 @@ void CCControlPlant::CEDROOMMemory::SetMemory(TEDROOMUInt32 numMessages_ , //mem
 		bool * QueueNodesMemMarks_)
 {
 
-		CEDROOMComponentMemory::SetMemory( numMessages_,MessagesMem_, MessagesMemMarks_, //Invalid arguments
+		CEDROOMComponentMemory::SetMemory( numMessages_,MessagesMem_, MessagesMemMarks_,
 			numberOfNodes_,QueueNodesMem_, QueueNodesMemMarks_, QueueHeads);
 
 		TimingMemory.SetMemory(3,TimerInf,&TimerInfMarks[0],TimeOutMsgs,&TimeOutMsgsMarks[0]);

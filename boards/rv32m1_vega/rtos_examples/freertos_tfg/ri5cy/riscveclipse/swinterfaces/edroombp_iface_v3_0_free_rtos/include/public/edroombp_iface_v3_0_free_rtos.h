@@ -36,9 +36,9 @@
 #include <public/timespec.h>
 /* FreeRTOS */
 /* Basic FreeRTOS definitions. */
-#include <FreeRTOS.h>
-#include <task.h>
-#include <semphr.h>
+#include <public/FreeRTOS.h>
+#include <public/task.h>
+#include <public/semphr.h>
 
 #include <stdio.h>
 

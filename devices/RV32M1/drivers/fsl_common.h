@@ -19,8 +19,6 @@
 #endif
 
 #include "fsl_device_registers.h"
-#include "RV32M1_ri5cy.h"
-#include "RV32M1_ri5cy_features.h"
 
 /*!
  * @addtogroup ksdk_common
