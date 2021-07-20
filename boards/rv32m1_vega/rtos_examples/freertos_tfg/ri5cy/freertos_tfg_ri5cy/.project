@@ -251,6 +251,16 @@
 			<locationURI>PARENT-6-PROJECT_LOC/rtos/freertos_9.0.0/Source/include/timers.h</locationURI>
 		</link>
 		<link>
+			<name>source/FreeRTOSConfig.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOSConfig.h</locationURI>
+		</link>
+		<link>
+			<name>source/test.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-8-PROJECT_LOC/Users/Manu/Desktop/test.cpp</locationURI>
+		</link>
+		<link>
 			<name>startup/startup_RV32M1_ri5cy.S</name>
 			<type>1</type>
 			<locationURI>PARENT-6-PROJECT_LOC/devices/RV32M1/gcc/startup_RV32M1_ri5cy.S</locationURI>

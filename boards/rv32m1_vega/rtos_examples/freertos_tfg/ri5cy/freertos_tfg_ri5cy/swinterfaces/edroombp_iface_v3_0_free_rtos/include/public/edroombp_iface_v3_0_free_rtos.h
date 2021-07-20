@@ -461,7 +461,7 @@ public:
         TaskIP(NULL),
         priorityMsg(EDROOMprioIDLE),
         priorityTmp(EDROOMprioIDLE)
-        {}
+        {/*uxPriority=0;*/}
 
 
 
@@ -765,7 +765,7 @@ public:
 
  	/*!
      * \brief Get the current IRQ Mask
-     * \todo
+     * \
      */
 	static inline TEDROOMIRQMask GetIRQMask(void);
 

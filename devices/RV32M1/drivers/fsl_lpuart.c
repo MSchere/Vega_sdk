@@ -1307,18 +1307,10 @@ void LPUART0_DriverIRQHandler(void) {
 			LPUART_WriteByte(LPUART0, 'n');
 			LPUART_WriteByte(LPUART0, '\r');
 			LPUART_WriteByte(LPUART0, '\n');
-
-			/*
-			int i;
-			for (i = 0; i <= sizeof(length); i++) {
-				LPUART_WriteByte(LPUART0, length[i]);
-			}
-			*/
 		}
 	} else if (header_ok & length_ok & !appdata_ok) {
 		if (irq_counter > len - 1) {
 			strncpy(appData, rxChars, len);
-			//appData[len] = '\0';
 			appdata_ok = true;
 			LPUART_WriteByte(LPUART0, ' ');
 			LPUART_WriteByte(LPUART0, 'd');

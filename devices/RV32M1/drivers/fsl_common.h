@@ -17,7 +17,6 @@
 #if defined(__ICCARM__)
 #include <stddef.h>
 #endif
-
 #include "fsl_device_registers.h"
 
 /*!

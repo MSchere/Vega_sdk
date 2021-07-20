@@ -1826,49 +1826,49 @@ OUTPUT(freertos_hello_ri5cy_rv32m1_vega.elf elf32-littleriscv)
  .debug_frame   0x00000000000042d8      0x1f0 utilities\fsl_log.o
  .debug_frame   0x00000000000044c8       0xf0 utilities\fsl_str.o
 
-.debug_info     0x0000000000000000    0x15ca7
+.debug_info     0x0000000000000000    0x15c8e
  .debug_info    0x0000000000000000     0x1252 board\board.o
  .debug_info    0x0000000000001252     0x1843 board\clock_config.o
  .debug_info    0x0000000000002a95      0xd0f board\pin_mux.o
  .debug_info    0x00000000000037a4     0x21ac drivers\fsl_clock.o
  .debug_info    0x0000000000005950      0x904 drivers\fsl_common.o
- .debug_info    0x0000000000006254     0x24ac drivers\fsl_lpuart.o
- .debug_info    0x0000000000008700      0xcbf freertos\heap_4.o
- .debug_info    0x00000000000093bf      0xae0 freertos\list.o
- .debug_info    0x0000000000009e9f      0xf94 freertos\portable\port.o
- .debug_info    0x000000000000ae33       0xd7 freertos\portable\portASM.o
- .debug_info    0x000000000000af0a     0x17b7 freertos\queue.o
- .debug_info    0x000000000000c6c1     0x2121 freertos\tasks.o
- .debug_info    0x000000000000e7e2     0x147f freertos\timers.o
- .debug_info    0x000000000000fc61      0xef4 source\freertos_hello.o
- .debug_info    0x0000000000010b55       0xc5 startup\startup_RV32M1_ri5cy.o
- .debug_info    0x0000000000010c1a     0x1890 startup\system_RV32M1_ri5cy.o
- .debug_info    0x00000000000124aa      0xf5d utilities\fsl_debug_console.o
- .debug_info    0x0000000000013407      0xfee utilities\fsl_io.o
- .debug_info    0x00000000000143f5      0xb91 utilities\fsl_log.o
- .debug_info    0x0000000000014f86      0xd21 utilities\fsl_str.o
+ .debug_info    0x0000000000006254     0x2493 drivers\fsl_lpuart.o
+ .debug_info    0x00000000000086e7      0xcbf freertos\heap_4.o
+ .debug_info    0x00000000000093a6      0xae0 freertos\list.o
+ .debug_info    0x0000000000009e86      0xf94 freertos\portable\port.o
+ .debug_info    0x000000000000ae1a       0xd7 freertos\portable\portASM.o
+ .debug_info    0x000000000000aef1     0x17b7 freertos\queue.o
+ .debug_info    0x000000000000c6a8     0x2121 freertos\tasks.o
+ .debug_info    0x000000000000e7c9     0x147f freertos\timers.o
+ .debug_info    0x000000000000fc48      0xef4 source\freertos_hello.o
+ .debug_info    0x0000000000010b3c       0xc5 startup\startup_RV32M1_ri5cy.o
+ .debug_info    0x0000000000010c01     0x1890 startup\system_RV32M1_ri5cy.o
+ .debug_info    0x0000000000012491      0xf5d utilities\fsl_debug_console.o
+ .debug_info    0x00000000000133ee      0xfee utilities\fsl_io.o
+ .debug_info    0x00000000000143dc      0xb91 utilities\fsl_log.o
+ .debug_info    0x0000000000014f6d      0xd21 utilities\fsl_str.o
 
-.debug_abbrev   0x0000000000000000     0x3279
+.debug_abbrev   0x0000000000000000     0x3263
  .debug_abbrev  0x0000000000000000      0x269 board\board.o
  .debug_abbrev  0x0000000000000269      0x350 board\clock_config.o
  .debug_abbrev  0x00000000000005b9      0x250 board\pin_mux.o
  .debug_abbrev  0x0000000000000809      0x34d drivers\fsl_clock.o
  .debug_abbrev  0x0000000000000b56      0x1b9 drivers\fsl_common.o
- .debug_abbrev  0x0000000000000d0f      0x3d6 drivers\fsl_lpuart.o
- .debug_abbrev  0x00000000000010e5      0x293 freertos\heap_4.o
- .debug_abbrev  0x0000000000001378      0x202 freertos\list.o
- .debug_abbrev  0x000000000000157a      0x3a3 freertos\portable\port.o
- .debug_abbrev  0x000000000000191d       0x14 freertos\portable\portASM.o
- .debug_abbrev  0x0000000000001931      0x2c1 freertos\queue.o
- .debug_abbrev  0x0000000000001bf2      0x359 freertos\tasks.o
- .debug_abbrev  0x0000000000001f4b      0x2b4 freertos\timers.o
- .debug_abbrev  0x00000000000021ff      0x22f source\freertos_hello.o
- .debug_abbrev  0x000000000000242e       0x12 startup\startup_RV32M1_ri5cy.o
- .debug_abbrev  0x0000000000002440      0x39e startup\system_RV32M1_ri5cy.o
- .debug_abbrev  0x00000000000027de      0x2c7 utilities\fsl_debug_console.o
- .debug_abbrev  0x0000000000002aa5      0x2b2 utilities\fsl_io.o
- .debug_abbrev  0x0000000000002d57      0x29b utilities\fsl_log.o
- .debug_abbrev  0x0000000000002ff2      0x287 utilities\fsl_str.o
+ .debug_abbrev  0x0000000000000d0f      0x3c0 drivers\fsl_lpuart.o
+ .debug_abbrev  0x00000000000010cf      0x293 freertos\heap_4.o
+ .debug_abbrev  0x0000000000001362      0x202 freertos\list.o
+ .debug_abbrev  0x0000000000001564      0x3a3 freertos\portable\port.o
+ .debug_abbrev  0x0000000000001907       0x14 freertos\portable\portASM.o
+ .debug_abbrev  0x000000000000191b      0x2c1 freertos\queue.o
+ .debug_abbrev  0x0000000000001bdc      0x359 freertos\tasks.o
+ .debug_abbrev  0x0000000000001f35      0x2b4 freertos\timers.o
+ .debug_abbrev  0x00000000000021e9      0x22f source\freertos_hello.o
+ .debug_abbrev  0x0000000000002418       0x12 startup\startup_RV32M1_ri5cy.o
+ .debug_abbrev  0x000000000000242a      0x39e startup\system_RV32M1_ri5cy.o
+ .debug_abbrev  0x00000000000027c8      0x2c7 utilities\fsl_debug_console.o
+ .debug_abbrev  0x0000000000002a8f      0x2b2 utilities\fsl_io.o
+ .debug_abbrev  0x0000000000002d41      0x29b utilities\fsl_log.o
+ .debug_abbrev  0x0000000000002fdc      0x287 utilities\fsl_str.o
 
 .debug_aranges  0x0000000000000000      0xb80
  .debug_aranges
