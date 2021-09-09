@@ -1,0 +1,17 @@
+package es.uah.aut.srg.micobs.mclev.common.embdio;
+
+import es.uah.aut.srg.micobs.langs;
+
+sai console_drv_iface
+{
+	version := v1;
+	
+	language := C(C99);
+	
+	attributes {
+		
+		integer NB_TERMIOS_PORTS := 2;
+		
+	};
+	
+};

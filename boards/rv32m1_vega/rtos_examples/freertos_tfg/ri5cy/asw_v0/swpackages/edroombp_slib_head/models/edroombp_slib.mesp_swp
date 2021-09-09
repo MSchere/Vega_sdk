@@ -1,0 +1,114 @@
+/*
+ * First we have to assign this file to a certain package
+ */
+
+package es.uah.aut.srg.micobs.mesp.common.rtosals;
+
+/*
+ * Optionally, we can import packages to use their elements as references.
+ */
+ 
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.mesp.common.osswi_;
+import es.uah.aut.srg.micobs.mesp.ctools;
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+import es.uah.aut.srg.micobs.pdl.common.os_;
+import es.uah.aut.srg.micobs.mesp.common.embdio;
+
+swpackage edroombp_slib
+{
+	version := HEAD;
+	
+	languages := CPP(98);
+	
+	construction tools := GNUMake(3.81);
+	
+	provided interfaces {
+	
+		provides edroombp_iface(v3.0_rtemsapi_4.8_impr){
+		
+//			parameter /* name */ := /* value */;
+		
+		};
+
+		//	TODO: cambiar
+		provides edroom_types_iface(v1)
+		{
+			
+		};
+	
+	}; 
+	
+//		requires /* name */ {
+//		
+//			quantifiable resource /* name */ := /* Quantity */;
+//			instantiable resource /* resource name */ /* instance name */ {
+//				parameter /* name */ := /* value */;
+//			};
+//		
+//		};
+//	
+//	}; 
+	
+	supported platforms
+	{
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_any_any_any
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := any;
+			microprocessor := any;
+			board := any;
+			
+			required interfaces {
+				requires RTEMSAPI(4.8_impr) { 
+					quantifiable resource SEMAPHORE :=
+													edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_BINSEM +
+													edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_IRQEVENT +
+													edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_KERNEL +
+													edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_SEMREC + 12;
+					quantifiable resource TASK := edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_TASK
+					+ edroombp_iface(v3.0_rtemsapi_4.8_impr)::PR_KERNEL + 2;					
+					quantifiable resource EVENT_MANAGER := 1;
+				};
+			};
+
+			configuration parameters
+			{		
+				integer EDROOM_MAX_PRIORITY := 255;
+				integer EDROOM_MIN_PRIORITY := 1;
+				integer EDROOM_MIN_STACK_SIZE := 2048;
+				integer EDROOM_MAX_TASKS := 100;
+				boolean FP_ENABLED:= true;
+			}; 
+
+
+//			required interfaces {
+//				...
+//			};
+
+
+//			configuration parameters
+//			{
+//				...
+//			};
+		
+		};
+	};
+
+			configuration parameters
+			{		
+				integer OUTPUT_CHANNEL_ID := 1;
+				boolean TESTING := false;
+				boolean DEBUG := false;
+			}; 
+//		boolean /* name */ := /* default */;
+//		integer /* name */ := /* default */ range /* ( / [ */ /* min */ , /* max */ /* ) / ] */;
+//		real /* name */ := /* default */ range /* ( / [ */ /* min */ , /* max */ /* ) / ] */;
+//		string /* name */ := /* default */;
+//		enum /* name */ {
+//			LITERAL_A, ...
+//		} := /* default literal */; 
+// 	};
+	
+};

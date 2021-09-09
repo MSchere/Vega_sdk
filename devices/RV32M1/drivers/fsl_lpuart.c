@@ -1294,15 +1294,6 @@ void LPUART0_DriverIRQHandler(void) {
 			if (!strcmp(rxChars, "BEBABEEF")) {
 				strncpy(header, rxChars, 8); //If header is detected, save it in header string
 				header_ok = true;
-				/*
-				LPUART_WriteByte(LPUART0, ' ');
-				LPUART_WriteByte(LPUART0, 'h');
-				LPUART_WriteByte(LPUART0, 'e');
-				LPUART_WriteByte(LPUART0, 'a');
-				LPUART_WriteByte(LPUART0, 'd');
-				LPUART_WriteByte(LPUART0, '\r');
-				LPUART_WriteByte(LPUART0, '\n');
-				*/
 			}
 				else {
 				LPUART_WriteByte(LPUART0, ' ');
@@ -1312,32 +1303,15 @@ void LPUART0_DriverIRQHandler(void) {
 	} else if (header_ok & !length_ok) {
 		if (irq_counter > 1) {
 			strncpy(length, rxChars, 2);
-			len = atoi(length); //String to int (doesnt work with HEX numbers)
+			len = strtol(length, NULL, 16);
 			length_ok = true;
 			irq_counter = 0;
-			/*
-			LPUART_WriteByte(LPUART0, ' ');
-			LPUART_WriteByte(LPUART0, 'l');
-			LPUART_WriteByte(LPUART0, 'e');
-			LPUART_WriteByte(LPUART0, 'n');
-			LPUART_WriteByte(LPUART0, '\r');
-			LPUART_WriteByte(LPUART0, '\n');
-			*/
 		}
 	} else if (header_ok & length_ok & !appdata_ok) {
 		if (irq_counter > len - 1) {
 			strncpy(appData, rxChars, len);
 			appdata_ok = true;
 			irq_counter = 0;
-			/*
-			LPUART_WriteByte(LPUART0, ' ');
-			LPUART_WriteByte(LPUART0, 'd');
-			LPUART_WriteByte(LPUART0, 'a');
-			LPUART_WriteByte(LPUART0, 't');
-			LPUART_WriteByte(LPUART0, 'a');
-			LPUART_WriteByte(LPUART0, '\r');
-			LPUART_WriteByte(LPUART0, '\n');
-			*/
 		}
 	}
 }
@@ -1358,7 +1332,6 @@ void LPUART1_RX_DriverIRQHandler(void)
 }
 #else
 void LPUART1_DriverIRQHandler(void) {
-	PRINTF("In handler UART1.\r\n");
 	s_lpuartIsr(LPUART1, s_lpuartHandle[1]);
 }
 #endif
@@ -1377,7 +1350,6 @@ void LPUART2_RX_DriverIRQHandler(void)
 }
 #else
 void LPUART2_DriverIRQHandler(void) {
-	PRINTF("In handler UART2.\r\n");
 	s_lpuartIsr(LPUART2, s_lpuartHandle[2]);
 }
 #endif

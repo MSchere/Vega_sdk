@@ -1,0 +1,9 @@
+dataclass TEDROOMWord32{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.TEDROOMWord32.tedroomword32_iface;
+	version := v1;
+
+
+};

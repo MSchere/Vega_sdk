@@ -1,0 +1,9 @@
+dataclass TEDROOMUInt16{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.TEDROOMUInt16.tedroomuint16_iface;
+	version := v1;
+
+
+};

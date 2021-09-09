@@ -1,0 +1,32 @@
+import "../../../dataclasses/CDSensorTMBufferStatus/models/CDSensorTMBufferStatus.ed_dclass";
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol CPRxTimeCode{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.CPRxTimeCode;
+	version :=v1;
+
+
+	/*
+	 * Input messages.
+	*/ 
+
+	input messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send EDROOMIRQsignal(CDSensorTMBufferStatus(v1));
+
+	};
+
+};

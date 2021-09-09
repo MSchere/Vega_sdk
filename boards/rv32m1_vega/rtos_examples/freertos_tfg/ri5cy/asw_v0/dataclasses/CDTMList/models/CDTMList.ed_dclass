@@ -1,0 +1,9 @@
+dataclass CDTMList{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.cdtmlist.cdtmlist_iface;
+	version := v1;
+
+
+};

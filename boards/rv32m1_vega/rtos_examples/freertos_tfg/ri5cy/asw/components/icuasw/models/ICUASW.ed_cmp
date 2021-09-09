@@ -1,0 +1,296 @@
+import "../../../dataclasses/Pr_Time/models/Pr_Time.ed_dclass";
+import "../../../protocols/EDROOMTimingSAP/models/EDROOMTimingSAP.ed_prot";
+import "../../../protocols/EDROOMServiceLibrary/models/EDROOMServiceLibrary.ed_prot";
+import "../../../components/CCEPDManager/models/CCEPDManager.ed_cmp";
+import "../../../components/CCHK_FDIRMng/models/CCHK_FDIRMng.ed_cmp";
+import "../../../components/CCBKGTCExec/models/CCBKGTCExec.ed_cmp";
+import "../../../components/CCSensorManager/models/CCSensorManager.ed_cmp";
+import "../../../components/CCTMChannelCtrl/models/CCTMChannelCtrl.ed_cmp";
+import "../../../sais/emu_sc_channel_drv_slib_v1/models/emu_sc_channel_drv_slib_v1.ed_sai";
+import "../../../sais/icuasw_pus_services_iface_v1/models/icuasw_pus_services_iface_v1.ed_sai";
+import "../../../sais/datapool_mng_iface_v1/models/datapool_mng_iface_v1.ed_sai";
+
+
+
+/*
+ * EDROOM Component Model.
+ */ 
+
+
+no_pattern component ICUASW{
+
+	uri := es.uah.aut.srg.edroom.mclev.cmp.ICUASW;
+	version := v1;
+	stack_size := 1024;
+	def_max_nb_messages := 10;
+	requires := emu_sc_channel_drv_slib(v1),
+			icuasw_pus_services_iface(v1),
+			datapool_mng_iface(v1);
+
+
+
+
+	structure {
+
+		ports {
+
+
+			system port EDROOMsl
+			{
+				id:= 0;
+				protocol:= EDROOMServiceLibrary(v1);
+			};
+			timing port Timer {
+				id := 1;
+				protocol := EDROOMTimingSAP(v1);
+
+			};
+
+
+
+		};
+
+
+		instances {
+
+
+			instance EPDManager
+			{
+				class := CCEPDManager(v1);
+				max_nb_messages := 11;
+				priority :=3;
+			};
+			instance HK_FDIRMng
+			{
+				class := CCHK_FDIRMng(v1);
+				max_nb_messages := 14;
+				priority :=3;
+			};
+			instance BKGTCExec
+			{
+				class := CCBKGTCExec(v1);
+				max_nb_messages := 14;
+				priority :=3;
+			};
+			instance SensorManager
+			{
+				class := CCSensorManager(v1);
+				max_nb_messages := 11;
+				priority :=3;
+			};
+			instance TMChannelCtrl
+			{
+				class := CCTMChannelCtrl(v1);
+				max_nb_messages := 10;
+				priority :=3;
+			};
+		};
+
+
+		connections {
+			connection BKGTCExec.TMChannelCtrl<->TMChannelCtrl.TMChannelCtrl4;
+			connection HK_FDIRMng.TMChannelCtrl<->TMChannelCtrl.TMChannelCtrl3;
+			connection SensorManager.TMChannelCtrl<->TMChannelCtrl.TMChannelCtrl2;
+			connection EPDManager.TMChannelCtrl<->TMChannelCtrl.TMChannelCtrl;
+			connection SensorManager.CmpHK<->HK_FDIRMng.SensorHK;
+			connection HK_FDIRMng.BKGHK<->BKGTCExec.CmpHK;
+			connection BKGTCExec.BKGExecCtrl<->EPDManager.BKGCtrl;
+			connection EPDManager.SensorMngCtrl<->SensorManager.SensorMngCtrl;
+			connection HK_FDIRMng.EPDHK<->EPDManager.CmpHK;
+			connection EPDManager.HK_FDIRCtrl<->HK_FDIRMng.HK_FDIRCtrl;
+		};
+
+
+	};
+
+
+	behaviour {
+
+		contexts {
+
+
+			context Top_ctx_0{
+
+
+				id := 0;
+
+
+				variables {
+					variable VEmuTimeCode{
+					 class := Pr_Time(v1);
+
+					 constructor := "";
+					};
+
+
+				};
+
+
+				states {
+					state I{
+						id := 0;
+					};
+					state Ready{
+						id := 1;
+
+						entry actions := FProgTimer;
+					};
+				};
+
+
+				init state := I;
+
+
+				items{
+					/**
+					 * \brief  
+					 */
+
+					action FInit {
+						<code>
+						for(int i=0; i &lt;256; i++) 
+							ForceDataPOOLValue(i,i);
+						 
+						ForceDataPOOLMonitoring( 0,
+						                          true,
+						                              3,
+						                              MonitorUnchecked,
+						                              0x4001,
+						                              5,
+						                              0x4002,
+						                              0);
+						 
+						ForceDataPOOLValue(0,6);
+						 
+						 
+						uint8_t aux[256];
+						 RIDSerial_t auxRID;
+						 
+						 auxRID.RID=0x4001;
+						 aux[0]=auxRID.bytes[0];
+						 aux[1]=auxRID.bytes[1];
+						 aux[2]=128;
+						 aux[3]=1;
+						 
+						 SetNextTC(19, 1, aux);
+						 
+						 printf(&quot;Next TC(%i,%i)\n&quot;, 19, 1);
+						 
+						 CCEPDManager::EDROOMEventIRQ7.SignalFromTask();
+						
+						 VEmuTimeCode.GetTime();
+
+
+						</code>
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					inform at FProgTimer {
+						code {
+							<code>
+								 
+								//Timing Service useful methods
+								
+							  VEmuTimeCode+=Pr_Time(1,0);
+							
+							  time=VEmuTimeCode;
+
+
+							</code>
+						};
+
+						port :=Timer;
+
+						priority :=3;
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					action FEmuPassSecond {
+						<code>
+						 //Emulate Hw TimeCode reception
+						 PUSService9::CurrentUniTimeY2KSecns=PUSService9::NextUniTimeY2KSecns;
+						 PUSService9::NextUniTimeY2KSecns++;
+						 
+						 //SetNextTC(VService, VSubService, aux);
+						 
+						 //printf(&quot;Next TC(%i,%i)\n&quot;, VService, VSubService);
+						 
+						 
+						 //CCEPDManager::EDROOMEventIRQ7.SignalFromTask();
+						 
+						 if(VSubService==10){
+							VService++;
+							VSubService=1;
+							
+						 }else
+							VSubService++;
+						 
+						 
+						 //Signal BottomHalf for TimeCode Interrupt
+						 CCSensorManager::EDROOMEventIRQ5.SignalFromTask();
+						 
+							
+
+
+						</code>
+
+					};
+
+
+				};
+
+
+				transitions{
+
+					transition Init{
+						id := 0;
+						source := I;
+						sink := Ready;
+
+
+						actions := FInit;
+
+
+						asynchronous trigger {
+							port := EDROOMsl;
+							message := EDROOMServiceLibrary(v1)::EDROOMStart;
+						};
+					};
+
+					transition NextTimeCode{
+						id := 1;
+						source := Ready;
+						sink := Ready;
+
+
+
+						asynchronous trigger {
+							port := Timer;
+							message := EDROOMTimingSAP(v1)::EDROOMSignalTimeout;
+						};
+					};
+
+
+				};
+
+
+			};
+
+
+		};
+
+		top context := Top_ctx_0;
+
+
+	};
+
+
+};

@@ -83,6 +83,7 @@ task.h is included from an application file. */
 #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
 
 #include "FreeRTOS.h"
+#include "fsl_debug_console.h"
 #include "task.h"
 
 #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
@@ -103,7 +104,8 @@ task.h is included from an application file. */
 	heap - probably so it can be placed in a special segment or address. */
 	extern uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
 #else
-	static uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+     static uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+     //const uint8_t *ucHeap = (uint8_t*) (0x20003200);
 #endif /* configAPPLICATION_ALLOCATED_HEAP */
 
 /* Define the linked list structure.  This is used to link free blocks in order
@@ -237,6 +239,7 @@ void *pvReturn = NULL;
 
 						/* Calculate the sizes of two blocks split from the
 						single block. */
+						//PRINTF("\r\nFree heap bytes remaining:%d\r\n", (int) xFreeBytesRemaining);
 						pxNewBlockLink->xBlockSize = pxBlock->xBlockSize - xWantedSize;
 						pxBlock->xBlockSize = xWantedSize;
 
@@ -287,8 +290,8 @@ void *pvReturn = NULL;
 	{
 		if( pvReturn == NULL )
 		{
-			extern void vApplicationMallocFailedHook( void );
-			vApplicationMallocFailedHook();
+			extern void vApplicationMallocFailedHook(size_t size);
+			vApplicationMallocFailedHook(xWantedSize);
 		}
 		else
 		{
@@ -365,6 +368,11 @@ size_t xPortGetMinimumEverFreeHeapSize( void )
 void vPortInitialiseBlocks( void )
 {
 	/* This just exists to keep the linker quiet. */
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationMallocFailedHook(size_t size) {
+	PRINTF("\r\nMALLOC FAILED after requesting %d bytes with %d bytes remaining\r\n", size, xPortGetFreeHeapSize());
 }
 /*-----------------------------------------------------------*/
 

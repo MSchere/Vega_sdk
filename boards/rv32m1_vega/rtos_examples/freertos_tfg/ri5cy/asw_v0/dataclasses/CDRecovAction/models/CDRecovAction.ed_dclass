@@ -1,0 +1,9 @@
+dataclass CDRecovAction{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.cdrecovaction.cdrecovaction_iface;
+	version := v1;
+
+
+};

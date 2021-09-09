@@ -81,6 +81,7 @@
 #include "task.h"
 #include "timers.h"
 #include "StackMacros.h"
+#include <fsl_debug_console.h>
 
 /* Lint e961 and e750 are suppressed as a MISRA exception justified because the
  MPU ports require MPU_WRAPPERS_INCLUDED_FROM_API_FILE to be defined for the
@@ -1488,6 +1489,10 @@ void vTaskPrioritySet(TaskHandle_t xTask, UBaseType_t uxNewPriority) {
 		}
 	}
 	taskEXIT_CRITICAL();
+}
+
+void vApplicationIdleHook(void){
+	PRINTF("\r\nAPPLICATION IDLE\r\n");
 }
 
 #endif /* INCLUDE_vTaskPrioritySet */

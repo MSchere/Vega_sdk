@@ -1,0 +1,30 @@
+/*
+ * First we have to assign this file to a certain package
+ */
+
+package es.uah.aut.srg.micobs.mesp.common.cmp_rt;
+
+/*
+ * Optionally, we can import packages to use their elements as references.
+ */
+
+import es.uah.aut.srg.micobs.langs;
+
+/*
+ * Definition of a SwInterface. Every SwInterface should have:
+ * - A name
+ * - A version
+ * - A list of defined languages
+ *
+ * And optionally can have:
+ * - A list of provided resources (quantifiable and instantiable)
+ *
+ */
+
+swinterface edroomtc_iface
+{
+	version := v1;
+	
+	language := CPP(98);
+	
+};

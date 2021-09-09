@@ -1,0 +1,9 @@
+dataclass TEDROOMBool{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.TEDROOMBool.tedroombool_iface;
+	version := v1;
+
+
+};

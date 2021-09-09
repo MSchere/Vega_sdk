@@ -1,0 +1,8 @@
+#ifndef CONSOLE_DRV_SLIB__RTEMSAPI_4_8_IMPR__RTEMS_4_8_IMPR_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H
+#define CONSOLE_DRV_SLIB__RTEMSAPI_4_8_IMPR__RTEMS_4_8_IMPR_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H
+
+void console_outbyte_polled_uart_a(unsigned char ch);
+
+void console_outbyte_polled_uart_b(unsigned char ch);
+
+#endif // CONSOLE_DRV_SLIB__RTEMSAPI_4_8_IMPR__RTEMS_4_8_IMPR_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H
