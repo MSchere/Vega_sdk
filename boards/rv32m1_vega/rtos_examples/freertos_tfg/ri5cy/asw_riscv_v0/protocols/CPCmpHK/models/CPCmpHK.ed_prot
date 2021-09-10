@@ -1,0 +1,32 @@
+import "../../../dataclasses/CDEventList/models/CDEventList.ed_dclass";
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol CPCmpHK{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.CPCmpHK;
+	version :=v1;
+
+
+	/*
+	 * Output messages.
+	*/ 
+
+	output messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send SIAmAlive(CDEventList(v1));
+
+	};
+
+};

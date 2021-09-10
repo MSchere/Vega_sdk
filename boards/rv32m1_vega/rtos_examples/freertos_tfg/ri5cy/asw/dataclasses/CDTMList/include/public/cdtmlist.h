@@ -58,19 +58,19 @@ public:
 		}
 	}
 
-	void Add(uint8_t serv,uint8_t subserv, uint8_t *dat){
-		    if(tm_number<TM_LIST_LENGTH){
-			tm[tm_number].dataFieldHeader.service=serv;
-			tm[tm_number].dataFieldHeader.subservice=subserv;
-			if(dat){
-			   for (int i=0; i<TM_DATA_LENGTH; i++){
-				tm[tm_number].appData[i]=*dat;
-				dat++;
-			   }
+	void Add(uint8_t serv, uint8_t subserv, uint8_t *dat) {
+		if (tm_number < TM_LIST_LENGTH) {
+			tm[tm_number].dataFieldHeader.service = serv;
+			tm[tm_number].dataFieldHeader.subservice = subserv;
+			if (dat) {
+				for (int i = 0; i < TM_DATA_LENGTH; i++) {
+					tm[tm_number].appData[i] = *dat;
+					dat++;
+				}
 			}
 			tm_number++;
-		    }
 		}
+	}
 
 	void Add(uint8_t serv, uint8_t subserv, uint8_t *dat, uint8_t dataBytes) {
 		if (tm_number < TM_LIST_LENGTH) {

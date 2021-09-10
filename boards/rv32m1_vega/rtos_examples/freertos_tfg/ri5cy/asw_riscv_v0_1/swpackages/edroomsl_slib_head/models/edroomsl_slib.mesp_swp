@@ -1,0 +1,63 @@
+package es.uah.aut.srg.micobs.mesp.common.cmp_rt;
+
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.mesp.common.osswi_;
+import es.uah.aut.srg.micobs.mesp.ctools;
+import es.uah.aut.srg.micobs.mesp.common.rtosals;
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+
+swpackage edroomsl_slib
+{
+	version := HEAD;
+	
+	languages := CPP(98);
+	
+	construction tools := GNUMake(3.81);
+	
+	provided interfaces {
+	
+		provides edroomsl_iface(v1) {};
+	
+	}; 
+	
+	required interfaces 
+	{
+		requires edroom_types_iface(v1){};
+	};
+	
+	supported platforms
+	{
+		supported platform RTEMSAPI_4_8_impr_any_any_any_any
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := any;
+			architecture := any;
+			microprocessor := any;
+			board := any;
+			
+			required interfaces 
+			{
+				requires edroombp_iface(v3.0_rtemsapi_4.8_impr) 
+				{
+					quantifiable resource PR_BINSEM := edroomsl_iface(v1)::CEDROOMComponent * 5;
+					quantifiable resource PR_TASK := edroomsl_iface(v1)::CEDROOMComponent * 2;
+					quantifiable resource PR_SEMREC := edroomsl_iface(v1)::CEDROOMComponent * 5;
+					quantifiable resource NUM_PRIO := 256;
+					quantifiable resource PR_IRQEVENT := 15;
+					quantifiable resource PR_KERNEL := 1;
+				};
+				requires RTEMSAPI(4.8_impr) {
+					quantifiable resource CLOCK_DRIVER := 1;
+					quantifiable resource TIMER_MANAGER := 1;
+				};
+			};
+		};
+		
+		/*	FALTA EL SOPORTE A OTRAS OSAPIS, PERO A DIA DE HOY SOLO HAY 
+		 * 	EDROOMBP PARA ESTA OSAPI EN EL MICOBS2.
+		 */
+		
+	};
+	
+	
+};

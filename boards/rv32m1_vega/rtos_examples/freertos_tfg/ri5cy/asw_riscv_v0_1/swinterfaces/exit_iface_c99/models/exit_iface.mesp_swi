@@ -1,0 +1,12 @@
+package es.uah.aut.srg.micobs.mesp.common.libc;
+
+import es.uah.aut.srg.micobs.langs;
+
+
+swinterface exit_iface
+{
+	version := C99;
+	
+	language := C(C99);
+	
+};
