@@ -1,0 +1,52 @@
+import "../../../dataclasses/CDTMList/models/CDTMList.ed_dclass";
+import "../../../dataclasses/CDTMMemory/models/CDTMMemory.ed_dclass";
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol CPTMChannelCtrl{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.CPTMChannelCtrl;
+	version :=v1;
+
+
+	/*
+	 * Input messages.
+	*/ 
+
+	input messages
+
+	{
+
+
+		/*
+		 * Synchronous Invoke messages.
+		*/ 
+
+		invoke STxTMList(CDTMList(v1)) replies STMMemory;
+
+	};
+
+
+
+	/*
+	 * Output messages.
+	*/ 
+
+	output messages
+
+	{
+
+
+		/*
+		 * Synchronous reply messages.
+		*/ 
+
+		reply STMMemory(CDTMMemory(v1));
+
+	};
+
+};

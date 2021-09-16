@@ -1,0 +1,1248 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+                              startup\startup_RV32M1_ri5cy.o (__libc_init_array)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+                              drivers\fsl_lpuart.o (memset)
+c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+                              utilities\fsl_str.o (strlen)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 board\board.o
+ .data          0x0000000000000000        0x0 board\board.o
+ .bss           0x0000000000000000        0x0 board\board.o
+ .rodata        0x0000000000000000       0x77 board\board.o
+ .text.CLOCK_SetIpSrc
+                0x0000000000000000       0xbc board\board.o
+ .text.BOARD_InitDebugConsole
+                0x0000000000000000       0x50 board\board.o
+ .rodata.__func__.3391
+                0x0000000000000000        0xf board\board.o
+ .debug_frame   0x0000000000000000       0x88 board\board.o
+ .debug_info    0x0000000000000000     0x1252 board\board.o
+ .debug_abbrev  0x0000000000000000      0x269 board\board.o
+ .debug_aranges
+                0x0000000000000000       0x28 board\board.o
+ .debug_ranges  0x0000000000000000       0x18 board\board.o
+ .debug_line    0x0000000000000000      0x22c board\board.o
+ .debug_str     0x0000000000000000     0x1323 board\board.o
+ .comment       0x0000000000000000       0x1b board\board.o
+ .Pulp_Chip.Info
+                0x0000000000000000       0x4e board\board.o
+ .text          0x0000000000000000        0x0 board\clock_config.o
+ .data          0x0000000000000000        0x0 board\clock_config.o
+ .bss           0x0000000000000000        0x0 board\clock_config.o
+ .text.CLOCK_SetVlprModeSysClkConfig
+                0x0000000000000000       0x4c board\clock_config.o
+ .text.CLOCK_SetHsrunModeSysClkConfig
+                0x0000000000000000       0x4c board\clock_config.o
+ .text.SMC_SetPowerModeProtection
+                0x0000000000000000       0x22 board\clock_config.o
+ .text.SMC_GetPowerModeState
+                0x0000000000000000       0x1c board\clock_config.o
+ .text.BOARD_InitBootClocks
+                0x0000000000000000       0x1a board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .sdata.g_sysClkConfig_BOARD_BootClockHSRUN
+                0x0000000000000000        0x4 board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgSircConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x14 board\clock_config.o
+ .rodata.g_scgFircConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgLpFllConfig_BOARD_BootClockHSRUN
+                0x0000000000000000       0x18 board\clock_config.o
+ .text.BOARD_BootClockHSRUN
+                0x0000000000000000       0xb6 board\clock_config.o
+ .sdata.g_sysClkConfig_BOARD_BootClockVLPR
+                0x0000000000000000        0x4 board\clock_config.o
+ .rodata.g_scgSysOscConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgSircConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x14 board\clock_config.o
+ .rodata.g_scgFircConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .rodata.g_scgLpFllConfig_BOARD_BootClockVLPR
+                0x0000000000000000       0x18 board\clock_config.o
+ .text.BOARD_BootClockVLPR
+                0x0000000000000000       0xb2 board\clock_config.o
+ .rodata.__func__.3444
+                0x0000000000000000       0x1f board\clock_config.o
+ .rodata.__func__.3436
+                0x0000000000000000       0x1e board\clock_config.o
+ .text          0x0000000000000000        0x0 board\pin_mux.o
+ .data          0x0000000000000000        0x0 board\pin_mux.o
+ .bss           0x0000000000000000        0x0 board\pin_mux.o
+ .text.BOARD_InitBootPins
+                0x0000000000000000       0x1a board\pin_mux.o
+ .text          0x0000000000000000        0x0 drivers\fsl_clock.o
+ .data          0x0000000000000000        0x0 drivers\fsl_clock.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_clock.o
+ .text.CLOCK_EnableClock
+                0x0000000000000000       0x56 drivers\fsl_clock.o
+ .text.CLOCK_SetIpSrc
+                0x0000000000000000       0xbc drivers\fsl_clock.o
+ .text.CLOCK_GetFlashClkFreq
+                0x0000000000000000       0x1e drivers\fsl_clock.o
+ .text.CLOCK_GetBusClkFreq
+                0x0000000000000000       0x1e drivers\fsl_clock.o
+ .text.CLOCK_GetPlatClkFreq
+                0x0000000000000000       0x1e drivers\fsl_clock.o
+ .text.CLOCK_GetCoreSysClkFreq
+                0x0000000000000000       0x1e drivers\fsl_clock.o
+ .text.CLOCK_GetExtClkFreq
+                0x0000000000000000       0x1e drivers\fsl_clock.o
+ .text.CLOCK_GetIpFreq
+                0x0000000000000000      0x14a drivers\fsl_clock.o
+ .text.CLOCK_EnableUsbfs0Clock
+                0x0000000000000000       0xaa drivers\fsl_clock.o
+ .text.CLOCK_InitSysOsc
+                0x0000000000000000       0xdc drivers\fsl_clock.o
+ .text.CLOCK_DeinitSysOsc
+                0x0000000000000000       0x4c drivers\fsl_clock.o
+ .rodata.__func__.3640
+                0x0000000000000000       0x10 drivers\fsl_clock.o
+ .rodata.__func__.3407
+                0x0000000000000000        0xf drivers\fsl_clock.o
+ .rodata.__func__.3393
+                0x0000000000000000       0x12 drivers\fsl_clock.o
+ .rodata.__func__.3673
+                0x0000000000000000       0x11 drivers\fsl_clock.o
+ .text          0x0000000000000000        0x0 drivers\fsl_common.o
+ .data          0x0000000000000000        0x0 drivers\fsl_common.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_common.o
+ .text          0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .data          0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .text.GPIO_WritePinOutput
+                0x0000000000000000       0x44 drivers\fsl_gpio.o
+ .rodata.s_portBases
+                0x0000000000000000       0x14 drivers\fsl_gpio.o
+ .rodata.s_gpioBases
+                0x0000000000000000       0x14 drivers\fsl_gpio.o
+ .rodata        0x0000000000000000       0x67 drivers\fsl_gpio.o
+ .text.GPIO_GetInstance
+                0x0000000000000000       0x80 drivers\fsl_gpio.o
+ .text.GPIO_PinInit
+                0x0000000000000000       0xa0 drivers\fsl_gpio.o
+ .text.GPIO_GetPinsInterruptFlags
+                0x0000000000000000       0x46 drivers\fsl_gpio.o
+ .text.GPIO_ClearPinsInterruptFlags
+                0x0000000000000000       0x4e drivers\fsl_gpio.o
+ .rodata.__func__.3633
+                0x0000000000000000       0x11 drivers\fsl_gpio.o
+ .rodata.__func__.3639
+                0x0000000000000000        0xd drivers\fsl_gpio.o
+ .debug_frame   0x0000000000000000      0x134 drivers\fsl_gpio.o
+ .debug_info    0x0000000000000000      0xde5 drivers\fsl_gpio.o
+ .debug_abbrev  0x0000000000000000      0x261 drivers\fsl_gpio.o
+ .debug_aranges
+                0x0000000000000000       0x40 drivers\fsl_gpio.o
+ .debug_ranges  0x0000000000000000       0x30 drivers\fsl_gpio.o
+ .debug_line    0x0000000000000000      0x2de drivers\fsl_gpio.o
+ .debug_str     0x0000000000000000      0xccc drivers\fsl_gpio.o
+ .comment       0x0000000000000000       0x1b drivers\fsl_gpio.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_gpio.o
+ .text          0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .data          0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .text.CLOCK_DisableClock
+                0x0000000000000000       0x58 drivers\fsl_lpuart.o
+ .text.EnableIRQ
+                0x0000000000000000       0x52 drivers\fsl_lpuart.o
+ .rodata.s_lpuartIRQ
+                0x0000000000000000       0x10 drivers\fsl_lpuart.o
+ .text.LPUART_TransferGetRxRingBufferLength
+                0x0000000000000000       0xb0 drivers\fsl_lpuart.o
+ .text.LPUART_TransferIsRxRingBufferFull
+                0x0000000000000000       0x72 drivers\fsl_lpuart.o
+ .text.LPUART_WriteNonBlocking
+                0x0000000000000000       0x7a drivers\fsl_lpuart.o
+ .text.LPUART_ReadNonBlocking
+                0x0000000000000000       0xf0 drivers\fsl_lpuart.o
+ .text.LPUART_Deinit
+                0x0000000000000000       0xa0 drivers\fsl_lpuart.o
+ .text.LPUART_SetBaudRate
+                0x0000000000000000      0x1fe drivers\fsl_lpuart.o
+ .text.LPUART_EnableInterrupts
+                0x0000000000000000       0x6e drivers\fsl_lpuart.o
+ .text.LPUART_DisableInterrupts
+                0x0000000000000000       0x7a drivers\fsl_lpuart.o
+ .text.LPUART_GetEnabledInterrupts
+                0x0000000000000000       0x52 drivers\fsl_lpuart.o
+ .text.LPUART_TransferCreateHandle
+                0x0000000000000000      0x12e drivers\fsl_lpuart.o
+ .text.LPUART_TransferStartRingBuffer
+                0x0000000000000000       0xaa drivers\fsl_lpuart.o
+ .text.LPUART_TransferStopRingBuffer
+                0x0000000000000000       0x84 drivers\fsl_lpuart.o
+ .text.LPUART_TransferSendNonBlocking
+                0x0000000000000000      0x12a drivers\fsl_lpuart.o
+ .text.LPUART_TransferAbortSend
+                0x0000000000000000       0x64 drivers\fsl_lpuart.o
+ .text.LPUART_TransferGetSendCount
+                0x0000000000000000       0x9a drivers\fsl_lpuart.o
+ .text.LPUART_TransferReceiveNonBlocking
+                0x0000000000000000      0x2a2 drivers\fsl_lpuart.o
+ .text.LPUART_TransferAbortReceive
+                0x0000000000000000       0x6e drivers\fsl_lpuart.o
+ .text.LPUART_TransferGetReceiveCount
+                0x0000000000000000       0x9c drivers\fsl_lpuart.o
+ .text.LPUART_TransferHandleIRQ
+                0x0000000000000000      0x520 drivers\fsl_lpuart.o
+ .text.LPUART_TransferHandleErrorIRQ
+                0x0000000000000000       0x16 drivers\fsl_lpuart.o
+ .rodata.__func__.4280
+                0x0000000000000000       0x25 drivers\fsl_lpuart.o
+ .rodata.__func__.4286
+                0x0000000000000000       0x22 drivers\fsl_lpuart.o
+ .rodata.__func__.4293
+                0x0000000000000000       0x18 drivers\fsl_lpuart.o
+ .rodata.__func__.4303
+                0x0000000000000000       0x17 drivers\fsl_lpuart.o
+ .rodata.__func__.3381
+                0x0000000000000000       0x13 drivers\fsl_lpuart.o
+ .rodata.__func__.4348
+                0x0000000000000000       0x13 drivers\fsl_lpuart.o
+ .rodata.__func__.4416
+                0x0000000000000000       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.4426
+                0x0000000000000000       0x1f drivers\fsl_lpuart.o
+ .rodata.__func__.4431
+                0x0000000000000000       0x1e drivers\fsl_lpuart.o
+ .rodata.__func__.4437
+                0x0000000000000000       0x1f drivers\fsl_lpuart.o
+ .rodata.__func__.4443
+                0x0000000000000000       0x19 drivers\fsl_lpuart.o
+ .rodata.__func__.4449
+                0x0000000000000000       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.4456
+                0x0000000000000000       0x22 drivers\fsl_lpuart.o
+ .rodata.__func__.4469
+                0x0000000000000000       0x1c drivers\fsl_lpuart.o
+ .rodata.__func__.4475
+                0x0000000000000000       0x1f drivers\fsl_lpuart.o
+ .rodata.__func__.4480
+                0x0000000000000000       0x19 drivers\fsl_lpuart.o
+ .text          0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .data          0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeRun
+                0x0000000000000000       0x34 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeHsrun
+                0x0000000000000000       0x40 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeWait
+                0x0000000000000000       0x34 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeStop
+                0x0000000000000000       0x6e drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlpr
+                0x0000000000000000       0x40 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlpw
+                0x0000000000000000       0x34 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlps
+                0x0000000000000000       0x62 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeLls
+                0x0000000000000000       0x62 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlls0
+                0x0000000000000000       0x62 drivers\fsl_msmc.o
+ .text.SMC_SetPowerModeVlls2
+                0x0000000000000000       0x62 drivers\fsl_msmc.o
+ .rodata        0x0000000000000000       0x42 drivers\fsl_msmc.o
+ .text.SMC_ConfigureResetPinFilter
+                0x0000000000000000       0x6e drivers\fsl_msmc.o
+ .rodata.__func__.3770
+                0x0000000000000000       0x1c drivers\fsl_msmc.o
+ .debug_frame   0x0000000000000000      0x254 drivers\fsl_msmc.o
+ .debug_info    0x0000000000000000     0x1025 drivers\fsl_msmc.o
+ .debug_abbrev  0x0000000000000000      0x25e drivers\fsl_msmc.o
+ .debug_aranges
+                0x0000000000000000       0x70 drivers\fsl_msmc.o
+ .debug_ranges  0x0000000000000000       0x60 drivers\fsl_msmc.o
+ .debug_line    0x0000000000000000      0x4df drivers\fsl_msmc.o
+ .debug_str     0x0000000000000000      0xa98 drivers\fsl_msmc.o
+ .comment       0x0000000000000000       0x1b drivers\fsl_msmc.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_msmc.o
+ .text          0x0000000000000000        0x0 drivers\fsl_sim.o
+ .data          0x0000000000000000        0x0 drivers\fsl_sim.o
+ .bss           0x0000000000000000        0x0 drivers\fsl_sim.o
+ .text.SIM_GetUniqueId
+                0x0000000000000000       0x2a drivers\fsl_sim.o
+ .text.SIM_GetRfAddr
+                0x0000000000000000       0x2a drivers\fsl_sim.o
+ .debug_frame   0x0000000000000000       0x78 drivers\fsl_sim.o
+ .debug_info    0x0000000000000000      0xa88 drivers\fsl_sim.o
+ .debug_abbrev  0x0000000000000000      0x1ce drivers\fsl_sim.o
+ .debug_aranges
+                0x0000000000000000       0x28 drivers\fsl_sim.o
+ .debug_ranges  0x0000000000000000       0x18 drivers\fsl_sim.o
+ .debug_line    0x0000000000000000      0x1ea drivers\fsl_sim.o
+ .debug_str     0x0000000000000000      0x713 drivers\fsl_sim.o
+ .comment       0x0000000000000000       0x1b drivers\fsl_sim.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_sim.o
+ .text          0x0000000000000000        0x0 source\polling_seven_bits.o
+ .data          0x0000000000000000        0x0 source\polling_seven_bits.o
+ .bss           0x0000000000000000        0x0 source\polling_seven_bits.o
+ .bss.rxbuff    0x0000000000000000       0x14 source\polling_seven_bits.o
+ .text          0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .data          0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .bss           0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .text          0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .data          0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .bss           0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .rodata        0x0000000000000000       0x6f startup\system_RV32M1_ri5cy.o
+ .text.CLOCK_EnableClock
+                0x0000000000000000       0x56 startup\system_RV32M1_ri5cy.o
+ .text.EnableIRQ
+                0x0000000000000000       0x52 startup\system_RV32M1_ri5cy.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0xe4 startup\system_RV32M1_ri5cy.o
+ .text.SystemSetupSystick
+                0x0000000000000000       0xb2 startup\system_RV32M1_ri5cy.o
+ .text.SystemGetIRQNestingLevel
+                0x0000000000000000       0x16 startup\system_RV32M1_ri5cy.o
+ .text.SystemClearSystickFlag
+                0x0000000000000000       0x16 startup\system_RV32M1_ri5cy.o
+ .text.EVENT_SetIRQPriority
+                0x0000000000000000       0x8c startup\system_RV32M1_ri5cy.o
+ .text.EVENT_GetIRQPriority
+                0x0000000000000000       0x66 startup\system_RV32M1_ri5cy.o
+ .text.SystemInISR
+                0x0000000000000000       0x1c startup\system_RV32M1_ri5cy.o
+ .text.EVENT_SystemReset
+                0x0000000000000000       0x24 startup\system_RV32M1_ri5cy.o
+ .rodata.__func__.3377
+                0x0000000000000000       0x12 startup\system_RV32M1_ri5cy.o
+ .text          0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .data          0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .rodata        0x0000000000000000       0x71 utilities\fsl_debug_console.o
+ .text.DbgConsole_Init
+                0x0000000000000000       0x6a utilities\fsl_debug_console.o
+ .text.DbgConsole_Deinit
+                0x0000000000000000       0x1c utilities\fsl_debug_console.o
+ .text.DbgConsole_Flush
+                0x0000000000000000       0x1c utilities\fsl_debug_console.o
+ .text.DbgConsole_Putchar
+                0x0000000000000000       0x28 utilities\fsl_debug_console.o
+ .text.DbgConsole_Scanf
+                0x0000000000000000       0x8a utilities\fsl_debug_console.o
+ .text.DbgConsole_Getchar
+                0x0000000000000000       0x24 utilities\fsl_debug_console.o
+ .text._write   0x0000000000000000       0x52 utilities\fsl_debug_console.o
+ .text._read    0x0000000000000000       0x3c utilities\fsl_debug_console.o
+ .text.isatty   0x0000000000000000       0x14 utilities\fsl_debug_console.o
+ .text.fstat    0x0000000000000000       0x20 utilities\fsl_debug_console.o
+ .text.lseek    0x0000000000000000       0x1c utilities\fsl_debug_console.o
+ .text.close    0x0000000000000000       0x14 utilities\fsl_debug_console.o
+ .text.read     0x0000000000000000       0x3a utilities\fsl_debug_console.o
+ .text.write    0x0000000000000000       0x50 utilities\fsl_debug_console.o
+ .rodata.__func__.4270
+                0x0000000000000000       0x10 utilities\fsl_debug_console.o
+ .text          0x0000000000000000        0x0 utilities\fsl_io.o
+ .data          0x0000000000000000        0x0 utilities\fsl_io.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_io.o
+ .text.LPUART_EnableTx
+                0x0000000000000000       0x46 utilities\fsl_io.o
+ .text.LPUART_EnableRx
+                0x0000000000000000       0x46 utilities\fsl_io.o
+ .rodata        0x0000000000000000       0x46 utilities\fsl_io.o
+ .text.IO_Init  0x0000000000000000       0xe4 utilities\fsl_io.o
+ .text.IO_Deinit
+                0x0000000000000000       0x66 utilities\fsl_io.o
+ .text.IO_WaitIdle
+                0x0000000000000000       0x48 utilities\fsl_io.o
+ .sdata.__func__.3848
+                0x0000000000000000        0x8 utilities\fsl_io.o
+ .text          0x0000000000000000        0x0 utilities\fsl_log.o
+ .data          0x0000000000000000        0x0 utilities\fsl_log.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_log.o
+ .text.LOG_Init
+                0x0000000000000000       0x4e utilities\fsl_log.o
+ .text.LOG_Deinit
+                0x0000000000000000       0x1a utilities\fsl_log.o
+ .text.LOG_WaitIdle
+                0x0000000000000000       0x1c utilities\fsl_log.o
+ .text.LOG_ReadLine
+                0x0000000000000000       0xf2 utilities\fsl_log.o
+ .text.LOG_ReadCharacter
+                0x0000000000000000       0x66 utilities\fsl_log.o
+ .text.LOG_ReadOneCharacter
+                0x0000000000000000       0x30 utilities\fsl_log.o
+ .rodata.__func__.3654
+                0x0000000000000000        0xd utilities\fsl_log.o
+ .rodata.__func__.3662
+                0x0000000000000000       0x12 utilities\fsl_log.o
+ .text          0x0000000000000000        0x0 utilities\fsl_str.o
+ .data          0x0000000000000000        0x0 utilities\fsl_str.o
+ .bss           0x0000000000000000        0x0 utilities\fsl_str.o
+ .text.ScanIgnoreWhiteSpace
+                0x0000000000000000       0x86 utilities\fsl_str.o
+ .text.StrFormatScanf
+                0x0000000000000000      0x6ee utilities\fsl_str.o
+ .rodata.StrFormatScanf
+                0x0000000000000000      0x124 utilities\fsl_str.o
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+m_vector         0x00000000000fff00 0x0000000000000100 xr
+m_text           0x0000000000000000 0x00000000000fff00 xr
+m_data           0x0000000020000000 0x000000000002e800 rw
+rpmsg_sh_mem     0x000000002002e800 0x0000000000001800 rw
+m_usb_sram       0x0000000048010000 0x0000000000000800 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+START GROUP
+LOAD board\board.o
+LOAD board\clock_config.o
+LOAD board\pin_mux.o
+LOAD drivers\fsl_clock.o
+LOAD drivers\fsl_common.o
+LOAD drivers\fsl_gpio.o
+LOAD drivers\fsl_lpuart.o
+LOAD drivers\fsl_msmc.o
+LOAD drivers\fsl_sim.o
+LOAD source\polling_seven_bits.o
+LOAD startup\startup_RV32M1_ri5cy.o
+LOAD startup\system_RV32M1_ri5cy.o
+LOAD utilities\fsl_debug_console.o
+LOAD utilities\fsl_io.o
+LOAD utilities\fsl_log.o
+LOAD utilities\fsl_str.o
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libnosys.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/rv32imcxpulpv2/ilp32\libgcc.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libm.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libm.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libg.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/rv32imcxpulpv2/ilp32\libgcc.a
+LOAD c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libnosys.a
+END GROUP
+                0x0000000000000400                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x400
+                0x0000000000000800                STACK_SIZE = DEFINED (__stack_size__)?__stack_size__:0x800
+
+.noinit_rpmsg_sh_mem
+                0x000000002002e800        0x0
+ *(.noinit.$rpmsg_sh_mem*)
+                0x000000002002e800                . = ALIGN (0x4)
+
+.vectors        0x00000000000fff00       0x90
+                0x00000000000fff00                __VECTOR_TABLE = .
+ *(.vectors)
+ .vectors       0x00000000000fff00       0x90 startup\startup_RV32M1_ri5cy.o
+
+.text           0x0000000000000000     0x2f55
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.startup)
+ .startup       0x0000000000000000      0x192 startup\startup_RV32M1_ri5cy.o
+                0x0000000000000026                _fini
+                0x0000000000000026                _init
+                0x0000000000000122                IRQ_Handler
+                0x000000000000013e                IllegalInstruction_Handler
+                0x0000000000000156                Ecall_Handler
+                0x000000000000016e                LSU_Handler
+                0x0000000000000186                IllegalInstruction_HandlerFunc
+                0x000000000000018a                Ecall_HandlerFunc
+                0x000000000000018e                LSU_HandlerFunc
+                0x0000000000000194                . = ALIGN (0x4)
+ *fill*         0x0000000000000192        0x2 
+                0x0000000000000194                __user_vector = .
+ *(user_vectors)
+ user_vectors   0x0000000000000194       0xfc startup\system_RV32M1_ri5cy.o
+                0x0000000000000194                isrTable
+ *(.text)
+ .text          0x0000000000000290       0x60 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+                0x0000000000000290                __libc_init_array
+ .text          0x00000000000002f0       0xa8 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+                0x00000000000002f0                memset
+ .text          0x0000000000000398       0x10 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+                0x0000000000000398                strlen
+ *(.text*)
+ .text.CLOCK_SetRunModeSysClkConfig
+                0x00000000000003a8       0x42 board\clock_config.o
+ .text.CLOCK_GetCurSysClkConfig
+                0x00000000000003ea       0x42 board\clock_config.o
+ .text.CLOCK_CONFIG_FircSafeConfig
+                0x000000000000042c       0xa4 board\clock_config.o
+ .text.BOARD_BootClockRUN
+                0x00000000000004d0       0x60 board\clock_config.o
+                0x00000000000004d0                BOARD_BootClockRUN
+ .text.CLOCK_EnableClock
+                0x0000000000000530       0x4c board\pin_mux.o
+ .text.PORT_SetPinMux
+                0x000000000000057c       0x46 board\pin_mux.o
+ .text.BOARD_InitPins
+                0x00000000000005c2       0x30 board\pin_mux.o
+                0x00000000000005c2                BOARD_InitPins
+ .text.CLOCK_GetLpoClkFreq
+                0x00000000000005f2       0x12 drivers\fsl_clock.o
+ .text.CLOCK_GetCurSysClkConfig
+                0x0000000000000604       0x42 drivers\fsl_clock.o
+ .text.CLOCK_GetOsc32kClkFreq
+                0x0000000000000646       0x3e drivers\fsl_clock.o
+                0x0000000000000646                CLOCK_GetOsc32kClkFreq
+ .text.CLOCK_GetFreq
+                0x0000000000000684      0x116 drivers\fsl_clock.o
+                0x0000000000000684                CLOCK_GetFreq
+ .text.CLOCK_GetSysClkFreq
+                0x000000000000079a       0xf6 drivers\fsl_clock.o
+                0x000000000000079a                CLOCK_GetSysClkFreq
+ .text.CLOCK_GetSysOscFreq
+                0x0000000000000890       0x50 drivers\fsl_clock.o
+                0x0000000000000890                CLOCK_GetSysOscFreq
+ .text.CLOCK_GetSysOscAsyncFreq
+                0x00000000000008e0       0x8e drivers\fsl_clock.o
+                0x00000000000008e0                CLOCK_GetSysOscAsyncFreq
+ .text.CLOCK_InitSirc
+                0x000000000000096e       0xb2 drivers\fsl_clock.o
+                0x000000000000096e                CLOCK_InitSirc
+ .text.CLOCK_DeinitSirc
+                0x0000000000000a20       0x48 drivers\fsl_clock.o
+                0x0000000000000a20                CLOCK_DeinitSirc
+ .text.CLOCK_GetSircFreq
+                0x0000000000000a68       0x3c drivers\fsl_clock.o
+                0x0000000000000a68                CLOCK_GetSircFreq
+ .text.CLOCK_GetSircAsyncFreq
+                0x0000000000000aa4       0x8e drivers\fsl_clock.o
+                0x0000000000000aa4                CLOCK_GetSircAsyncFreq
+ .text.CLOCK_InitFirc
+                0x0000000000000b32      0x14c drivers\fsl_clock.o
+                0x0000000000000b32                CLOCK_InitFirc
+ .text.CLOCK_DeinitFirc
+                0x0000000000000c7e       0x4c drivers\fsl_clock.o
+                0x0000000000000c7e                CLOCK_DeinitFirc
+ .text.CLOCK_GetFircFreq
+                0x0000000000000cca       0x3a drivers\fsl_clock.o
+                0x0000000000000cca                CLOCK_GetFircFreq
+ .text.CLOCK_GetFircAsyncFreq
+                0x0000000000000d04       0x8e drivers\fsl_clock.o
+                0x0000000000000d04                CLOCK_GetFircAsyncFreq
+ .text.CLOCK_GetRtcOscFreq
+                0x0000000000000d92       0x50 drivers\fsl_clock.o
+                0x0000000000000d92                CLOCK_GetRtcOscFreq
+ .text.CLOCK_InitLpFll
+                0x0000000000000de2      0x17a drivers\fsl_clock.o
+                0x0000000000000de2                CLOCK_InitLpFll
+ .text.CLOCK_DeinitLpFll
+                0x0000000000000f5c       0x4c drivers\fsl_clock.o
+                0x0000000000000f5c                CLOCK_DeinitLpFll
+ .text.CLOCK_GetLpFllFreq
+                0x0000000000000fa8       0x3a drivers\fsl_clock.o
+                0x0000000000000fa8                CLOCK_GetLpFllFreq
+ .text.CLOCK_GetLpFllAsyncFreq
+                0x0000000000000fe2       0x72 drivers\fsl_clock.o
+                0x0000000000000fe2                CLOCK_GetLpFllAsyncFreq
+ .text.__assert_func
+                0x0000000000001054       0x36 drivers\fsl_common.o
+                0x0000000000001054                __assert_func
+ .text.CLOCK_EnableClock
+                0x000000000000108a       0x4a drivers\fsl_lpuart.o
+ .text.LPUART_SoftwareReset
+                0x00000000000010d4       0x32 drivers\fsl_lpuart.o
+ .text.LPUART_GetInstance
+                0x0000000000001106       0x72 drivers\fsl_lpuart.o
+                0x0000000000001106                LPUART_GetInstance
+ .text.LPUART_Init
+                0x0000000000001178      0x472 drivers\fsl_lpuart.o
+                0x0000000000001178                LPUART_Init
+ .text.LPUART_GetDefaultConfig
+                0x00000000000015ea       0xb0 drivers\fsl_lpuart.o
+                0x00000000000015ea                LPUART_GetDefaultConfig
+ .text.LPUART_GetStatusFlags
+                0x000000000000169a       0x36 drivers\fsl_lpuart.o
+                0x000000000000169a                LPUART_GetStatusFlags
+ .text.LPUART_ClearStatusFlags
+                0x00000000000016d0       0xf6 drivers\fsl_lpuart.o
+                0x00000000000016d0                LPUART_ClearStatusFlags
+ .text.LPUART_WriteBlocking
+                0x00000000000017c6       0x74 drivers\fsl_lpuart.o
+                0x00000000000017c6                LPUART_WriteBlocking
+ .text.LPUART_ReadBlocking
+                0x000000000000183a      0x164 drivers\fsl_lpuart.o
+                0x000000000000183a                LPUART_ReadBlocking
+ .text.LPUART0_DriverIRQHandler
+                0x000000000000199e       0x2a drivers\fsl_lpuart.o
+                0x000000000000199e                LPUART0_DriverIRQHandler
+ .text.LPUART1_DriverIRQHandler
+                0x00000000000019c8       0x2c drivers\fsl_lpuart.o
+                0x00000000000019c8                LPUART1_DriverIRQHandler
+ .text.LPUART2_DriverIRQHandler
+                0x00000000000019f4       0x2c drivers\fsl_lpuart.o
+                0x00000000000019f4                LPUART2_DriverIRQHandler
+ .text.LPUART3_DriverIRQHandler
+                0x0000000000001a20       0x34 drivers\fsl_lpuart.o
+                0x0000000000001a20                LPUART3_DriverIRQHandler
+ .text.CLOCK_SetIpSrc
+                0x0000000000001a54       0xa8 source\polling_seven_bits.o
+ .text.main     0x0000000000001afc       0x8c source\polling_seven_bits.o
+                0x0000000000001afc                main
+ .text.copy_section
+                0x0000000000001b88       0x48 startup\system_RV32M1_ri5cy.o
+ .text.zero_section
+                0x0000000000001bd0       0x3e startup\system_RV32M1_ri5cy.o
+ .text.DMA0_0_4_8_12_IRQHandler
+                0x0000000000001c0e       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c0e                DMA0_0_4_8_12_IRQHandler
+ .text.DMA0_1_5_9_13_IRQHandler
+                0x0000000000001c24       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c24                DMA0_1_5_9_13_IRQHandler
+ .text.DMA0_2_6_10_14_IRQHandler
+                0x0000000000001c3a       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c3a                DMA0_2_6_10_14_IRQHandler
+ .text.DMA0_3_7_11_15_IRQHandler
+                0x0000000000001c50       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c50                DMA0_3_7_11_15_IRQHandler
+ .text.FLEXIO0_IRQHandler
+                0x0000000000001c66       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c66                FLEXIO0_IRQHandler
+ .text.LPI2C0_IRQHandler
+                0x0000000000001c7c       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c7c                LPI2C0_IRQHandler
+ .text.LPI2C1_IRQHandler
+                0x0000000000001c92       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001c92                LPI2C1_IRQHandler
+ .text.LPI2C2_IRQHandler
+                0x0000000000001ca8       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001ca8                LPI2C2_IRQHandler
+ .text.I2S0_IRQHandler
+                0x0000000000001cbe       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001cbe                I2S0_IRQHandler
+ .text.USDHC0_IRQHandler
+                0x0000000000001cd4       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001cd4                USDHC0_IRQHandler
+ .text.LPSPI0_IRQHandler
+                0x0000000000001cea       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001cea                LPSPI0_IRQHandler
+ .text.LPSPI1_IRQHandler
+                0x0000000000001d00       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d00                LPSPI1_IRQHandler
+ .text.LPSPI2_IRQHandler
+                0x0000000000001d16       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d16                LPSPI2_IRQHandler
+ .text.LPUART0_IRQHandler
+                0x0000000000001d2c       0x14 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d2c                LPUART0_IRQHandler
+ .text.LPUART1_IRQHandler
+                0x0000000000001d40       0x14 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d40                LPUART1_IRQHandler
+ .text.LPUART2_IRQHandler
+                0x0000000000001d54       0x14 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d54                LPUART2_IRQHandler
+ .text.LPI2C3_IRQHandler
+                0x0000000000001d68       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d68                LPI2C3_IRQHandler
+ .text.LPSPI3_IRQHandler
+                0x0000000000001d7e       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d7e                LPSPI3_IRQHandler
+ .text.LPUART3_IRQHandler
+                0x0000000000001d94       0x14 startup\system_RV32M1_ri5cy.o
+                0x0000000000001d94                LPUART3_IRQHandler
+ .text.INTMUX0_0_IRQHandler
+                0x0000000000001da8       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001da8                INTMUX0_0_IRQHandler
+ .text.INTMUX0_1_IRQHandler
+                0x0000000000001dbe       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001dbe                INTMUX0_1_IRQHandler
+ .text.INTMUX0_2_IRQHandler
+                0x0000000000001dd4       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001dd4                INTMUX0_2_IRQHandler
+ .text.INTMUX0_3_IRQHandler
+                0x0000000000001dea       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001dea                INTMUX0_3_IRQHandler
+ .text.INTMUX0_4_IRQHandler
+                0x0000000000001e00       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e00                INTMUX0_4_IRQHandler
+ .text.INTMUX0_5_IRQHandler
+                0x0000000000001e16       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e16                INTMUX0_5_IRQHandler
+ .text.INTMUX0_6_IRQHandler
+                0x0000000000001e2c       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e2c                INTMUX0_6_IRQHandler
+ .text.INTMUX0_7_IRQHandler
+                0x0000000000001e42       0x16 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e42                INTMUX0_7_IRQHandler
+ .text.DefaultIRQHandler
+                0x0000000000001e58        0x8 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e58                LPSPI2_DriverIRQHandler
+                0x0000000000001e58                INTMUX0_3_DriverIRQHandler
+                0x0000000000001e58                LPI2C0_DriverIRQHandler
+                0x0000000000001e58                I2S0_DriverIRQHandler
+                0x0000000000001e58                LPTMR2_IRQHandler
+                0x0000000000001e58                TPM0_IRQHandler
+                0x0000000000001e58                LPIT0_IRQHandler
+                0x0000000000001e58                INTMUX0_4_DriverIRQHandler
+                0x0000000000001e58                LPCMP0_IRQHandler
+                0x0000000000001e58                LPI2C3_DriverIRQHandler
+                0x0000000000001e58                WDOG0_IRQHandler
+                0x0000000000001e58                INTMUX0_1_DriverIRQHandler
+                0x0000000000001e58                ADC0_IRQHandler
+                0x0000000000001e58                FLEXIO0_DriverIRQHandler
+                0x0000000000001e58                EMVSIM0_IRQHandler
+                0x0000000000001e58                LPCMP1_IRQHandler
+                0x0000000000001e58                INTMUX0_7_DriverIRQHandler
+                0x0000000000001e58                FTFE_Command_Complete_IRQHandler
+                0x0000000000001e58                INTMUX0_6_DriverIRQHandler
+                0x0000000000001e58                PORTD_IRQHandler
+                0x0000000000001e58                PORTB_IRQHandler
+                0x0000000000001e58                USDHC0_DriverIRQHandler
+                0x0000000000001e58                LLWU0_IRQHandler
+                0x0000000000001e58                LPDAC0_IRQHandler
+                0x0000000000001e58                TPM2_IRQHandler
+                0x0000000000001e58                RTC_IRQHandler
+                0x0000000000001e58                DMA0_3_7_11_15_DriverIRQHandler
+                0x0000000000001e58                CMC0_IRQHandler
+                0x0000000000001e58                EWM_IRQHandler
+                0x0000000000001e58                DMA0_0_4_8_12_DriverIRQHandler
+                0x0000000000001e58                MUA_IRQHandler
+                0x0000000000001e58                TPM3_IRQHandler
+                0x0000000000001e58                DMA0_2_6_10_14_DriverIRQHandler
+                0x0000000000001e58                INTMUX0_0_DriverIRQHandler
+                0x0000000000001e58                RF0_0_IRQHandler
+                0x0000000000001e58                LPSPI0_DriverIRQHandler
+                0x0000000000001e58                USB0_IRQHandler
+                0x0000000000001e58                FTFE_Read_Collision_IRQHandler
+                0x0000000000001e58                LPI2C1_DriverIRQHandler
+                0x0000000000001e58                LPSPI1_DriverIRQHandler
+                0x0000000000001e58                SCG_IRQHandler
+                0x0000000000001e58                DMA0_1_5_9_13_DriverIRQHandler
+                0x0000000000001e58                TPM1_IRQHandler
+                0x0000000000001e58                RF0_1_IRQHandler
+                0x0000000000001e58                CAU3_Security_Violation_IRQHandler
+                0x0000000000001e58                PORTA_IRQHandler
+                0x0000000000001e58                LPIT1_IRQHandler
+                0x0000000000001e58                INTMUX0_2_DriverIRQHandler
+                0x0000000000001e58                CAU3_Task_Complete_IRQHandler
+                0x0000000000001e58                INTMUX0_8_DriverIRQHandler
+                0x0000000000001e58                PORTE_IRQHandler
+                0x0000000000001e58                LPTMR0_IRQHandler
+                0x0000000000001e58                SPM_IRQHandler
+                0x0000000000001e58                LPSPI3_DriverIRQHandler
+                0x0000000000001e58                LPI2C2_DriverIRQHandler
+                0x0000000000001e58                DMA0_Error_IRQHandler
+                0x0000000000001e58                LPTMR1_IRQHandler
+                0x0000000000001e58                INTMUX0_5_DriverIRQHandler
+                0x0000000000001e58                TRNG_IRQHandler
+                0x0000000000001e58                PORTC_IRQHandler
+ .text.SystemInit
+                0x0000000000001e60       0xa4 startup\system_RV32M1_ri5cy.o
+                0x0000000000001e60                SystemInit
+ .text.SystemInitHook
+                0x0000000000001f04        0xe startup\system_RV32M1_ri5cy.o
+                0x0000000000001f04                SystemInitHook
+ .text.SystemIrqHandler
+                0x0000000000001f12       0x80 startup\system_RV32M1_ri5cy.o
+                0x0000000000001f12                SystemIrqHandler
+ .text.DbgConsole_Printf
+                0x0000000000001f92       0x7e utilities\fsl_debug_console.o
+                0x0000000000001f92                DbgConsole_Printf
+ .text.DbgConsole_RelocateLog
+                0x0000000000002010       0x92 utilities\fsl_debug_console.o
+ .text.IO_Transfer
+                0x00000000000020a2       0x7e utilities\fsl_io.o
+                0x00000000000020a2                IO_Transfer
+ .text.LOG_Push
+                0x0000000000002120       0x46 utilities\fsl_log.o
+                0x0000000000002120                LOG_Push
+ .text.LOG_Pop  0x0000000000002166       0x4e utilities\fsl_log.o
+                0x0000000000002166                LOG_Pop
+ .text.ConvertRadixNumToString
+                0x00000000000021b4      0x1b6 utilities\fsl_str.o
+ .text.StrFormatPrintf
+                0x000000000000236a      0x4d2 utilities\fsl_str.o
+                0x000000000000236a                StrFormatPrintf
+ *(.rodata)
+ .rodata        0x000000000000283c       0x43 board\clock_config.o
+ *fill*         0x000000000000287f        0x1 
+ .rodata        0x0000000000002880       0x6f board\pin_mux.o
+ *fill*         0x00000000000028ef        0x1 
+ .rodata        0x00000000000028f0      0x10c drivers\fsl_clock.o
+ .rodata        0x00000000000029fc       0x3e drivers\fsl_common.o
+ *fill*         0x0000000000002a3a        0x2 
+ .rodata        0x0000000000002a3c      0x1e0 drivers\fsl_lpuart.o
+ .rodata        0x0000000000002c1c       0x77 source\polling_seven_bits.o
+ *fill*         0x0000000000002c93        0x1 
+ .rodata        0x0000000000002c94       0x53 utilities\fsl_log.o
+ *(.rodata*)
+ *fill*         0x0000000000002ce7        0x1 
+ .rodata.g_scgSircConfig_BOARD_BootClockRUN
+                0x0000000000002ce8       0x14 board\clock_config.o
+                0x0000000000002ce8                g_scgSircConfig_BOARD_BootClockRUN
+ .rodata.g_scgFircConfig_BOARD_BootClockRUN
+                0x0000000000002cfc       0x18 board\clock_config.o
+                0x0000000000002cfc                g_scgFircConfig_BOARD_BootClockRUN
+ .rodata.g_scgLpFllConfig_BOARD_BootClockRUN
+                0x0000000000002d14       0x18 board\clock_config.o
+                0x0000000000002d14                g_scgLpFllConfig_BOARD_BootClockRUN
+ .rodata.__func__.3440
+                0x0000000000002d2c       0x1d board\clock_config.o
+ *fill*         0x0000000000002d49        0x3 
+ .rodata.__func__.3448
+                0x0000000000002d4c       0x19 board\clock_config.o
+ *fill*         0x0000000000002d65        0x3 
+ .rodata.__func__.3377
+                0x0000000000002d68       0x12 board\pin_mux.o
+ *fill*         0x0000000000002d7a        0x2 
+ .rodata.CLOCK_GetFreq
+                0x0000000000002d7c       0x64 drivers\fsl_clock.o
+ .rodata.CLOCK_GetSysClkFreq
+                0x0000000000002de0       0x18 drivers\fsl_clock.o
+ .rodata.__func__.3589
+                0x0000000000002df8       0x17 drivers\fsl_clock.o
+ *fill*         0x0000000000002e0f        0x1 
+ .rodata.__func__.3464
+                0x0000000000002e10       0x19 drivers\fsl_clock.o
+ *fill*         0x0000000000002e29        0x3 
+ .rodata.__func__.3686
+                0x0000000000002e2c       0x14 drivers\fsl_clock.o
+ .rodata.__func__.3700
+                0x0000000000002e40        0xf drivers\fsl_clock.o
+ *fill*         0x0000000000002e4f        0x1 
+ .rodata.__func__.3726
+                0x0000000000002e50        0xf drivers\fsl_clock.o
+ *fill*         0x0000000000002e5f        0x1 
+ .rodata.fircFreq.3738
+                0x0000000000002e60       0x10 drivers\fsl_clock.o
+ .rodata.__func__.3752
+                0x0000000000002e70       0x14 drivers\fsl_clock.o
+ .rodata.__func__.3756
+                0x0000000000002e84       0x10 drivers\fsl_clock.o
+ .rodata.lpfllFreq.3771
+                0x0000000000002e94       0x10 drivers\fsl_clock.o
+ .rodata.s_lpuartBases
+                0x0000000000002ea4       0x10 drivers\fsl_lpuart.o
+ .rodata.s_lpuartClock
+                0x0000000000002eb4       0x10 drivers\fsl_lpuart.o
+ .rodata.__func__.4275
+                0x0000000000002ec4       0x13 drivers\fsl_lpuart.o
+ *fill*         0x0000000000002ed7        0x1 
+ .rodata.__func__.4315
+                0x0000000000002ed8        0xc drivers\fsl_lpuart.o
+ .rodata.__func__.3377
+                0x0000000000002ee4       0x12 drivers\fsl_lpuart.o
+ *fill*         0x0000000000002ef6        0x2 
+ .rodata.__func__.4342
+                0x0000000000002ef8       0x18 drivers\fsl_lpuart.o
+ .rodata.__func__.4388
+                0x0000000000002f10       0x15 drivers\fsl_lpuart.o
+ *fill*         0x0000000000002f25        0x3 
+ .rodata.__func__.4400
+                0x0000000000002f28       0x14 drivers\fsl_lpuart.o
+ .rodata.__func__.3391
+                0x0000000000002f3c        0xf source\polling_seven_bits.o
+ *fill*         0x0000000000002f4b        0x1 
+ .rodata.__func__.3644
+                0x0000000000002f4c        0x9 utilities\fsl_log.o
+ *(.srodata .srodata.*)
+ *(.glue_7)
+ *(.glue_7t)
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+
+.rela.dyn       0x0000000000002f58        0x0
+ .rela.text.CLOCK_SetIpSrc
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.BOARD_InitDebugConsole
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_SetVlprModeSysClkConfig
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_SetRunModeSysClkConfig
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_SetHsrunModeSysClkConfig
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_GetCurSysClkConfig
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_CONFIG_FircSafeConfig
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.BOARD_BootClockRUN
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.BOARD_BootClockHSRUN
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.BOARD_BootClockVLPR
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_EnableClock
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_GetOsc32kClkFreq
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_GetIpFreq
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_InitSysOsc
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_GetSysOscFreq
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_InitSirc
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_InitFirc
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_GetRtcOscFreq
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.CLOCK_InitLpFll
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.__assert_func
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPUART_TransferCreateHandle
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPUART3_DriverIRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.vectors  0x0000000000002f58        0x0 board\board.o
+ .rela.text.DMA0_0_4_8_12_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DMA0_1_5_9_13_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DMA0_2_6_10_14_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DMA0_3_7_11_15_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.FLEXIO0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPI2C0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPI2C1_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPI2C2_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.I2S0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.USDHC0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPSPI0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPSPI1_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPSPI2_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPI2C3_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.LPSPI3_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_0_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_1_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_2_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_3_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_4_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_5_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_6_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.INTMUX0_7_IRQHandler
+                0x0000000000002f58        0x0 board\board.o
+ .relauser_vectors
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.SystemInit
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Init
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Deinit
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Flush
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Printf
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Putchar
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Scanf
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_Getchar
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.DbgConsole_RelocateLog
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text._write
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text._read
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.read
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.write
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text.StrFormatPrintf
+                0x0000000000002f58        0x0 board\board.o
+ .rela.text     0x0000000000002f58        0x0 board\board.o
+
+.preinit_array  0x0000000000002f55        0x0
+                0x0000000000002f55                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000000002f55                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000002f55        0x0
+                0x0000000000002f55                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x0000000000002f55                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000002f55        0x0
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+                [!provide]                        PROVIDE (__fini_array_end, .)
+                0x0000000000002f55                __etext = .
+                0x0000000000002f55                __global_pointer = .
+                0x0000000000002f55                __DATA_ROM = .
+
+.data           0x0000000020000000       0x68 load address 0x0000000000002f55
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __DATA_RAM = .
+                0x0000000020000000                __data_start__ = .
+ *(.data)
+ *(.data*)
+ .data.txbuff   0x0000000020000000       0x58 source\polling_seven_bits.o
+                0x0000000020000000                txbuff
+ *(.sdata .sdata.*)
+ .sdata.g_sysClkConfig_BOARD_BootClockRUN
+                0x0000000020000058        0x4 board\clock_config.o
+                0x0000000020000058                g_sysClkConfig_BOARD_BootClockRUN
+ .sdata.sircFreq.3712
+                0x000000002000005c        0x8 drivers\fsl_clock.o
+ .sdata.SystemCoreClock
+                0x0000000020000064        0x4 startup\system_RV32M1_ri5cy.o
+                0x0000000020000064                SystemCoreClock
+ *(.heapsram*)
+                0x0000000020000068                __noncachedata_start__ = .
+ *(NonCacheable)
+                0x0000000020000068                __noncachedata_end__ = .
+ *(.jcr*)
+                0x0000000020000068                . = ALIGN (0x4)
+                0x0000000020000068                __data_end__ = .
+                0x0000000000002fbd                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00000000000fff00                text_end = (ORIGIN (m_text) + LENGTH (m_text))
+                0x0000000000000001                ASSERT ((__DATA_END <= text_end), region m_text overflowed with text and data)
+                0x0000000020000068                _edata = .
+
+.bss            0x0000000020000068       0x28 load address 0x0000000000002fc0
+                0x0000000020000068                . = ALIGN (0x4)
+                0x0000000020000068                __START_BSS = .
+                0x0000000020000068                __bss_start__ = .
+ *(.bss)
+ *(.bss*)
+ .bss.s_lpuartHandle
+                0x0000000020000068       0x10 drivers\fsl_lpuart.o
+ *(.sbss)
+ *(.sbss*)
+ .sbss.g_xtal0Freq
+                0x0000000020000078        0x4 drivers\fsl_clock.o
+                0x0000000020000078                g_xtal0Freq
+ .sbss.g_xtal32Freq
+                0x000000002000007c        0x4 drivers\fsl_clock.o
+                0x000000002000007c                g_xtal32Freq
+ .sbss.s_lpuartIsr
+                0x0000000020000080        0x4 drivers\fsl_lpuart.o
+ .sbss.irqNesting
+                0x0000000020000084        0x4 startup\system_RV32M1_ri5cy.o
+ .sbss.s_debugConsoleIO
+                0x0000000020000088        0x8 utilities\fsl_io.o
+ *(COMMON)
+                0x0000000020000090                . = ALIGN (0x4)
+                0x0000000020000090                __bss_end__ = .
+                0x0000000020000090                __END_BSS = .
+                0x0000000020000090                _end = .
+                [!provide]                        PROVIDE (end, .)
+
+.heap           0x0000000020000090      0x400 load address 0x0000000000002fe8
+                0x0000000020000090                . = ALIGN (0x8)
+                0x0000000020000090                __heap_start = .
+                0x0000000020000490                . = (. + HEAP_SIZE)
+ *fill*         0x0000000020000090      0x400 
+                0x0000000020000490                __heap_end = .
+                0x0000000020000490                _heap_end = __heap_end
+
+.stack          0x0000000020000490      0x800 load address 0x00000000000033e8
+                0x0000000020000490                . = ALIGN (0x8)
+                0x0000000020000490                __StackLimit = .
+                0x0000000020000c90                . = (. + STACK_SIZE)
+ *fill*         0x0000000020000490      0x800 
+                0x0000000020000c90                __StackTop = .
+
+m_usb_bdt       0x0000000048010000        0x0
+                0x0000000048010000                . = ALIGN (0x200)
+ *(m_usb_bdt)
+
+m_usb_global
+ *(m_usb_global)
+                [!provide]                        PROVIDE (__stack, __StackTop)
+OUTPUT(lpuart_polling_seven_bits_ri5cy_rv32m1_vega.elf elf32-littleriscv)
+
+.debug_frame    0x0000000000000000     0x250c
+ .debug_frame   0x0000000000000000      0x294 board\clock_config.o
+ .debug_frame   0x0000000000000294       0xf8 board\pin_mux.o
+ .debug_frame   0x000000000000038c      0x714 drivers\fsl_clock.o
+ .debug_frame   0x0000000000000aa0       0x38 drivers\fsl_common.o
+ .debug_frame   0x0000000000000ad8      0x80c drivers\fsl_lpuart.o
+ .debug_frame   0x00000000000012e4       0x74 source\polling_seven_bits.o
+ .debug_frame   0x0000000000001358      0x9b8 startup\system_RV32M1_ri5cy.o
+ .debug_frame   0x0000000000001d10      0x3b4 utilities\fsl_debug_console.o
+ .debug_frame   0x00000000000020c4      0x168 utilities\fsl_io.o
+ .debug_frame   0x000000000000222c      0x1f0 utilities\fsl_log.o
+ .debug_frame   0x000000000000241c       0xf0 utilities\fsl_str.o
+
+.debug_info     0x0000000000000000     0xdb0e
+ .debug_info    0x0000000000000000     0x1843 board\clock_config.o
+ .debug_info    0x0000000000001843      0xd0f board\pin_mux.o
+ .debug_info    0x0000000000002552     0x21ac drivers\fsl_clock.o
+ .debug_info    0x00000000000046fe      0x904 drivers\fsl_common.o
+ .debug_info    0x0000000000005002     0x22d5 drivers\fsl_lpuart.o
+ .debug_info    0x00000000000072d7     0x16f0 source\polling_seven_bits.o
+ .debug_info    0x00000000000089c7       0xd5 startup\startup_RV32M1_ri5cy.o
+ .debug_info    0x0000000000008a9c     0x1890 startup\system_RV32M1_ri5cy.o
+ .debug_info    0x000000000000a32c      0xf5d utilities\fsl_debug_console.o
+ .debug_info    0x000000000000b289      0xfee utilities\fsl_io.o
+ .debug_info    0x000000000000c277      0xb76 utilities\fsl_log.o
+ .debug_info    0x000000000000cded      0xd21 utilities\fsl_str.o
+
+.debug_abbrev   0x0000000000000000     0x1eeb
+ .debug_abbrev  0x0000000000000000      0x350 board\clock_config.o
+ .debug_abbrev  0x0000000000000350      0x250 board\pin_mux.o
+ .debug_abbrev  0x00000000000005a0      0x34d drivers\fsl_clock.o
+ .debug_abbrev  0x00000000000008ed      0x1b9 drivers\fsl_common.o
+ .debug_abbrev  0x0000000000000aa6      0x363 drivers\fsl_lpuart.o
+ .debug_abbrev  0x0000000000000e09      0x29e source\polling_seven_bits.o
+ .debug_abbrev  0x00000000000010a7       0x12 startup\startup_RV32M1_ri5cy.o
+ .debug_abbrev  0x00000000000010b9      0x39e startup\system_RV32M1_ri5cy.o
+ .debug_abbrev  0x0000000000001457      0x2c7 utilities\fsl_debug_console.o
+ .debug_abbrev  0x000000000000171e      0x2b2 utilities\fsl_io.o
+ .debug_abbrev  0x00000000000019d0      0x294 utilities\fsl_log.o
+ .debug_abbrev  0x0000000000001c64      0x287 utilities\fsl_str.o
+
+.debug_aranges  0x0000000000000000      0x638
+ .debug_aranges
+                0x0000000000000000       0x70 board\clock_config.o
+ .debug_aranges
+                0x0000000000000070       0x38 board\pin_mux.o
+ .debug_aranges
+                0x00000000000000a8      0x110 drivers\fsl_clock.o
+ .debug_aranges
+                0x00000000000001b8       0x20 drivers\fsl_common.o
+ .debug_aranges
+                0x00000000000001d8      0x130 drivers\fsl_lpuart.o
+ .debug_aranges
+                0x0000000000000308       0x28 source\polling_seven_bits.o
+ .debug_aranges
+                0x0000000000000330       0x28 startup\startup_RV32M1_ri5cy.o
+ .debug_aranges
+                0x0000000000000358      0x170 startup\system_RV32M1_ri5cy.o
+ .debug_aranges
+                0x00000000000004c8       0x98 utilities\fsl_debug_console.o
+ .debug_aranges
+                0x0000000000000560       0x48 utilities\fsl_io.o
+ .debug_aranges
+                0x00000000000005a8       0x58 utilities\fsl_log.o
+ .debug_aranges
+                0x0000000000000600       0x38 utilities\fsl_str.o
+
+.debug_ranges   0x0000000000000000      0x580
+ .debug_ranges  0x0000000000000000       0x60 board\clock_config.o
+ .debug_ranges  0x0000000000000060       0x28 board\pin_mux.o
+ .debug_ranges  0x0000000000000088      0x100 drivers\fsl_clock.o
+ .debug_ranges  0x0000000000000188       0x10 drivers\fsl_common.o
+ .debug_ranges  0x0000000000000198      0x120 drivers\fsl_lpuart.o
+ .debug_ranges  0x00000000000002b8       0x18 source\polling_seven_bits.o
+ .debug_ranges  0x00000000000002d0       0x20 startup\startup_RV32M1_ri5cy.o
+ .debug_ranges  0x00000000000002f0      0x160 startup\system_RV32M1_ri5cy.o
+ .debug_ranges  0x0000000000000450       0x88 utilities\fsl_debug_console.o
+ .debug_ranges  0x00000000000004d8       0x38 utilities\fsl_io.o
+ .debug_ranges  0x0000000000000510       0x48 utilities\fsl_log.o
+ .debug_ranges  0x0000000000000558       0x28 utilities\fsl_str.o
+
+.debug_line     0x0000000000000000     0x4ee6
+ .debug_line    0x0000000000000000      0x455 board\clock_config.o
+ .debug_line    0x0000000000000455      0x246 board\pin_mux.o
+ .debug_line    0x000000000000069b      0xc8a drivers\fsl_clock.o
+ .debug_line    0x0000000000001325      0x200 drivers\fsl_common.o
+ .debug_line    0x0000000000001525     0x13cf drivers\fsl_lpuart.o
+ .debug_line    0x00000000000028f4      0x2a1 source\polling_seven_bits.o
+ .debug_line    0x0000000000002b95      0x341 startup\startup_RV32M1_ri5cy.o
+ .debug_line    0x0000000000002ed6      0x830 startup\system_RV32M1_ri5cy.o
+ .debug_line    0x0000000000003706      0x59f utilities\fsl_debug_console.o
+ .debug_line    0x0000000000003ca5      0x3a4 utilities\fsl_io.o
+ .debug_line    0x0000000000004049      0x3c8 utilities\fsl_log.o
+ .debug_line    0x0000000000004411      0xad5 utilities\fsl_str.o
+
+.debug_str      0x0000000000000000     0x47d6
+ .debug_str     0x0000000000000000     0x19fd board\clock_config.o
+                                       0x1ad5 (size before relaxing)
+ .debug_str     0x00000000000019fd      0x4e3 board\pin_mux.o
+                                        0xb06 (size before relaxing)
+ .debug_str     0x0000000000001ee0      0x9cf drivers\fsl_clock.o
+                                       0x206b (size before relaxing)
+ .debug_str     0x00000000000028af       0x5a drivers\fsl_common.o
+                                        0x656 (size before relaxing)
+ .debug_str     0x0000000000002909     0x13ec drivers\fsl_lpuart.o
+                                       0x234f (size before relaxing)
+ .debug_str     0x0000000000003cf5       0x2e source\polling_seven_bits.o
+                                       0x1e40 (size before relaxing)
+ .debug_str     0x0000000000003d23      0x491 startup\system_RV32M1_ri5cy.o
+                                       0x18c1 (size before relaxing)
+ .debug_str     0x00000000000041b4      0x280 utilities\fsl_debug_console.o
+                                        0x9ac (size before relaxing)
+ .debug_str     0x0000000000004434       0xb7 utilities\fsl_io.o
+                                       0x12d7 (size before relaxing)
+ .debug_str     0x00000000000044eb       0xa9 utilities\fsl_log.o
+                                        0x7ab (size before relaxing)
+ .debug_str     0x0000000000004594      0x242 utilities\fsl_str.o
+                                        0x8a0 (size before relaxing)
+
+.comment        0x0000000000000000       0x1a
+ .comment       0x0000000000000000       0x1a board\clock_config.o
+                                         0x1b (size before relaxing)
+ .comment       0x000000000000001a       0x1b board\pin_mux.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_clock.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_common.o
+ .comment       0x000000000000001a       0x1b drivers\fsl_lpuart.o
+ .comment       0x000000000000001a       0x1b source\polling_seven_bits.o
+ .comment       0x000000000000001a       0x1b startup\system_RV32M1_ri5cy.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_debug_console.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_io.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_log.o
+ .comment       0x000000000000001a       0x1b utilities\fsl_str.o
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .comment       0x000000000000001a       0x1b c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)
+
+.Pulp_Chip.Info
+                0x0000000000000000        0x0
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 board\clock_config.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 board\pin_mux.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_clock.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_common.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 drivers\fsl_lpuart.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 source\polling_seven_bits.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 startup\startup_RV32M1_ri5cy.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 startup\system_RV32M1_ri5cy.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 utilities\fsl_debug_console.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 utilities\fsl_io.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 utilities\fsl_log.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 utilities\fsl_str.o
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-init.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-memset.o)
+ .Pulp_Chip.Info
+                0x0000000000000000        0x0 c:/vega/toolchain/riscv32-unknown-elf-gcc/bin/../lib/gcc/riscv32-unknown-elf/7.1.1/../../../../riscv32-unknown-elf/lib/rv32imcxpulpv2/ilp32\libc.a(lib_a-strlen.o)

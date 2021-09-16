@@ -71,27 +71,27 @@ void SendTM(CDTM *tm) {
 
 #ifdef BEBASYNC
 	for (i = 0; i < 4; i++) {
-		LPUART_WriteByte(LPUART0, Header[i]);
+		LPUART_WriteByte(LPUART, Header[i]);
 	}
 
 	for (i = 0; i < 2; i++) {
-		LPUART_WriteByte(LPUART0, *(pSyncLength + i));
+		LPUART_WriteByte(LPUART, *(pSyncLength + i));
 	}
 #endif
 
 	for (i = 0; i < 6; i++) {
-		LPUART_WriteByte(LPUART0, *(pHeader + i));
+		LPUART_WriteByte(LPUART, *(pHeader + i));
 
 	}
 
 	for (i = 0; i < 4; i++) {
-		LPUART_WriteByte(LPUART0, *pDataFieldHeader);
+		LPUART_WriteByte(LPUART, *pDataFieldHeader);
 		pDataFieldHeader++;
 	}
 
 	for (i = 4; i < (tm->packHeader.length + 1); i++) {
 
-		LPUART_WriteByte(LPUART0, tm->appData[i - 4]);
+		LPUART_WriteByte(LPUART, tm->appData[i - 4]);
 
 	}
 

@@ -32,6 +32,8 @@ void BOARD_InitBootPins(void) {
 
 #define PIN7_IDX                         7u   /*!< Pin number for pin 7 in a port */
 #define PIN8_IDX                         8u   /*!< Pin number for pin 8 in a port */
+#define PIN29_IDX                        29u   /*!< Pin number for pin 29 in a port */
+#define PIN30_IDX                        30u   /*!< Pin number for pin 30 in a port */
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
@@ -54,6 +56,11 @@ void BOARD_InitPins(void) {
 
   PORT_SetPinMux(PORTC, PIN7_IDX, kPORT_MuxAlt3);            /* PORTC7 (pin N2) is configured as LPUART0_RX */
   PORT_SetPinMux(PORTC, PIN8_IDX, kPORT_MuxAlt3);            /* PORTC8 (pin P3) is configured as LPUART0_TX */
+
+  /* LPUART1 RX, TX */
+  PORT_SetPinMux(PORTC, PIN29_IDX, kPORT_MuxAlt2); 			 /* PORTC29 (pin D18) is configured as LPUART1_RX */
+  PORT_SetPinMux(PORTC, PIN30_IDX, kPORT_MuxAlt2);			 /* PORTC30 (pin D19) is configured as LPUART1_TX */
+
 }
 
 /*******************************************************************************

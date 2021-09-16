@@ -14,7 +14,7 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_LPUART LPUART0
+
 #define DEMO_LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
 #define DEMO_LPUART_CLK_FREQ CLOCK_GetFreq(kCLOCK_ScgFircAsyncDiv2Clk)
 
@@ -36,13 +36,17 @@ uint8_t rxbuff[20] = {0};
 /*!
  * @brief Main function
  */
+
+
 int main(void)
 {
     uint8_t ch;
+
     lpuart_config_t config;
 
     BOARD_InitPins();
     BOARD_BootClockRUN();
+    CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync); //Necessary
     BOARD_InitDebugConsole();
 
 
@@ -55,18 +59,22 @@ int main(void)
      * config.enableTx = false;
      * config.enableRx = false;
      */
+
     LPUART_GetDefaultConfig(&config);
-    config.baudRate_Bps = BOARD_DEBUG_UART_BAUDRATE;
     config.enableTx = true;
     config.enableRx = true;
 
-    LPUART_Init(DEMO_LPUART, &config, DEMO_LPUART_CLK_FREQ);
+    LPUART_Init(LPUART0, &config, DEMO_LPUART_CLK_FREQ);
+    LPUART_WriteBlocking(LPUART0, txbuff, sizeof(txbuff) - 1);
 
-    LPUART_WriteBlocking(DEMO_LPUART, txbuff, sizeof(txbuff) - 1);
+    LPUART_Init(LPUART1, &config, DEMO_LPUART_CLK_FREQ);
+    LPUART_WriteBlocking(LPUART1, txbuff, sizeof(txbuff) - 1);
 
     while (1)
     {
-        LPUART_ReadBlocking(DEMO_LPUART, &ch, 1);
-        LPUART_WriteBlocking(DEMO_LPUART, &ch, 1);
+        LPUART_ReadBlocking(LPUART1, &ch, 1);
+
+    	LPUART_WriteBlocking(LPUART0, &ch, 1);
+    	LPUART_WriteBlocking(LPUART1, &ch, 1);
     }
 }

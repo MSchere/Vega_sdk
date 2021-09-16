@@ -33,6 +33,9 @@ void BOARD_InitBootPins(void) {
 #define PIN7_IDX                         7u   /*!< Pin number for pin 7 in a port */
 #define PIN8_IDX                         8u   /*!< Pin number for pin 8 in a port */
 
+#define PIN25_IDX                       25u   /*!< Pin number for pin 25 in a port */
+#define PIN26_IDX                       26u   /*!< Pin number for pin 26 in a port */
+
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 BOARD_InitPins:
@@ -50,10 +53,17 @@ BOARD_InitPins:
  *
  *END**************************************************************************/
 void BOARD_InitPins(void) {
-  CLOCK_EnableClock(kCLOCK_PortC);                           /* Clock Gate Control: 0x01u */
+	CLOCK_EnableClock(kCLOCK_PortA);                           /* Clock Gate Control: 0x01u */
+	CLOCK_EnableClock(kCLOCK_PortB);                           /* Clock Gate Control: 0x01u */
+	CLOCK_EnableClock(kCLOCK_PortC);                           /* Clock Gate Control: 0x01u */
 
-  PORT_SetPinMux(PORTC, PIN7_IDX, kPORT_MuxAlt3);            /* PORTC7 (pin N2) is configured as LPUART0_RX */
-  PORT_SetPinMux(PORTC, PIN8_IDX, kPORT_MuxAlt3);            /* PORTC8 (pin P3) is configured as LPUART0_TX */
+  //LPUART0 J1
+    PORT_SetPinMux(PORTC, PIN7_IDX, kPORT_MuxAlt3);            /* PORTC7 (pin N2) is configured as LPUART0_RX */
+    PORT_SetPinMux(PORTC, PIN8_IDX, kPORT_MuxAlt3);            /* PORTC8 (pin P3) is configured as LPUART0_TX */
+
+    //LPUART1 J1
+    PORT_SetPinMux(PORTA, PIN25_IDX, kPORT_MuxAlt2);           /* PORTA25 (pin B5) is configured as LPUART1_RX */
+    PORT_SetPinMux(PORTA, PIN26_IDX, kPORT_MuxAlt2);           /* PORTA26 (pin A5) is configured as LPUART1_TX */
 }
 
 /*******************************************************************************

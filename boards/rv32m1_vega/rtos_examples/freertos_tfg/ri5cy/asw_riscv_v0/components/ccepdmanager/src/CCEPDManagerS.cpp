@@ -96,8 +96,8 @@ Pr_TaskRV_t 	CCEPDManager::EDROOMIRQ17BottomHalfTask(Pr_TaskP_t){
 		// ******************* IRQPort **************
 
 CEDROOMIRQInterface CCEPDManager::RxTC( 
-		CCEPDManager::EDROOMIRQ17Handler 
-		,CCEPDManager::EDROOMIRQ17IdleHandler 
+		CCEPDManager::EDROOMIRQ17Handler
+		,CCEPDManager::EDROOMIRQ17IdleHandler
 		,CCEPDManager::EDROOMEventIRQ17
 		,CCEPDManager::EDROOMSemEndIRQ17
 		,17 );

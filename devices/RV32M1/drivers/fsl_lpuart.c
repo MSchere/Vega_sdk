@@ -5,7 +5,7 @@
  * 
  * SPDX-License-Identifier: BSD-3-Clause
  */
-#include "fsl_lpuart_freertos.h"
+//#include "fsl_lpuart_freertos.h"
 #include "fsl_debug_console.h"
 #include "fsl_lpuart.h"
 
@@ -1242,6 +1242,7 @@ void LPUART0_RX_DriverIRQHandler(void)
 #else
 
 /* Handler variables declaration */
+/*
 uint8_t irq_counter = 0;
 uint8_t len = 0;
 bool header_ok = false;
@@ -1277,9 +1278,14 @@ char* get_stream() { //Returns the full stream
 	strcat(str, appData);
 	return strdup(str);
 }
-
+*/
 /* My handler */
 void LPUART0_DriverIRQHandler(void) {
+	s_lpuartIsr(LPUART0, s_lpuartHandle[0]);
+
+
+	/*
+	//test.cpp
 	if (appdata_ok) {
 		s_lpuartIsr(LPUART0, s_lpuartHandle[0]); //UART ISR, exits handler
 	}
@@ -1314,6 +1320,7 @@ void LPUART0_DriverIRQHandler(void) {
 			irq_counter = 0;
 		}
 	}
+	*/
 }
 #endif
 #endif
@@ -1367,7 +1374,6 @@ void LPUART3_RX_DriverIRQHandler(void)
 }
 #else
 void LPUART3_DriverIRQHandler(void) {
-	PRINTF("In handler UART3.\r\n");
 	s_lpuartIsr(LPUART3, s_lpuartHandle[3]);
 }
 #endif

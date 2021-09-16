@@ -1,0 +1,49 @@
+/*
+ * First we have to assign this file to a certain package
+ */
+
+package es.uah.aut.srg.micobs.mesp.common.rtosals;
+
+/*
+ * Optionally, we can import packages to use their elements as references.
+ */
+
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+
+/*
+ * Definition of a SwInterface. Every SwInterface should have:
+ * - A name
+ * - A version
+ * - A list of defined languages
+ *
+ * And optionally can have:
+ * - A list of provided resources (quantifiable and instantiable)
+ *
+ */
+
+swinterface edroombp_iface
+{
+	version := v3.0_rtemsapi_4.8_impr;
+	
+	language := CPP(98);
+	
+	requires := edroom_types_iface(v1);
+	required osapi := RTEMSAPI(4.8_impr);
+	
+	provided resources
+	{
+		quantifiable resource PR_KERNEL step 1 to 1;
+		quantifiable resource PR_BINSEM step 1 to -1;
+		quantifiable resource PR_SEMREC step 1 to -1;
+		quantifiable resource PR_TASK step 1 to -1;
+		quantifiable resource PR_IRQEVENT step 1 to -1;
+		quantifiable resource NUM_PRIO step 1 to -1;
+	};
+	
+	configuration parameters {
+		 boolean TRACE_METHODS := true;
+		 boolean TESTING_METHODS := true;
+	};
+	
+};

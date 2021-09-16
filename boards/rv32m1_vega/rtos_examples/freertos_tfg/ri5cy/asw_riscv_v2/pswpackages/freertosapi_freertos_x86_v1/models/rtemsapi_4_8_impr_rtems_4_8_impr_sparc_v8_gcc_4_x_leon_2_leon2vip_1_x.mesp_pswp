@@ -1,0 +1,16 @@
+package es.uah.aut.srg.micobs.mesp.common.plts;
+
+import es.uah.aut.srg.micobs.pdl.common.plts;
+import es.uah.aut.srg.micobs.mesp.common.os_;
+import es.uah.aut.srg.micobs.mesp.ctools;
+
+pswpackage RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_GCC_4_x_LEON_2_Leon2ViP_1_x
+{
+	version := v1;
+	
+	supported platform := RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_GCC_4_x_LEON_2_Leon2ViP_1_x(v1);
+	
+	construction tools := GNUMake(3.81);
+	
+	osswpackages := RTEMS(4.8_impr);
+};

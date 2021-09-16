@@ -1,0 +1,9 @@
+dataclass CDEventList{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.cdeventlist.cdeventlist_iface;
+	version := v1;
+
+
+};

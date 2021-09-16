@@ -94,7 +94,7 @@ int main(void)
     config.baudRate_Bps = BOARD_DEBUG_UART_BAUDRATE;
     config.enableTx = true;
     config.enableRx = true;
-    config.dataBitsCount = kLPUART_SevenDataBits;
+    //config.dataBitsCount = kLPUART_SevenDataBits;
     config.isMsb = false;
 
     LPUART_Init(DEMO_LPUART, &config, DEMO_LPUART_CLK_FREQ);
