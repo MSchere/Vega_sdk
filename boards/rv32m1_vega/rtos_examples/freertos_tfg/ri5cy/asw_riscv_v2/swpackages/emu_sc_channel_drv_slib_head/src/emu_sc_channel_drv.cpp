@@ -73,7 +73,7 @@ void SendTM(CDTM *tm) {
 	byte_t *pHeader = (byte_t*) &tm->packHeader;
 	byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
 
-	byte_t Header[4] = { 0xBE, 0xBA, 0xBE, 0xEF };
+	byte_t header[] = { 0xBE, 0xBA, 0xBE, 0xEF };
 
 	uint16_t length = tm->packHeader.length + 1 + 6;
 	byte_t pSyncLength[2];
@@ -91,20 +91,35 @@ void SendTM(CDTM *tm) {
 	byte_t pLength[2];
 	Serializer_SetUInt16(packLength,pLength);
 
+	uint8_t sync[] = {header[0], header[1], header[2], header[3],
+			pSyncLength[0], pSyncLength[1]};
+
+	uint8_t data[] = {pIdLength[0], pIdLength[1],
+			pSeqCtrlLength[0], pSeqCtrlLength[1],
+			pLength[0], pLength[1],
+			tm->dataFieldHeader.flat_pusVersion_Ack,
+			tm->dataFieldHeader.service,
+			tm->dataFieldHeader.subservice,
+			tm->dataFieldHeader.dummy,
+			0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
+
 
 #ifdef BEBASYNC
-
+	/*
 	for (i = 0; i < 4; i++) {
-		LPUART_WriteByte(LPUART0, Header[i]);
-		LPUART_WriteByte(LPUART1, Header[i]);
+		LPUART_WriteByte(LPUART0, header[i]);
+		LPUART_WriteByte(LPUART1, header[i]);
 	}
 
 	for (i = 0; i < 2; i++) {
 		LPUART_WriteByte(LPUART0, *(pSyncLength + i));
 		LPUART_WriteByte(LPUART1, *(pSyncLength + i));
 	}
+	*/
+	LPUART_WriteBlocking(LPUART0, sync, sizeof(sync));
 #endif
-
+	LPUART_WriteBlocking(LPUART0, data, sizeof(data));
+	/*
 	for (i = 0; i < 2; i++) {
 		LPUART_WriteByte(LPUART0, *(pIdLength + i));
 		LPUART_WriteByte(LPUART1, *(pIdLength + i));
@@ -120,6 +135,9 @@ void SendTM(CDTM *tm) {
 		LPUART_WriteByte(LPUART0, *(pLength + i));
 		LPUART_WriteByte(LPUART1, *(pLength + i));
 	}
+
+	LPUART_WriteByte(LPUART0, tm->dataFieldHeader.flat_pusVersion_Ack);
+	LPUART_WriteByte(LPUART1, tm->dataFieldHeader.flat_pusVersion_Ack);
 
 	for (i = 0; i < 4; i++) {
 		LPUART_WriteByte(LPUART0, *pDataFieldHeader);
@@ -138,6 +156,10 @@ void SendTM(CDTM *tm) {
 		LPUART_WriteByte(LPUART1, tm->appData[i - 4]);
 
 	}
+	 */
+
+
+
 
 }
 
