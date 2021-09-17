@@ -65,6 +65,7 @@ void LPUART_IRQ_Handler(LPUART_Type *base, lpuart_handle_t *handle, status_t sta
 {
 	sendBuff[idx] = recvXfer.data[0];
 	idx++;
+	//LPUART_WriteByte(LPUART1, recvXfer.data[0]);
 }
 
 void Init_sc_channel() {
@@ -92,8 +93,6 @@ void SendTM(CDTM *tm) {
 
 	int i = 0;
 	int j = 0;
-
-	LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
 
 	//byte_t *pHeader = (byte_t*) &tm->packHeader;
 	//byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
@@ -128,15 +127,16 @@ void SendTM(CDTM *tm) {
 			tm->dataFieldHeader.dummy};
 
 
-	/*for (i = 4; i < (packLength + 1); i++) {
+	for (i = 4; i < (packLength + 1); i++) {
 				data[16+j] = tm->appData[i - 4];
 				j++;
 		}
-	*/
-		LPUART_WriteBlocking(LPUART0, sendBuff, idx);
-		idx=0;
+		LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
 
-		//LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+		LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+
+		LPUART_WriteBlocking(LPUART1, sendBuff, idx);
+		idx=0;
 		//LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
 /*
 #ifdef BEBASYNC
