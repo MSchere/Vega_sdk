@@ -19,8 +19,14 @@
 #include "pin_mux.h"
 #include "clock_config.h"
 
+#define LPUART_CLK_FREQ CLOCK_GetFreq(kCLOCK_ScgFircAsyncDiv2Clk)
+#define LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
 
 CDTCDescriptor currentTC;
+lpuart_transfer_t recvBuff;
+lpuart_handle_t handle0;
+lpuart_handle_t handle1;
+uint8_t idx;
 
 char *currentTCBrief = NULL;
 
@@ -49,12 +55,16 @@ void Serializer_SetUInt16(uint16_t data , byte_t * aux){
         *(aux+1)=serializer.bytes[0];
     }
   }
-#define LPUART_CLK_FREQ CLOCK_GetFreq(kCLOCK_ScgFircAsyncDiv2Clk)
 
-#define LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
+void LPUART_IRQ_Handler(LPUART_Type *base, lpuart_handle_t *handle, status_t status, void *userData)
+{
+
+}
 
 void Init_sc_channel() {
 		lpuart_config_t config;
+
+
 
 		CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync);
 
@@ -64,16 +74,22 @@ void Init_sc_channel() {
 
 		LPUART_Init(LPUART0, &config, LPUART_CLK_FREQ);
 	    LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
+
+	    LPUART_TransferCreateHandle(LPUART0, &handle0, LPUART_IRQ_Handler, NULL);
+	    LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
 }
 
 void SendTM(CDTM *tm) {
 
 	int i = 0;
+	int j = 0;
 
-	byte_t *pHeader = (byte_t*) &tm->packHeader;
-	byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
+	//LPUART_TransferReceiveNonBlocking(LPUART0, &handle, &recvBuff, NULL);
 
-	byte_t header[] = { 0xBE, 0xBA, 0xBE, 0xEF };
+	//byte_t *pHeader = (byte_t*) &tm->packHeader;
+	//byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
+
+	byte_t header[4] = { 0xBE, 0xBA, 0xBE, 0xEF };
 
 	uint16_t length = tm->packHeader.length + 1 + 6;
 	byte_t pSyncLength[2];
@@ -91,21 +107,19 @@ void SendTM(CDTM *tm) {
 	byte_t pLength[2];
 	Serializer_SetUInt16(packLength,pLength);
 
-	uint8_t sync[] = {header[0], header[1], header[2], header[3],
-			pSyncLength[0], pSyncLength[1]};
 
-	uint8_t data[] = {pIdLength[0], pIdLength[1],
+	uint8_t data[255] = {header[0], header[1], header[2], header[3],
+			pSyncLength[0], pSyncLength[1],
+			pIdLength[0], pIdLength[1],
 			pSeqCtrlLength[0], pSeqCtrlLength[1],
 			pLength[0], pLength[1],
 			tm->dataFieldHeader.flat_pusVersion_Ack,
 			tm->dataFieldHeader.service,
 			tm->dataFieldHeader.subservice,
-			tm->dataFieldHeader.dummy,
-			0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
+			tm->dataFieldHeader.dummy};
 
-
+/*
 #ifdef BEBASYNC
-	/*
 	for (i = 0; i < 4; i++) {
 		LPUART_WriteByte(LPUART0, header[i]);
 		LPUART_WriteByte(LPUART1, header[i]);
@@ -115,10 +129,17 @@ void SendTM(CDTM *tm) {
 		LPUART_WriteByte(LPUART0, *(pSyncLength + i));
 		LPUART_WriteByte(LPUART1, *(pSyncLength + i));
 	}
-	*/
-	LPUART_WriteBlocking(LPUART0, sync, sizeof(sync));
+
 #endif
-	LPUART_WriteBlocking(LPUART0, data, sizeof(data));
+*/
+
+	for (i = 4; i < (packLength + 1); i++) {
+			data[16+j] = tm->appData[i - 4];
+			j++;
+	}
+
+	LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+	LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
 	/*
 	for (i = 0; i < 2; i++) {
 		LPUART_WriteByte(LPUART0, *(pIdLength + i));
@@ -149,14 +170,10 @@ void SendTM(CDTM *tm) {
 			LPUART_WriteByte(LPUART0, *(pSyncLength + i));
 			LPUART_WriteByte(LPUART1, *(pSyncLength + i));
 	}
+	*/
 
-	for (i = 4; i < (tm->packHeader.length + 1); i++) {
 
-		LPUART_WriteByte(LPUART0, tm->appData[i - 4]);
-		LPUART_WriteByte(LPUART1, tm->appData[i - 4]);
 
-	}
-	 */
 
 
 

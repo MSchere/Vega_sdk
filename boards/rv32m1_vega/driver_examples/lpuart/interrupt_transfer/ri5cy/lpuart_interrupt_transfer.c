@@ -90,14 +90,6 @@ int main(void)
 
     EnableIRQ(LPUART1_IRQn);
 
-    LPUART_EnableInterrupts(LPUART1,
-    			kLPUART_TxDataRegEmptyInterruptEnable
-    					| kLPUART_TransmissionCompleteInterruptEnable);
-    LPUART_EnableInterrupts(LPUART1,
-    						kLPUART_RxDataRegFullInterruptEnable
-    							| kLPUART_RxOverrunInterruptEnable
-    							| kLPUART_IdleLineInterruptEnable);
-
 
     /* Send g_tipString out. */
     xfer.data = g_tipString;
