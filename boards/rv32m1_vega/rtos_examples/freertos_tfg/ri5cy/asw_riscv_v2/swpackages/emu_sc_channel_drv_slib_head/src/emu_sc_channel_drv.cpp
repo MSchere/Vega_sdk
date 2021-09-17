@@ -23,10 +23,15 @@
 #define LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
 
 CDTCDescriptor currentTC;
-lpuart_transfer_t recvBuff;
+
+lpuart_transfer_t recvXfer;
+uint8_t g_rxBuffer[1] = {0};
+
 lpuart_handle_t handle0;
 lpuart_handle_t handle1;
-uint8_t idx;
+
+uint8_t sendBuff[255];
+uint8_t idx = 0;
 
 char *currentTCBrief = NULL;
 
@@ -58,7 +63,8 @@ void Serializer_SetUInt16(uint16_t data , byte_t * aux){
 
 void LPUART_IRQ_Handler(LPUART_Type *base, lpuart_handle_t *handle, status_t status, void *userData)
 {
-
+	sendBuff[idx] = recvXfer.data[0];
+	idx++;
 }
 
 void Init_sc_channel() {
@@ -77,6 +83,9 @@ void Init_sc_channel() {
 
 	    LPUART_TransferCreateHandle(LPUART0, &handle0, LPUART_IRQ_Handler, NULL);
 	    LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
+
+	    recvXfer.data = g_rxBuffer;
+	    recvXfer.dataSize = 1;
 }
 
 void SendTM(CDTM *tm) {
@@ -84,7 +93,7 @@ void SendTM(CDTM *tm) {
 	int i = 0;
 	int j = 0;
 
-	//LPUART_TransferReceiveNonBlocking(LPUART0, &handle, &recvBuff, NULL);
+	LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
 
 	//byte_t *pHeader = (byte_t*) &tm->packHeader;
 	//byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
@@ -137,9 +146,10 @@ void SendTM(CDTM *tm) {
 			data[16+j] = tm->appData[i - 4];
 			j++;
 	}
-
-	LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
-	LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
+	LPUART_WriteBlocking(LPUART0, sendBuff, idx);
+	idx=0;
+	//LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+	//LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
 	/*
 	for (i = 0; i < 2; i++) {
 		LPUART_WriteByte(LPUART0, *(pIdLength + i));
