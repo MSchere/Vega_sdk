@@ -127,6 +127,17 @@ void SendTM(CDTM *tm) {
 			tm->dataFieldHeader.subservice,
 			tm->dataFieldHeader.dummy};
 
+
+	/*for (i = 4; i < (packLength + 1); i++) {
+				data[16+j] = tm->appData[i - 4];
+				j++;
+		}
+	*/
+		LPUART_WriteBlocking(LPUART0, sendBuff, idx);
+		idx=0;
+
+		//LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+		//LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
 /*
 #ifdef BEBASYNC
 	for (i = 0; i < 4; i++) {
@@ -140,17 +151,7 @@ void SendTM(CDTM *tm) {
 	}
 
 #endif
-*/
 
-	for (i = 4; i < (packLength + 1); i++) {
-			data[16+j] = tm->appData[i - 4];
-			j++;
-	}
-	LPUART_WriteBlocking(LPUART0, sendBuff, idx);
-	idx=0;
-	//LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
-	//LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
-	/*
 	for (i = 0; i < 2; i++) {
 		LPUART_WriteByte(LPUART0, *(pIdLength + i));
 		LPUART_WriteByte(LPUART1, *(pIdLength + i));
@@ -181,13 +182,6 @@ void SendTM(CDTM *tm) {
 			LPUART_WriteByte(LPUART1, *(pSyncLength + i));
 	}
 	*/
-
-
-
-
-
-
-
 }
 
 void SendTMList(CDTMList *tm) {
