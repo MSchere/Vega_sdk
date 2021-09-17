@@ -25,7 +25,7 @@
 CDTCDescriptor currentTC;
 
 lpuart_transfer_t recvXfer;
-uint8_t g_rxBuffer[1] = {0};
+uint8_t g_rxBuffer[24] = {0};
 
 lpuart_handle_t handle0;
 lpuart_handle_t handle1;
