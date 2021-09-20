@@ -21,11 +21,18 @@
 
 #define LPUART_CLK_FREQ CLOCK_GetFreq(kCLOCK_ScgFircAsyncDiv2Clk)
 #define LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
+#define BUFF_LENGTH 18
 
 CDTCDescriptor currentTC;
 
 lpuart_transfer_t recvXfer;
-uint8_t g_rxBuffer[24] = {0};
+
+volatile bool rxBufferEmpty = true;
+volatile bool txBufferFull = false;
+volatile bool txOnGoing = false;
+volatile bool rxOnGoing = false;
+
+uint8_t g_rxBuffer[BUFF_LENGTH] = {0};
 
 lpuart_handle_t handle0;
 lpuart_handle_t handle1;
@@ -63,15 +70,24 @@ void Serializer_SetUInt16(uint16_t data , byte_t * aux){
 
 void LPUART_IRQ_Handler(LPUART_Type *base, lpuart_handle_t *handle, status_t status, void *userData)
 {
-	sendBuff[idx] = recvXfer.data[0];
-	idx++;
-	//LPUART_WriteByte(LPUART1, recvXfer.data[0]);
-}
+	userData = userData;
+	    if (kStatus_LPUART_TxIdle == status)
+	    {
+	        txBufferFull = false;
+	        txOnGoing = false;
+	    }
+	    if (kStatus_LPUART_RxIdle == status)
+	    {
+	        memcpy(sendBuff + idx*BUFF_LENGTH, recvXfer.data, BUFF_LENGTH);
+	    	//sendBuff[idx] = recvXfer.data[0];
+	        rxBufferEmpty = false;
+	        rxOnGoing = false;
+	    }
+	    idx=idx+1;
+	}
 
 void Init_sc_channel() {
 		lpuart_config_t config;
-
-
 
 		CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync);
 
@@ -86,16 +102,24 @@ void Init_sc_channel() {
 	    LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
 
 	    recvXfer.data = g_rxBuffer;
-	    recvXfer.dataSize = 1;
+	    recvXfer.dataSize = sizeof(g_rxBuffer);
+}
+
+void Restart_UART(){
+	lpuart_config_t config;
+	LPUART_GetDefaultConfig(&config);
+	LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
+	config.enableTx = true;
+	config.enableRx = true;
+	LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
+	recvXfer.data = g_rxBuffer;
+	recvXfer.dataSize = sizeof(g_rxBuffer);
 }
 
 void SendTM(CDTM *tm) {
 
 	int i = 0;
 	int j = 0;
-
-	//byte_t *pHeader = (byte_t*) &tm->packHeader;
-	//byte_t *pDataFieldHeader = (byte_t*) &tm->dataFieldHeader;
 
 	byte_t header[4] = { 0xBE, 0xBA, 0xBE, 0xEF };
 
@@ -131,57 +155,39 @@ void SendTM(CDTM *tm) {
 				data[16+j] = tm->appData[i - 4];
 				j++;
 		}
-		LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
+
+	        /* If RX is idle and g_rxBuffer is empty, start to read data to g_rxBuffer. */
+	        if ((!rxOnGoing) && rxBufferEmpty)
+	        {
+	            rxOnGoing = true;
+	            LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
+	        }
+
+	        /* If TX is idle and g_txBuffer is full, start to send data. */
+	        if ((!txOnGoing) && txBufferFull)
+	        {
+	            txOnGoing = true;
+	            //Reset
+	            //memmove(&sendBuff[0], &sendBuff[idx], idx);
+	            LPUART_WriteBlocking(LPUART1, sendBuff, BUFF_LENGTH);
+	            sendBuff[0] = '\0';
+	            idx=0;
+	            rxBufferEmpty = true;
+	            txBufferFull = false;
+	            txOnGoing = false;
+	            rxOnGoing = false;
+	        }
+
+	        if ((!rxBufferEmpty) && (!txBufferFull))
+	        {
+	            rxBufferEmpty = true;
+	            txBufferFull = true;
+	        }
+
+
 
 		LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
 
-		LPUART_WriteBlocking(LPUART1, sendBuff, idx);
-		idx=0;
-		//LPUART_WriteBlocking(LPUART1, data, 15+packLength-2);
-/*
-#ifdef BEBASYNC
-	for (i = 0; i < 4; i++) {
-		LPUART_WriteByte(LPUART0, header[i]);
-		LPUART_WriteByte(LPUART1, header[i]);
-	}
-
-	for (i = 0; i < 2; i++) {
-		LPUART_WriteByte(LPUART0, *(pSyncLength + i));
-		LPUART_WriteByte(LPUART1, *(pSyncLength + i));
-	}
-
-#endif
-
-	for (i = 0; i < 2; i++) {
-		LPUART_WriteByte(LPUART0, *(pIdLength + i));
-		LPUART_WriteByte(LPUART1, *(pIdLength + i));
-
-	}
-
-	for (i = 0; i < 2; i++) {
-		LPUART_WriteByte(LPUART0, *(pSeqCtrlLength + i));
-		LPUART_WriteByte(LPUART1, *(pSeqCtrlLength + i));
-	}
-
-	for (i = 0; i < 2; i++) {
-		LPUART_WriteByte(LPUART0, *(pLength + i));
-		LPUART_WriteByte(LPUART1, *(pLength + i));
-	}
-
-	LPUART_WriteByte(LPUART0, tm->dataFieldHeader.flat_pusVersion_Ack);
-	LPUART_WriteByte(LPUART1, tm->dataFieldHeader.flat_pusVersion_Ack);
-
-	for (i = 0; i < 4; i++) {
-		LPUART_WriteByte(LPUART0, *pDataFieldHeader);
-		LPUART_WriteByte(LPUART1, *pDataFieldHeader);
-		pDataFieldHeader++;
-	}
-
-	for (i = 0; i < 2; i++) {
-			LPUART_WriteByte(LPUART0, *(pSyncLength + i));
-			LPUART_WriteByte(LPUART1, *(pSyncLength + i));
-	}
-	*/
 }
 
 void SendTMList(CDTMList *tm) {
