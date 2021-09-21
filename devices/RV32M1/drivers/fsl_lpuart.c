@@ -1242,10 +1242,12 @@ void LPUART0_RX_DriverIRQHandler(void)
 #else
 
 /* My handler */
+/*
 void LPUART0_DriverIRQHandler(void) {
 	LPUART_WriteByte(LPUART1, LPUART_ReadByte(LPUART0));
 	s_lpuartIsr(LPUART0, s_lpuartHandle[0]);
 }
+*/
 
 #endif
 #endif

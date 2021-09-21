@@ -1,0 +1,38 @@
+package es.uah.aut.srg.micobs.mclev.common.libc;
+
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+import es.uah.aut.srg.micobs.pdl.common.os_;
+import es.uah.aut.srg.micobs.pdl.common.arch;
+import es.uah.aut.srg.micobs.pdl.common.compilers;
+import es.uah.aut.srg.micobs.pdl.common.mp;
+import es.uah.aut.srg.micobs.pdl.common.board_;
+
+
+service library exit_slib
+{
+	version := C99;
+	
+	languages := C(C99);
+	
+	provided sais {
+	
+		provides exit_iface(C99) {};
+	
+	}; 
+
+	supported platforms
+	{
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_GCC_4_x_LEON_2_Leon2ViP_1_x
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			compiler := GCC(4.x);
+			microprocessor := LEON(2);
+			board := Leon2ViP(1.x);
+		
+		};
+	};
+	
+};

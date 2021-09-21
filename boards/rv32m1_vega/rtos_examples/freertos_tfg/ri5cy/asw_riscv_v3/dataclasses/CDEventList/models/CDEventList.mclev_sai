@@ -1,0 +1,14 @@
+package es.uah.aut.srg.edroom.mclev.data_sai.cdeventlist;
+
+inport es.uah.aut.srg.micobs.langs;
+
+sai cdeventlist_iface
+{
+
+
+
+	version := v1;
+	language := CPP(98);
+
+
+};
