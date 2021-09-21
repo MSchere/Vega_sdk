@@ -1241,87 +1241,12 @@ void LPUART0_RX_DriverIRQHandler(void)
 }
 #else
 
-/* Handler variables declaration */
-/*
-uint8_t irq_counter = 0;
-uint8_t len = 0;
-bool header_ok = false;
-bool length_ok = false;
-bool appdata_ok = false;
-char aux;
-char rxChars[256];
-char header[8];
-char length[2];
-char appData[256];
-
-void reset_handler() { //Resets counters and buffers
-	irq_counter = 0;
-	len = 0;
-	header_ok = false;
-	length_ok = false;
-	appdata_ok = false;
-	aux = '\0';
-	rxChars[0] = '\0';
-	header[0] = '\0';
-	length[0] = '\0';
-	appData[0] = '\0';
-
-}
-bool stream_ok() { //If appdata is ok, stream is complete
-	return appdata_ok;
-}
-
-char* get_stream() { //Returns the full stream
-	char str[sizeof(header) + sizeof(length) + sizeof(appData)] = "";
-	strcat(str, header);
-	strcat(str, length);
-	strcat(str, appData);
-	return strdup(str);
-}
-*/
 /* My handler */
 void LPUART0_DriverIRQHandler(void) {
+	LPUART_WriteByte(LPUART1, LPUART_ReadByte(LPUART0));
 	s_lpuartIsr(LPUART0, s_lpuartHandle[0]);
-
-
-	/*
-	//test.cpp
-	if (appdata_ok) {
-		s_lpuartIsr(LPUART0, s_lpuartHandle[0]); //UART ISR, exits handler
-	}
-	aux = LPUART_ReadByte(LPUART0); //Receive input
-	rxChars[irq_counter] = aux; //Save it in buffer
-	LPUART_WriteByte(LPUART0, aux); //Show input
-	irq_counter++;
-
-	if (!header_ok) {
-		if (irq_counter > 7) {
-			rxChars[9] = '\0';
-			if (!strcmp(rxChars, "BEBABEEF")) {
-				strncpy(header, rxChars, 8); //If header is detected, save it in header string
-				header_ok = true;
-			}
-				else {
-				LPUART_WriteByte(LPUART0, ' ');
-			}
-			irq_counter = 0;
-		}
-	} else if (header_ok & !length_ok) {
-		if (irq_counter > 1) {
-			strncpy(length, rxChars, 2);
-			len = strtol(length, NULL, 16);
-			length_ok = true;
-			irq_counter = 0;
-		}
-	} else if (header_ok & length_ok & !appdata_ok) {
-		if (irq_counter > len - 1) {
-			strncpy(appData, rxChars, len);
-			appdata_ok = true;
-			irq_counter = 0;
-		}
-	}
-	*/
 }
+
 #endif
 #endif
 #endif

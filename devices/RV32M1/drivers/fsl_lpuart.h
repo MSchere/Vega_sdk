@@ -319,10 +319,7 @@ status_t LPUART_Init(LPUART_Type *base, const lpuart_config_t *config, uint32_t 
  * @param base LPUART peripheral base address.
  */
 void LPUART_Deinit(LPUART_Type *base);
-/* My methods */
-bool stream_ok();
-char* get_stream();
-void reset_handler();
+
 /*!
  * @brief Gets the default configuration structure.
  *

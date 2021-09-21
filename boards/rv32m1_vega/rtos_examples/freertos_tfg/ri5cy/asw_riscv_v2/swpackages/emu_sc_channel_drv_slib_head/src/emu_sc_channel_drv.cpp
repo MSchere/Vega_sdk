@@ -21,24 +21,19 @@
 
 #define LPUART_CLK_FREQ CLOCK_GetFreq(kCLOCK_ScgFircAsyncDiv2Clk)
 #define LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
-#define BUFF_LENGTH 18
 
 CDTCDescriptor currentTC;
-
-lpuart_transfer_t recvXfer;
-
-volatile bool rxBufferEmpty = true;
-volatile bool txBufferFull = false;
-volatile bool txOnGoing = false;
-volatile bool rxOnGoing = false;
-
-uint8_t g_rxBuffer[BUFF_LENGTH] = {0};
 
 lpuart_handle_t handle0;
 lpuart_handle_t handle1;
 
-uint8_t sendBuff[255];
-uint8_t idx = 0;
+
+typedef union TM_UINT16Serial_t{
+	uint16_t data;
+	uint8_t bytes[2];
+} TM_UINT16Serial_t;
+
+TM_UINT16Serial_t TCLength;
 
 char *currentTCBrief = NULL;
 
@@ -54,70 +49,47 @@ void SetNextTC(CDTCDescriptor *tc) {
 
 }
 
-union TM_UINT16Serial_t{
-    uint16_t data;
-    uint8_t  bytes[2];
-};
-
-void Serializer_SetUInt16(uint16_t data , byte_t * aux){
+void Serializer_SetUInt16(uint16_t data, byte_t *aux) {
 	TM_UINT16Serial_t serializer;
-    serializer.data=data;
-    if(aux){
-        *aux=serializer.bytes[1];
-        *(aux+1)=serializer.bytes[0];
-    }
-  }
-
-void LPUART_IRQ_Handler(LPUART_Type *base, lpuart_handle_t *handle, status_t status, void *userData)
-{
-	userData = userData;
-	    if (kStatus_LPUART_TxIdle == status)
-	    {
-	        txBufferFull = false;
-	        txOnGoing = false;
-	    }
-	    if (kStatus_LPUART_RxIdle == status)
-	    {
-	        memcpy(sendBuff + idx*BUFF_LENGTH, recvXfer.data, BUFF_LENGTH);
-	    	//sendBuff[idx] = recvXfer.data[0];
-	        rxBufferEmpty = false;
-	        rxOnGoing = false;
-	    }
-	    idx=idx+1;
+	serializer.data = data;
+	if (aux) {
+		*aux = serializer.bytes[1];
+		*(aux + 1) = serializer.bytes[0];
 	}
-
-void Init_sc_channel() {
-		lpuart_config_t config;
-
-		CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync);
-
-		LPUART_GetDefaultConfig(&config);
-		config.enableTx = true;
-		config.enableRx = true;
-
-		LPUART_Init(LPUART0, &config, LPUART_CLK_FREQ);
-	    LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
-
-	    LPUART_TransferCreateHandle(LPUART0, &handle0, LPUART_IRQ_Handler, NULL);
-	    LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
-
-	    recvXfer.data = g_rxBuffer;
-	    recvXfer.dataSize = sizeof(g_rxBuffer);
 }
 
-void Restart_UART(){
+#define DEMO_LPUART_CLKSRC kCLOCK_ScgFircAsyncDiv2Clk
+#define DEMO_LPUART_CLK_FREQ CLOCK_GetIpFreq(kCLOCK_Lpuart0)
+
+uint8_t background_buffer[32];
+uint8_t recv_buffer[1];
+lpuart_rtos_handle_t handle;
+struct _lpuart_handle t_handle;
+
+lpuart_rtos_config_t lpuart_config = { base : LPUART0, srcclk
+		: DEMO_LPUART_CLK_FREQ, baudrate : 115200, parity
+		: kLPUART_ParityDisabled, stopbits : kLPUART_OneStopBit, buffer
+		: background_buffer, buffer_size : sizeof(background_buffer), };
+
+void Init_sc_channel() {
 	lpuart_config_t config;
+
+	//NVIC_SetPriority(LPUART0_IRQn, 5);
+	CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync);
+
 	LPUART_GetDefaultConfig(&config);
-	LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
 	config.enableTx = true;
 	config.enableRx = true;
-	LPUART_TransferCreateHandle(LPUART1, &handle1, LPUART_IRQ_Handler, NULL);
-	recvXfer.data = g_rxBuffer;
-	recvXfer.dataSize = sizeof(g_rxBuffer);
+
+	if (0 > LPUART_RTOS_Init(&handle, &t_handle, &lpuart_config)) {
+		PRINTF("\r\nCONFIGURATION ERROR\r\n");
+	}
+
+	//LPUART_Init(LPUART0, &config, LPUART_CLK_FREQ);
+	LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
 }
 
 void SendTM(CDTM *tm) {
-
 	int i = 0;
 	int j = 0;
 
@@ -125,68 +97,37 @@ void SendTM(CDTM *tm) {
 
 	uint16_t length = tm->packHeader.length + 1 + 6;
 	byte_t pSyncLength[2];
-	Serializer_SetUInt16(length,pSyncLength);
+	Serializer_SetUInt16(length, pSyncLength);
 
 	uint16_t packId = tm->packHeader.packID;
 	byte_t pIdLength[2];
-	Serializer_SetUInt16(packId,pIdLength);
+	Serializer_SetUInt16(packId, pIdLength);
 
 	uint16_t seqCtrl = tm->packHeader.seqCtrl;
 	byte_t pSeqCtrlLength[2];
-	Serializer_SetUInt16(seqCtrl,pSeqCtrlLength);
+	Serializer_SetUInt16(seqCtrl, pSeqCtrlLength);
 
 	uint16_t packLength = tm->packHeader.length;
 	byte_t pLength[2];
-	Serializer_SetUInt16(packLength,pLength);
+	Serializer_SetUInt16(packLength, pLength);
 
-
-	uint8_t data[255] = {header[0], header[1], header[2], header[3],
-			pSyncLength[0], pSyncLength[1],
-			pIdLength[0], pIdLength[1],
-			pSeqCtrlLength[0], pSeqCtrlLength[1],
-			pLength[0], pLength[1],
+	uint8_t data[255] = { header[0], header[1], header[2], header[3],
+			pSyncLength[0], pSyncLength[1], pIdLength[0], pIdLength[1],
+			pSeqCtrlLength[0], pSeqCtrlLength[1], pLength[0], pLength[1],
 			tm->dataFieldHeader.flat_pusVersion_Ack,
-			tm->dataFieldHeader.service,
-			tm->dataFieldHeader.subservice,
-			tm->dataFieldHeader.dummy};
-
+			tm->dataFieldHeader.service, tm->dataFieldHeader.subservice,
+			tm->dataFieldHeader.dummy };
 
 	for (i = 4; i < (packLength + 1); i++) {
-				data[16+j] = tm->appData[i - 4];
-				j++;
-		}
+		data[16 + j] = tm->appData[i - 4];
+		j++;
+	}
 
-	        /* If RX is idle and g_rxBuffer is empty, start to read data to g_rxBuffer. */
-	        if ((!rxOnGoing) && rxBufferEmpty)
-	        {
-	            rxOnGoing = true;
-	            LPUART_TransferReceiveNonBlocking(LPUART0, &handle0, &recvXfer, NULL);
-	        }
+	LPUART_WriteBlocking(LPUART0, data, 15 + packLength - 2); //Send bit stream
 
-	        /* If TX is idle and g_txBuffer is full, start to send data. */
-	        if ((!txOnGoing) && txBufferFull)
-	        {
-	            txOnGoing = true;
-	            //Reset
-	            //memmove(&sendBuff[0], &sendBuff[idx], idx);
-	            LPUART_WriteBlocking(LPUART1, sendBuff, BUFF_LENGTH);
-	            sendBuff[0] = '\0';
-	            idx=0;
-	            rxBufferEmpty = true;
-	            txBufferFull = false;
-	            txOnGoing = false;
-	            rxOnGoing = false;
-	        }
-
-	        if ((!rxBufferEmpty) && (!txBufferFull))
-	        {
-	            rxBufferEmpty = true;
-	            txBufferFull = true;
-	        }
-
-
-
-		LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+	if (LPUART_ReadByte(LPUART0) != 0x00) { //Non-null character received
+		LPUART_ReadBlocking(LPUART0, recv_buffer, sizeof(recv_buffer)); //Receive bit stream, triggers LPUART0_DriverIRQHandler
+	}
 
 }
 
@@ -207,15 +148,16 @@ void EmuPassSecond() {
 
 }
 
-void SendProgrammedTCs(){
-  while(ProgramTC::GetTCProgramed(PUSService9::CurrentUniTimeY2KSecns ,currentTC,currentTCBrief)){
+void SendProgrammedTCs() {
+	while (ProgramTC::GetTCProgramed(PUSService9::CurrentUniTimeY2KSecns,
+			currentTC, currentTCBrief)) {
 
-        //Signal BottomHalf for TimeCode Interrupt
+		//Signal BottomHalf for TimeCode Interrupt
 
-        CCEPDManager::EDROOMEventIRQ45.SignalFromTask();
-        Pr_DelayIn(Pr_Time(0,20000));
+		CCEPDManager::EDROOMEventIRQ45.SignalFromTask();
+		Pr_DelayIn(Pr_Time(0, 20000));
 
-    }
+	}
 }
 
 ProgramTC *ProgramTC::firstProgram = NULL;
