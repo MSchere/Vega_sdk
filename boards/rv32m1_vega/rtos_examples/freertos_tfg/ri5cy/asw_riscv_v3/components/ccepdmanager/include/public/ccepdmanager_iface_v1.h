@@ -241,7 +241,6 @@ public:
 		CEDROOMInterface & TMChannelCtrl;
 		CEDROOMIRQInterface & RxTC;
 
-
 		//! State Identifiers
 		enum TEDROOMStateID{I,
 			Ready,

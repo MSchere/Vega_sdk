@@ -143,8 +143,6 @@ CCEPDManager::CCEPDManager(TEDROOMComponentID id,
 
 int CCEPDManager::EDROOMConfig()
 {
-
-
  return 0; 
 }
 

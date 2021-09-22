@@ -76,7 +76,7 @@ class CDTCDescriptor{
 
 
 	}
-	TM_UINT16Serial_t * aux;
+
 	bool RxByte(byte_t CurrentRxByte){
 
 		bool rx_ok=false;
@@ -88,6 +88,7 @@ class CDTCDescriptor{
 				rxBytesCounter++;
 			}
 		} else if (rxBytesCounter < 10){
+			TM_UINT16Serial_t * aux;
 			switch (rxBytesCounter){
 				case(4):
 					TCLength.bytes[1] = CurrentRxByte;
