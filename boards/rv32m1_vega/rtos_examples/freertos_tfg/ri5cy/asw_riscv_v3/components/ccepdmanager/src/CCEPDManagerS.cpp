@@ -4,35 +4,35 @@
 
 
 
-	// ******************* HANDLING IRQ 45********************
+	// ******************* HANDLING IRQ 17********************
 
-Pr_IRQEvent	CCEPDManager::EDROOMEventIRQ45(45);
-Pr_SemaphoreBin	CCEPDManager::EDROOMSemEndIRQ45(0);
+Pr_IRQEvent	CCEPDManager::EDROOMEventIRQ17(17);
+Pr_SemaphoreBin	CCEPDManager::EDROOMSemEndIRQ17(0);
 
 
 		// ******************* DATA ***************
 
-CDTCDescriptor	CCEPDManager::	EDROOMVarIRQ45;
+CDTCDescriptor	CCEPDManager::	EDROOMVarIRQ17;
 
 
 		// ******************* DATA POOL *******
 
-CCEPDManager::CEDROOMPOOLIRQ45CDTCDescriptor	CCEPDManager::EDROOMPoolIRQ45;
+CCEPDManager::CEDROOMPOOLIRQ17CDTCDescriptor	CCEPDManager::EDROOMPoolIRQ17;
 
 
 		// ******************* Aux IRQ Handler **************
 
-void 	CCEPDManager::EDROOMIRQ45HandlerTopHalfFunction(void){
+void 	CCEPDManager::EDROOMIRQ17HandlerTopHalfFunction(void){
 
-	bool EDROOMIRQ45BottomHalfSignal=true;
+	bool EDROOMIRQ17BottomHalfSignal=true;
 	//if error
 
-	//EDROOMIRQ45BottomHalfSignal=false;
+	//EDROOMIRQ17BottomHalfSignal=false;
 	
-	//EDROOMIRQ18BottomHalfSignal=EDROOMVarIRQ45.HandleIRQ();
+	EDROOMIRQ17BottomHalfSignal=EDROOMVarIRQ17.HandleIRQ();
 
-	if (EDROOMIRQ45BottomHalfSignal)
-		EDROOMEventIRQ45.Signal();
+	if (EDROOMIRQ17BottomHalfSignal)
+		EDROOMEventIRQ17.Signal();
 
 }
 
@@ -40,9 +40,9 @@ void 	CCEPDManager::EDROOMIRQ45HandlerTopHalfFunction(void){
 
 		// ******************* IRQ Handler **************
 
-Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ45Handler(void){
+Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ17Handler(void){
 
-	EDROOMIRQ45HandlerTopHalfFunction();
+	EDROOMIRQ17HandlerTopHalfFunction();
 
 }
 
@@ -50,7 +50,7 @@ Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ45Handler(void){
 
 		// ******************* IRQ Idle Handler **************
 
-Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ45IdleHandler(void){
+Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ17IdleHandler(void){
 
 }
 
@@ -58,32 +58,32 @@ Pr_IRQHandler_RetType	CCEPDManager::EDROOMIRQ45IdleHandler(void){
 
 		// ******************* Bottom Half Task **************
 
-Pr_TaskRV_t 	CCEPDManager::EDROOMIRQ45BottomHalfTask(Pr_TaskP_t){
+Pr_TaskRV_t 	CCEPDManager::EDROOMIRQ17BottomHalfTask(Pr_TaskP_t){
 
 	bool endTask=false;
 
 	do
 	{
 
-		EDROOMEventIRQ45.Wait();
+		EDROOMEventIRQ17.Wait();
 
-		bool EDROOMIRQ45SendMsgToCmp=true;
+		bool EDROOMIRQ17SendMsgToCmp=true;
 
-		if(!EDROOMSemEndIRQ45.WaitCond()){
+		if(!EDROOMSemEndIRQ17.WaitCond()){
 
-			GetNextTC(&EDROOMVarIRQ45);
+			GetNextTC(&EDROOMVarIRQ17);
 
-			if(EDROOMIRQ45SendMsgToCmp){
+			if(EDROOMIRQ17SendMsgToCmp){
 				CDTCDescriptor	*pEDROOMVarIRQ;
 
-				pEDROOMVarIRQ=EDROOMPoolIRQ45.AllocData();
+				pEDROOMVarIRQ=EDROOMPoolIRQ17.AllocData();
 
-				*pEDROOMVarIRQ=EDROOMVarIRQ45;
+				*pEDROOMVarIRQ=EDROOMVarIRQ17;
 
-				//RxTC.NewIRQMsg(EDROOMIRQsignal, pEDROOMVarIRQ, &EDROOMPoolIRQ45);
+				RxTC.NewIRQMsg(EDROOMIRQsignal, pEDROOMVarIRQ, &EDROOMPoolIRQ17);
 
 			}
-			Pr_IRQManager::EnableIRQ(45);
+			Pr_IRQManager::EnableIRQ(17);
 
 		}else endTask=1;
 
@@ -96,11 +96,11 @@ Pr_TaskRV_t 	CCEPDManager::EDROOMIRQ45BottomHalfTask(Pr_TaskP_t){
 		// ******************* IRQPort **************
 
 CEDROOMIRQInterface CCEPDManager::RxTC( 
-		CCEPDManager::EDROOMIRQ45Handler
-		,CCEPDManager::EDROOMIRQ45IdleHandler
-		,CCEPDManager::EDROOMEventIRQ45
-		,CCEPDManager::EDROOMSemEndIRQ45
-		,45 );
+		CCEPDManager::EDROOMIRQ17Handler 
+		,CCEPDManager::EDROOMIRQ17IdleHandler 
+		,CCEPDManager::EDROOMEventIRQ17
+		,CCEPDManager::EDROOMSemEndIRQ17
+		,17 );
 
 
 
@@ -120,7 +120,7 @@ CCEPDManager::CCEPDManager(TEDROOMComponentID id,
 
 		// ***************   BOTTOM HALF IRQ TASKS  ********************
 
-		EDROOMIRQ45BottomHalfT( EDROOMIRQ45BottomHalfTask,EDROOMprioURGENT,256),
+		EDROOMIRQ17BottomHalfT( EDROOMIRQ17BottomHalfTask,EDROOMprioURGENT,256),
 
 		// ***************	Top State  *****************
 

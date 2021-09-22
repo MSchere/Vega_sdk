@@ -24,10 +24,6 @@
 
 CDTCDescriptor currentTC;
 
-lpuart_transfer_t recvXfer;
-
-lpuart_handle_t handle0;
-lpuart_handle_t handle1;
 
 char RxTC[256];
 uint16_t idx = 0;
@@ -35,12 +31,12 @@ bool rx_ok = false;
 uint8_t CurrentRxByte = 0;
 
 char *currentTCBrief = NULL;
-
+/*
 union TM_UINT16Serial_t{
     uint16_t data;
     uint8_t  bytes[2];
 };
-
+*/
 TM_UINT16Serial_t TCLength;
 
 void GetNextTC(CDTCDescriptor *tc) {
@@ -64,7 +60,9 @@ void Serializer_SetUInt16(uint16_t data , byte_t * aux){
     }
   }
 
+/*
 uint8_t SyncPattern[4] = {0xBE, 0xBA, 0xBE, 0xEF};
+
 
 void EDROOMHandler(void) {
 	if (idx < 4) {
@@ -90,6 +88,14 @@ void EDROOMHandler(void) {
 		}
 	}
 }
+*/
+
+Pr_IRQHandler Pr_IRQHandler17=NULL;
+
+byte_t sc_channel_drv_get_char(){
+
+	return LPUART_ReadByte(LPUART0);
+}
 
 extern "C" void LPUART0_MyDriverIRQHandler(void)
 {
@@ -98,11 +104,10 @@ extern "C" void LPUART0_MyDriverIRQHandler(void)
 		 LPUART0->STAT = ((LPUART0->STAT & 0x3FE00000U) | LPUART_STAT_OR_MASK);
 	 }
 
-	 CurrentRxByte = LPUART_ReadByte(LPUART0);
 	 //LPUART_WriteByte(LPUART1, CurrentRxByte); //ECHO
-	 EDROOMHandler();
-
-}
+	 if(Pr_IRQHandler17)
+		 Pr_IRQHandler17();
+	}
 
 void Init_sc_channel() {
 		lpuart_config_t config;
@@ -166,10 +171,11 @@ void SendTM(CDTM *tm) {
 		}
 
 	LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
+	/*
 	if(rx_ok){
 	 LPUART_WriteBlocking(LPUART1, (uint8_t *) RxTC, TCLength.data);
 	 rx_ok=false;
-	}
+	}*/
 
 }
 
@@ -195,7 +201,7 @@ void SendProgrammedTCs(){
 
         //Signal BottomHalf for TimeCode Interrupt
 
-        CCEPDManager::EDROOMEventIRQ45.SignalFromTask();
+        CCEPDManager::EDROOMEventIRQ17.SignalFromTask();
         Pr_DelayIn(Pr_Time(0,20000));
 
     }

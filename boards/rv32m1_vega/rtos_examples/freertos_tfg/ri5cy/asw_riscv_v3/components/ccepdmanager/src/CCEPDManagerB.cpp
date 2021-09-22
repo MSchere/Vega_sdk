@@ -149,7 +149,7 @@ void	CCEPDManager::EDROOM_CTX_Top_0::FInit()
 
 {
 
-//RxTC.InstallHandler();
+RxTC.InstallHandler();
 Init_sc_channel();
 
 }

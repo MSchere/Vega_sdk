@@ -90,7 +90,7 @@ void	ICUASW::EDROOM_CTX_Top_0::FInit()
 for(int i=0; i <256; i++) 
 	ForceDataPOOLValue(i,i);
  
-SendProgrammedTCs();
+//SendProgrammedTCs();
 
 }
 

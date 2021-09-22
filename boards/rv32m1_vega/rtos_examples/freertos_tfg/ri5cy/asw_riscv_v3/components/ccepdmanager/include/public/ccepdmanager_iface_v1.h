@@ -110,44 +110,44 @@ public:
 	// ********************************************************************
 
 	// ********************************
-	// Handling IRQ vector 45 (LPUART1)
+	// Handling IRQ vector 17 (LPUART0)
 
-	//! Event for trigger the bottom half associated to the IRQ vector 45
-	static Pr_IRQEvent	EDROOMEventIRQ45;
-	//! Binary Semaphore for signal the end of the bottom half of the IRQ vector 45
-	static Pr_SemaphoreBin	EDROOMSemEndIRQ45;
-	//! IRQ Handler for the IRQ vector 45
-	static Pr_IRQHandler_RetType	EDROOMIRQ45Handler(void);
-	//! Top Half Function for IRQ Handler  45
-	static void	EDROOMIRQ45HandlerTopHalfFunction(void);
-	//! Idle IRQ Handler for the IRQ vector 45
-	static Pr_IRQHandler_RetType	EDROOMIRQ45IdleHandler(void);
-	//! Bottom Half Task Function for the IRQ vector 45
-	static Pr_TaskRV_t 	EDROOMIRQ45BottomHalfTask(Pr_TaskP_t);
-	//! Bottom Half Pr_Task Object for the IRQ vector 45
-	Pr_Task 	EDROOMIRQ45BottomHalfT;
-	//! Component Port associated to the IRQ vector 45
+	//! Event for trigger the bottom half associated to the IRQ vector 17
+	static Pr_IRQEvent	EDROOMEventIRQ17;
+	//! Binary Semaphore for signal the end of the bottom half of the IRQ vector 17
+	static Pr_SemaphoreBin	EDROOMSemEndIRQ17;
+	//! IRQ Handler for the IRQ vector 17
+	static Pr_IRQHandler_RetType	EDROOMIRQ17Handler(void);
+	//! Top Half Function for IRQ Handler  17
+	static void	EDROOMIRQ17HandlerTopHalfFunction(void);
+	//! Idle IRQ Handler for the IRQ vector 17
+	static Pr_IRQHandler_RetType	EDROOMIRQ17IdleHandler(void);
+	//! Bottom Half Task Function for the IRQ vector 17
+	static Pr_TaskRV_t 	EDROOMIRQ17BottomHalfTask(Pr_TaskP_t);
+	//! Bottom Half Pr_Task Object for the IRQ vector 17
+	Pr_Task 	EDROOMIRQ17BottomHalfT;
+	//! Component Port associated to the IRQ vector 17
 	static CEDROOMIRQInterface	RxTC;
-	//! Global variable required for the botton half of the IRQ vector 45
-	static CDTCDescriptor	EDROOMVarIRQ45;
+	//! Global variable required for the botton half of the IRQ vector 17
+	static CDTCDescriptor	EDROOMVarIRQ17;
 	/**
-	 * \class CEDROOMPOOLIRQ45CDTCDescriptor
-	 * \brief Data Pool Class required for the botton half of the IRQ vector 45
+	 * \class CEDROOMPOOLIRQ17CDTCDescriptor
+	 * \brief Data Pool Class required for the botton half of the IRQ vector 17
 	 *
 	 */
-	class CEDROOMPOOLIRQ45CDTCDescriptor:public CEDROOMProtectedMemoryPool {
+	class CEDROOMPOOLIRQ17CDTCDescriptor:public CEDROOMProtectedMemoryPool {
 		//! Data Pool Memory
 		CDTCDescriptor mem[10+1];
 		//! Data Pool Memory Marks
 		bool marks[10];
 		public:
 		//! Constructor
-		CEDROOMPOOLIRQ45CDTCDescriptor():CEDROOMProtectedMemoryPool(10,mem,marks, sizeof(CDTCDescriptor)){}
+		CEDROOMPOOLIRQ17CDTCDescriptor():CEDROOMProtectedMemoryPool(10,mem,marks, sizeof(CDTCDescriptor)){}
 		//! Function for allocating a data from the pool
 		CDTCDescriptor	* AllocData(){ return ( CDTCDescriptor	* ) CEDROOMProtectedMemoryPool::AllocData();}
 	};
-	 //!Data Pool required for the botton half of the IRQ vector 45
-	static CEDROOMPOOLIRQ45CDTCDescriptor	EDROOMPoolIRQ45;
+	 //!Data Pool required for the botton half of the IRQ vector 17
+	static CEDROOMPOOLIRQ17CDTCDescriptor	EDROOMPoolIRQ17;
 
 
 
