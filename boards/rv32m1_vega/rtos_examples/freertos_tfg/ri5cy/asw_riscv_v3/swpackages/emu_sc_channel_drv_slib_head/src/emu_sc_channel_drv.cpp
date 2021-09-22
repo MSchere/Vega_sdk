@@ -29,14 +29,10 @@ char RxTC[256];
 uint16_t idx = 0;
 bool rx_ok = false;
 uint8_t CurrentRxByte = 0;
+uint8_t SyncPattern[4] = {0xBE, 0xBA, 0xBE, 0xEF};
 
 char *currentTCBrief = NULL;
-/*
-union TM_UINT16Serial_t{
-    uint16_t data;
-    uint8_t  bytes[2];
-};
-*/
+
 TM_UINT16Serial_t TCLength;
 
 void GetNextTC(CDTCDescriptor *tc) {
@@ -60,59 +56,17 @@ void Serializer_SetUInt16(uint16_t data , byte_t * aux){
     }
   }
 
-/*
-uint8_t SyncPattern[4] = {0xBE, 0xBA, 0xBE, 0xEF};
 
-
-void EDROOMHandler(void) {
-	if (idx < 4) {
-		if (SyncPattern[idx] != CurrentRxByte) {
-			idx = 0;
-		} else{
-			idx++;
-		}
-	} else if (4 == idx) {
-		TCLength.bytes[1] = CurrentRxByte;
-		idx = 5;
-
-	} else if (5 == idx) {
-		TCLength.bytes[0] = CurrentRxByte;
-		idx = 6;
-	} else {
-		uint16_t tc_index = idx - 6;
-		RxTC[tc_index] = CurrentRxByte;
-		idx++;
-		if (TCLength.data == (tc_index + 1)) { // TC complete
-			idx = 0;
-			rx_ok = true;
-		}
-	}
-}
-*/
-
-Pr_IRQHandler Pr_IRQHandler17=NULL;
 
 byte_t sc_channel_drv_get_char(){
 
 	return LPUART_ReadByte(LPUART0);
 }
 
-extern "C" void LPUART0_MyDriverIRQHandler(void)
-{
-	 if (LPUART_STAT_OR_MASK & LPUART0->STAT) {
-			/* Clear overrun flag, otherwise the RX does not work. */
-		 LPUART0->STAT = ((LPUART0->STAT & 0x3FE00000U) | LPUART_STAT_OR_MASK);
-	 }
-
-	 //LPUART_WriteByte(LPUART1, CurrentRxByte); //ECHO
-	 if(Pr_IRQHandler17)
-		 Pr_IRQHandler17();
-	}
 
 void Init_sc_channel() {
 		lpuart_config_t config;
 
-		//NVIC_SetPriority(LPUART0_IRQn, 5);
 		CLOCK_SetIpSrc(kCLOCK_Lpuart1, kCLOCK_IpSrcFircAsync);
 
 		LPUART_GetDefaultConfig(&config);
@@ -122,12 +76,10 @@ void Init_sc_channel() {
 		LPUART_Init(LPUART0, &config, LPUART_CLK_FREQ);
 	    LPUART_Init(LPUART1, &config, LPUART_CLK_FREQ);
 
-	    //Disable TX in UART0
+	    //Disable TX and enable RX IRQs in UART0
 	    LPUART_DisableInterrupts(LPUART0,kLPUART_TxDataRegEmptyInterruptEnable);
 		LPUART_EnableInterrupts(LPUART0,kLPUART_RxDataRegFullInterruptEnable);
-	    //Disable TX in UART1
-	    LPUART_DisableInterrupts(LPUART1,kLPUART_TxDataRegEmptyInterruptEnable | kLPUART_RxDataRegFullInterruptEnable);
-	    EnableIRQ(LPUART0_IRQn);
+		EnableIRQ(LPUART0_IRQn);
 }
 
 void SendTM(CDTM *tm) {
@@ -171,18 +123,12 @@ void SendTM(CDTM *tm) {
 		}
 
 	LPUART_WriteBlocking(LPUART0, data, 15+packLength-2);
-	/*
-	if(rx_ok){
-	 LPUART_WriteBlocking(LPUART1, (uint8_t *) RxTC, TCLength.data);
-	 rx_ok=false;
-	}*/
 
 }
 
 void SendTMList(CDTMList *tm) {
 	for (uint8_t i = 0; i < tm->GetTMNumber(); i++) {
 		SendTM(tm->GetTM(i));
-
 	}
 
 }
@@ -192,7 +138,7 @@ void EmuPassSecond() {
 	//Emulate Hw TimeCode reception
 	PUSService9::CurrentUniTimeY2KSecns = PUSService9::NextUniTimeY2KSecns;
 	PUSService9::NextUniTimeY2KSecns++;
-	SendProgrammedTCs();
+	//SendProgrammedTCs();
 
 }
 

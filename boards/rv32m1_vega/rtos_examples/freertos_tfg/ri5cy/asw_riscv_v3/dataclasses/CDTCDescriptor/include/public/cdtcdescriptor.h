@@ -4,6 +4,7 @@
 
 
 #include <platform/basic_types.h>
+#include <fsl_lpuart.h>
 
 extern byte_t sc_channel_drv_get_char();
 extern uint8_t SyncPattern[4];
@@ -56,6 +57,7 @@ class CDTCDescriptor{
 	uint8_t appData[256];
 
 
+
 	bool_t IsPrioTC(){return ExecAsPrioTC==tcexecCtrl;}
 	bool_t IsChangeModeTC(){return ExecAsChangeModeTC==tcexecCtrl;}
 	bool_t IsHK_FDIRTC(){return ExecAsHK_FDIRTC==tcexecCtrl;}
@@ -71,52 +73,50 @@ class CDTCDescriptor{
 	
 	//returns true if the TC is commpleted after IRQ 
 	bool HandleIRQ(){
-
 		return (RxByte(sc_channel_drv_get_char()));
-
-
 	}
 
 	bool RxByte(byte_t CurrentRxByte){
 
 		bool rx_ok=false;
 
-		if (rxBytesCounter < 4) {
+		if (rxBytesCounter < 4) { //Header
 			if (SyncPattern[rxBytesCounter] != CurrentRxByte) {
 				rxBytesCounter = 0;
 			} else{
 				rxBytesCounter++;
 			}
-		} else if (rxBytesCounter < 10){
+		} else if (rxBytesCounter < 12){
+			LPUART_WriteByte(LPUART1, CurrentRxByte); //ECHO
 			TM_UINT16Serial_t * aux;
 			switch (rxBytesCounter){
-				case(4):
+				case(4): //TM length byte 0
 					TCLength.bytes[1] = CurrentRxByte;
 				break;
-				case(5):
+				case(5): //TM length byte 1
 					TCLength.bytes[0] = CurrentRxByte;
 				break;
-				case(6):
+				case(6): //Package ID byte 0
 					aux=(TM_UINT16Serial_t*)&packHeader.packID;
 					aux->bytes[1]=CurrentRxByte;
 				break;
-				case(7):
+				case(7): //Package ID byte 1
 					aux=(TM_UINT16Serial_t*)&packHeader.packID;
 					aux->bytes[0]=CurrentRxByte;
 				break;
-				case(8):
+				case(8): //Sequence control byte 0
 					aux=(TM_UINT16Serial_t*)&packHeader.seqCtrl;
 					aux->bytes[1]=CurrentRxByte;
 				break;
-				case(9):
+				case(9): //Sequence control byte 1
 					aux=(TM_UINT16Serial_t*)&packHeader.seqCtrl;
 					aux->bytes[0]=CurrentRxByte;
 				break;
-				case(10):
+				case(10): //Package length byte 0
 					aux=(TM_UINT16Serial_t*)&packHeader.length;
 					aux->bytes[1]=CurrentRxByte;
 				break;
-				case(11):
+				case(11): //Package length byte 1
 					aux=(TM_UINT16Serial_t*)&packHeader.length;
 					aux->bytes[0]=CurrentRxByte;
 				break;
@@ -124,16 +124,22 @@ class CDTCDescriptor{
 				;
 			}
 			rxBytesCounter++;
-		} else if (rxBytesCounter < 14){
+		} else if (rxBytesCounter < 16){
+			LPUART_WriteByte(LPUART1, CurrentRxByte); //ECHO
 			byte_t * aux=(byte_t*)&dataFieldHeader;
-			*(aux + rxBytesCounter-4-BEBASYNC)=CurrentRxByte;
+			*(aux + rxBytesCounter-6-BEBASYNC)=CurrentRxByte;
 			rxBytesCounter++;
 		} else{
-			appData[rxBytesCounter-8-BEBASYNC]=CurrentRxByte;
+			LPUART_WriteByte(LPUART1, CurrentRxByte); //ECHO
+			appData[rxBytesCounter-10-BEBASYNC]=CurrentRxByte;
 			rxBytesCounter++;
-			if (rxBytesCounter == (6 + BEBASYNC + packHeader.length + 1)){
+			if ((rxBytesCounter - 10 - BEBASYNC)== (packHeader.length - 4 + 1 )){
 				rx_ok=true;
 				rxBytesCounter=0;
+				LPUART_WriteByte(LPUART1, 0xBE); //ECHO
+				LPUART_WriteByte(LPUART1, 0xBA); //ECHO
+				LPUART_WriteByte(LPUART1, dataFieldHeader.service); //ECHO
+				LPUART_WriteByte(LPUART1, dataFieldHeader.subservice); //ECHO
 			}
 		}
 

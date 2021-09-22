@@ -26,6 +26,21 @@
 //#include <public/debug_primitives.h>
 //#include <public/string.h>
 
+Pr_IRQHandler Pr_IRQHandler17=NULL;
+
+extern "C" void LPUART0_MyDriverIRQHandler(void)
+{
+	 if (LPUART_STAT_OR_MASK & LPUART0->STAT) {
+			/* Clear overrun flag, otherwise the RX does not work. */
+		 LPUART0->STAT = ((LPUART0->STAT & 0x3FE00000U) | LPUART_STAT_OR_MASK);
+	 }
+
+	 if(Pr_IRQHandler17) {
+
+		 Pr_IRQHandler17();
+	 }
+
+}
 
 
 
@@ -57,10 +72,18 @@
 	  portENABLE_INTERRUPTS(); //Changed from to vPortEnableInterrupts() to porENABLE_INTERRUPTS()
   }
 
+
+
   void Pr_IRQManager::InstallIRQHandler(Pr_IRQHandler handler,
       uint8_t IRQLevel, uint8_t IRQVectorNumber )
   {
 
+	  switch (IRQVectorNumber){
+		  case(17):
+				  Pr_IRQHandler17=handler;
+		  break;
+		  default:;
+	  }
     //intr_capture((void (*) (int)) handler, IRQVectorNumber);
   }
 

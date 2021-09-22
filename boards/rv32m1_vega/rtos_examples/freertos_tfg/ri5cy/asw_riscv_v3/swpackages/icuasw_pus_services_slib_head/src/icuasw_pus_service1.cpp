@@ -8,13 +8,14 @@
 
 #include <public/icuasw_pus_services_iface_v1.h>
 
-
+#include <fsl_lpuart.h>
 bool_t  PUSService1::AcceptTC( CDTCDescriptor &TC, CDTMList &List){
 
   bool_t accepted=false;
 
   TC.tcexecCtrl=ExecAsPrioTC;
-
+  LPUART_WriteByte(LPUART1, TC.dataFieldHeader.service); //ECHO
+  LPUART_WriteByte(LPUART1, TC.dataFieldHeader.subservice); //ECHO
   switch(TC.dataFieldHeader.service){
 
     case(3):
