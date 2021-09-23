@@ -8,6 +8,7 @@
 //#include "fsl_lpuart_freertos.h"
 #include "fsl_debug_console.h"
 #include "fsl_lpuart.h"
+#include <public/config.h>
 
 //My includes
 #include "stdlib.h"
@@ -1241,13 +1242,11 @@ void LPUART0_RX_DriverIRQHandler(void)
 }
 #else
 
-/* My handler */
-/*
+#if !defined(USE_EDROOMBP_LPUART0_IRQ_HANDLER)
 void LPUART0_DriverIRQHandler(void) {
-	LPUART_WriteByte(LPUART1, LPUART_ReadByte(LPUART0));
 	s_lpuartIsr(LPUART0, s_lpuartHandle[0]);
 }
-*/
+#endif
 
 #endif
 #endif

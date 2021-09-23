@@ -9,7 +9,7 @@
 #include <public/icuasw_pus_services_iface_v1.h>
 #include <stdio.h>
 
-
+//enabled, ID, period (s), always 0, n of parameters, parameter IDs to report
 HKConfig_t PUSService3::HKConfig[PUS_SERVICE3_SID_NUMBER]={
     {true,0,2,0,1,{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}},
     {true,1,10,0,2,{4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0}},

@@ -3491,9 +3491,9 @@ END GROUP
  .text.timespec_gt
                 0x000000000000c296       0x28 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
                 0x000000000000c296                timespec_gt
- .text.LPUART0_MyDriverIRQHandler
+ .text.LPUART0_DriverIRQHandler
                 0x000000000000c2be       0x56 swpackages\edroombp_slib_head\src\freertossapi\vega_board\edroombp_free_rtos.o
-                0x000000000000c2be                LPUART0_MyDriverIRQHandler
+                0x000000000000c2be                LPUART0_DriverIRQHandler
  .text._ZN13Pr_IRQManager17InstallIRQHandlerEPFvvEhh
                 0x000000000000c314       0x3a swpackages\edroombp_slib_head\src\freertossapi\vega_board\edroombp_free_rtos.o
                 0x000000000000c314                Pr_IRQManager::InstallIRQHandler(void (*)(), unsigned char, unsigned char)
@@ -5881,7 +5881,7 @@ OUTPUT(asw_riscv_v3.elf elf32-littleriscv)
  .debug_line    0x000000000001eb56      0x411 utilities\fsl_log.o
  .debug_line    0x000000000001ef67      0xacc utilities\fsl_str.o
 
-.debug_str      0x0000000000000000    0x11cd5
+.debug_str      0x0000000000000000    0x11cd3
  .debug_str     0x0000000000000000     0x123f board\board.o
                                        0x1319 (size before relaxing)
  .debug_str     0x000000000000123f      0xbd3 board\clock_config.o
@@ -5938,57 +5938,57 @@ OUTPUT(asw_riscv_v3.elf elf32-littleriscv)
                                        0x23d2 (size before relaxing)
  .debug_str     0x000000000000de1d       0xd2 swpackages\edroombp_slib_head\src\freertossapi\timespec.o
                                         0x6cb (size before relaxing)
- .debug_str     0x000000000000deef      0x2af swpackages\edroombp_slib_head\src\freertossapi\vega_board\edroombp_free_rtos.o
-                                       0x128a (size before relaxing)
- .debug_str     0x000000000000e19e     0x15d7 swpackages\edroomsl_slib_head\src\freertosapi\edroomsl.o
+ .debug_str     0x000000000000deef      0x2ad swpackages\edroombp_slib_head\src\freertossapi\vega_board\edroombp_free_rtos.o
+                                       0x1288 (size before relaxing)
+ .debug_str     0x000000000000e19c     0x15d7 swpackages\edroomsl_slib_head\src\freertosapi\edroomsl.o
                                        0x486b (size before relaxing)
- .debug_str     0x000000000000f775      0x43a swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_channel_drv.o
+ .debug_str     0x000000000000f773      0x43a swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_channel_drv.o
                                        0x29ad (size before relaxing)
- .debug_str     0x000000000000fbaf      0x144 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service12.o
+ .debug_str     0x000000000000fbad      0x144 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service12.o
                                        0x11fd (size before relaxing)
- .debug_str     0x000000000000fcf3       0xe0 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service128.o
+ .debug_str     0x000000000000fcf1       0xe0 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service128.o
                                        0x1190 (size before relaxing)
- .debug_str     0x000000000000fdd3       0x88 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service17.o
+ .debug_str     0x000000000000fdd1       0x88 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service17.o
                                        0x1132 (size before relaxing)
- .debug_str     0x000000000000fe5b      0x154 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service19.o
+ .debug_str     0x000000000000fe59      0x154 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service19.o
                                        0x11fe (size before relaxing)
- .debug_str     0x000000000000ffaf      0x109 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service3.o
+ .debug_str     0x000000000000ffad      0x109 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service3.o
                                        0x11bc (size before relaxing)
- .debug_str     0x00000000000100b8       0xd9 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service6.o
+ .debug_str     0x00000000000100b6       0xd9 swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service6.o
                                        0x1183 (size before relaxing)
- .debug_str     0x0000000000010191       0x9b swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service9.o
+ .debug_str     0x000000000001018f       0x9b swpackages\emu_sc_channel_drv_slib_head\src\emu_sc_pus_service9.o
                                        0x1145 (size before relaxing)
- .debug_str     0x000000000001022c       0xc7 swpackages\emu_tc_programming\src\emu_tc_programming.o
+ .debug_str     0x000000000001022a       0xc7 swpackages\emu_tc_programming\src\emu_tc_programming.o
                                        0x1354 (size before relaxing)
- .debug_str     0x00000000000102f3      0x302 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service1.o
+ .debug_str     0x00000000000102f1      0x302 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service1.o
                                         0xe41 (size before relaxing)
- .debug_str     0x00000000000105f5      0x2ef swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service12.o
+ .debug_str     0x00000000000105f3      0x2ef swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service12.o
                                        0x1198 (size before relaxing)
- .debug_str     0x00000000000108e4      0x144 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service128.o
+ .debug_str     0x00000000000108e2      0x144 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service128.o
                                         0xe95 (size before relaxing)
- .debug_str     0x0000000000010a28       0x8b swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service17.o
+ .debug_str     0x0000000000010a26       0x8b swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service17.o
                                         0xdc2 (size before relaxing)
- .debug_str     0x0000000000010ab3      0x450 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service19.o
+ .debug_str     0x0000000000010ab1      0x450 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service19.o
                                        0x141b (size before relaxing)
- .debug_str     0x0000000000010f03      0x115 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service20.o
+ .debug_str     0x0000000000010f01      0x115 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service20.o
                                         0xe8c (size before relaxing)
- .debug_str     0x0000000000011018      0x25c swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service3.o
+ .debug_str     0x0000000000011016      0x25c swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service3.o
                                         0xfd3 (size before relaxing)
- .debug_str     0x0000000000011274       0x88 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service5.o
+ .debug_str     0x0000000000011272       0x88 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service5.o
                                         0xdbf (size before relaxing)
- .debug_str     0x00000000000112fc       0x88 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service6.o
+ .debug_str     0x00000000000112fa       0x88 swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service6.o
                                         0xdbf (size before relaxing)
- .debug_str     0x0000000000011384      0x18c swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service9.o
+ .debug_str     0x0000000000011382      0x18c swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_service9.o
                                         0xed1 (size before relaxing)
- .debug_str     0x0000000000011510      0x1fb swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_services.o
+ .debug_str     0x000000000001150e      0x1fb swpackages\icuasw_pus_services_slib_head\src\icuasw_pus_services.o
                                        0x1062 (size before relaxing)
- .debug_str     0x000000000001170b      0x248 utilities\fsl_debug_console.o
+ .debug_str     0x0000000000011709      0x248 utilities\fsl_debug_console.o
                                         0x99f (size before relaxing)
- .debug_str     0x0000000000011953       0xb4 utilities\fsl_io.o
+ .debug_str     0x0000000000011951       0xb4 utilities\fsl_io.o
                                        0x12ca (size before relaxing)
- .debug_str     0x0000000000011a07       0xa6 utilities\fsl_log.o
+ .debug_str     0x0000000000011a05       0xa6 utilities\fsl_log.o
                                         0x7ba (size before relaxing)
- .debug_str     0x0000000000011aad      0x228 utilities\fsl_str.o
+ .debug_str     0x0000000000011aab      0x228 utilities\fsl_str.o
                                         0x887 (size before relaxing)
 
 .comment        0x0000000000000000       0x1a

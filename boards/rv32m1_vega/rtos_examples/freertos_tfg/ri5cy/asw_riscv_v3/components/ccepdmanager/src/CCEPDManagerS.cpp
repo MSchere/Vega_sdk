@@ -71,8 +71,6 @@ Pr_TaskRV_t 	CCEPDManager::EDROOMIRQ17BottomHalfTask(Pr_TaskP_t){
 
 		if(!EDROOMSemEndIRQ17.WaitCond()){
 
-			//GetNextTC(&EDROOMVarIRQ17);
-
 			if(EDROOMIRQ17SendMsgToCmp){
 				CDTCDescriptor	*pEDROOMVarIRQ;
 

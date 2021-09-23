@@ -28,7 +28,10 @@
 
 Pr_IRQHandler Pr_IRQHandler17=NULL;
 
-extern "C" void LPUART0_MyDriverIRQHandler(void)
+//Custom handler, replaces the original LPUART0_DriverIRQHandler
+
+#if defined(USE_EDROOMBP_LPUART0_IRQ_HANDLER)
+extern "C" void LPUART0_DriverIRQHandler(void)
 {
 	 if (LPUART_STAT_OR_MASK & LPUART0->STAT) {
 			/* Clear overrun flag, otherwise the RX does not work. */
@@ -41,7 +44,7 @@ extern "C" void LPUART0_MyDriverIRQHandler(void)
 	 }
 
 }
-
+#endif
 
 
 ////********************************************************
@@ -74,6 +77,7 @@ extern "C" void LPUART0_MyDriverIRQHandler(void)
 
 
 
+  //Installs handler
   void Pr_IRQManager::InstallIRQHandler(Pr_IRQHandler handler,
       uint8_t IRQLevel, uint8_t IRQVectorNumber )
   {
@@ -84,7 +88,6 @@ extern "C" void LPUART0_MyDriverIRQHandler(void)
 		  break;
 		  default:;
 	  }
-    //intr_capture((void (*) (int)) handler, IRQVectorNumber);
   }
 
   void Pr_IRQManager::DeinstallIRQHandler(unsigned char IRQLevel,
