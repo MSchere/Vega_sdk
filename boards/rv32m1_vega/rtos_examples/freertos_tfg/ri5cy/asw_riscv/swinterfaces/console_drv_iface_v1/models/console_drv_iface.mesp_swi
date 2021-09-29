@@ -1,0 +1,28 @@
+package es.uah.aut.srg.micobs.mesp.common.embdio;
+
+import es.uah.aut.srg.micobs.langs;
+
+swinterface console_drv_iface
+{
+	version := v1;
+	
+	language := C(C99);
+	
+	configuration parameters {
+		
+		integer NB_TERMIOS_PORTS := 2;
+		
+	};
+	
+	provided resources {
+		
+		/** Represents an ipoutput channel used by a software package */
+		instantiable resource TERMIO_CHANNEL {
+			
+			integer ID := 0 range [0, console_drv_iface(v1)::NB_TERMIOS_PORTS);
+			
+		};
+		
+	};
+	
+};

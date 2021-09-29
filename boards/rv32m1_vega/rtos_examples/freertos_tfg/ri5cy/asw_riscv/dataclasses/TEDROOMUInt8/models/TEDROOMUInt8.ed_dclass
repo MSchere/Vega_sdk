@@ -1,0 +1,9 @@
+dataclass TEDROOMUInt8{
+
+
+
+	uri := es.uah.aut.srg.edroom.mclev.data_sai.TEDROOMUInt8.tedroomuint8_iface;
+	version := v1;
+
+
+};

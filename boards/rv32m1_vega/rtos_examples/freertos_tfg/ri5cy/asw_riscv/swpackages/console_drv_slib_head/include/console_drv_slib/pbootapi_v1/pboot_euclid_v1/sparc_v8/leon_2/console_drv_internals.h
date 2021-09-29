@@ -1,0 +1,8 @@
+#ifndef CONSOLE_DRV_SLIB__PBOOTAPI_V1_PBOOT_V1_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H
+#define CONSOLE_DRV_SLIB__PBOOTAPI_V1_PBOOT_V1_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H
+
+void console_outbyte_polled_uart_a(unsigned char ch);
+
+void console_outbyte_polled_uart_b(unsigned char ch);
+
+#endif // CONSOLE_DRV_SLIB__PBOOTAPI_V1_PBOOT_V1_SPARC_V8__LEON_2__CONSOLE_DRV_INTERNALS_H

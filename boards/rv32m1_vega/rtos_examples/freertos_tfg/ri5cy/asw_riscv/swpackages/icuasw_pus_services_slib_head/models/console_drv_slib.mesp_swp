@@ -1,0 +1,195 @@
+package es.uah.aut.srg.micobs.mesp.common.embdio;
+
+import es.uah.aut.srg.micobs.langs;
+import es.uah.aut.srg.micobs.mesp.ctools;
+
+import es.uah.aut.srg.micobs.pdl.common.osapi_;
+import es.uah.aut.srg.micobs.pdl.common.os_;
+import es.uah.aut.srg.micobs.pdl.common.arch;
+import es.uah.aut.srg.micobs.pdl.common.mp;
+import es.uah.aut.srg.micobs.pdl.common.board_;
+import es.uah.aut.srg.micobs.pdl.common.device_;
+
+driver console_drv_slib
+{
+	version := HEAD;
+	
+	languages := C(C99);
+	
+	construction tools := GNUMake(3.81);
+
+	configuration parameters {
+		
+		enum CONSOLE_PORT {
+			UART_A = 0, UART_B = 1
+		};
+		
+		enum CONSOLE_PORT CONSOLE_PORT_0 := UART_A;
+		enum CONSOLE_PORT CONSOLE_PORT_1 := UART_B;
+		
+		integer NB_CONSOLE_PORTS := 0 range [0,2];
+		
+	};
+
+	provided interfaces {
+	
+		provides console_drv_iface(v1) {
+			
+			parameter NB_TERMIOS_PORTS := console_drv_slib(HEAD)::NB_CONSOLE_PORTS;
+				
+		};
+	
+	};
+	
+	supported platforms
+	{
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_Leon2ViP_1_x
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := Leon2ViP(1.x);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_TSIM_LEON2_2_x
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := TSIM_LEON2(2.x);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_3_TSIM_LEON3_2_x
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(3);
+			board := TSIM_LEON3(2.x);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_srg_a3p_v2_0
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := srg_a3p(v2.0);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_cdpu_v1
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := cdpu(v1);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_emulator_cdpu_a3p_v2_fpga_v5_4
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := emulator_cdpu(a3p_v2_fpga_v5.4);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		supported platform pbootapi_v1_pboot_v1_SPARC_v8_LEON_2_emulator_cdpu_a3p_v2_fpga_v5_4
+		{
+			osapi := pbootapi(v1);
+			os := pboot(v1);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := emulator_cdpu(a3p_v2_fpga_v5.4);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		supported platform pbootapi_v1_pboot_v1_SPARC_v8_LEON_2_Leon2ViP_1_x
+		{
+			osapi := pbootapi(v1);
+			os := pboot(v1);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := Leon2ViP(1.x);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		
+		supported platform pbootapi_v1_pboot_v1_SPARC_v8_LEON_2_cdpu_v1
+		{
+			osapi := pbootapi(v1);
+			os := pboot(v1);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := cdpu(v1);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+			};
+		};
+		supported platform pbootapi_v1_pboot_euclid_v1_SPARC_v8_LEON_2_cdpu_euclid_v1
+		{
+			osapi := pbootapi(v1);
+			os := pboot_euclid(v1);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := cdpu_euclid(v1);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+		supported platform RTEMSAPI_4_8_impr_RTEMS_4_8_impr_SPARC_v8_LEON_2_cdpu_euclid_v1
+		{
+			osapi := RTEMSAPI(4.8_impr);
+			os := RTEMS(4.8_impr);
+			architecture := SPARC(v8);
+			microprocessor := LEON(2);
+			board := cdpu_euclid(v1);
+			
+			supported devices {
+				device APBUART(1.x) UART_A {};
+				device APBUART(1.x) UART_B {};
+			};
+		};
+	};
+
+};
+

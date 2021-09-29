@@ -1,0 +1,31 @@
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol EDROOMTimingSAP{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.EDROOMTimingSAP;
+	version :=v1;
+
+
+	/*
+	 * Input messages.
+	*/ 
+
+	input messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send EDROOMSignalTimeout();
+
+	};
+
+};

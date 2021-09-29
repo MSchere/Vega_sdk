@@ -1,0 +1,17 @@
+package es.uah.aut.srg.micobs.mclev.common.embdio;
+
+import es.uah.aut.srg.micobs.langs;
+
+sai xprintf_iface
+{
+	version := v1;
+	
+	language := C(C99);
+	
+	attributes {
+		
+		integer NB_MAX_CHANNELS := 2;
+		
+	};
+	
+};

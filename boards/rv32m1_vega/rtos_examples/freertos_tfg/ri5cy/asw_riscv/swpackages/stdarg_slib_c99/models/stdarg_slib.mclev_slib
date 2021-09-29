@@ -1,0 +1,28 @@
+package es.uah.aut.srg.micobs.mclev.common.libc;
+
+import es.uah.aut.srg.micobs.langs;
+
+service library stdarg_slib
+{
+	version := C99;
+	
+	languages := C(C99);
+	
+	provided sais {
+	
+		provides stdarg_iface(C99) {};
+	
+	}; 
+		
+	supported platforms
+	{
+		supported platform any_any_any_any_any
+		{
+			osapi := any;
+			os := any;
+			architecture := any;
+			microprocessor := any;
+			board := any;
+		};
+	};
+};

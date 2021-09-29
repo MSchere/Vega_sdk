@@ -1,0 +1,14 @@
+package es.uah.aut.srg.edroom.mclev.data_sai.cdtmlist;
+
+inport es.uah.aut.srg.micobs.langs;
+
+sai cdtmlist_iface
+{
+
+
+
+	version := v1;
+	language := CPP(98);
+
+
+};
